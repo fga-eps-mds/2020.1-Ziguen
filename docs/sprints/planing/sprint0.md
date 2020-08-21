@@ -8,11 +8,11 @@ Duração: 18/08 à 21/08
 * Local: Reunião online (Jitsi)
 
 
-
 ## Objetivo
 * Selecionar projetos de interesse do grupo
 * Definir Sprints
 * Discutir sobre as issues já criadas e organizá-las
+
 
 ## Papeis definidos
 | Membros  |  Papel  |
@@ -23,5 +23,19 @@ Duração: 18/08 à 21/08
 |  Geise Saunier |   |
 |  Giulia Lobo |   |
 |  Liverson Severo |   |
+
+
+## Backlog
+| Issue | Descrição | Pontuação | Responsáveis | Status |
+| ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
+
 
 ## Pareamento
