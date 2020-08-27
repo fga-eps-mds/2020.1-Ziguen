@@ -1,1 +1,0 @@
-## Padrão de Commits
