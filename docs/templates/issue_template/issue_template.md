@@ -3,10 +3,6 @@
 |------|------|------|------|-----|
 | T1 | teste|teste unitarios | | | 
 
-## Título da issue
-
-Seja objetivo ao descrever o titulo, com palavras chaves. Exemplo "Teste unitario".
-
 
 ## Descrição
 
