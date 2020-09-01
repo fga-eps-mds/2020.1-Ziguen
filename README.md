@@ -18,3 +18,9 @@
 </ul>
 <h2> :whale: Uso do Docker </h2>
 <h2> :bust_in_silhouette: Equipe do Projeto </h2>
+<a href= 'https://github.com/edsondearaujo'><img width="130" src='https://github.com/fga-eps-mds/2020-1-Ziguen/blob/develop/docs/Foto_Edson.jpeg'</a>
+<a href= 'https://github.com/francisco1code'><img width="130" src='https://github.com/fga-eps-mds/2020-1-Ziguen/blob/develop/docs/Foto_Francisco.jpeg'</a>
+<a href= 'https://github.com/gabrielapivetta'><img width="130" src='https://github.com/fga-eps-mds/2020-1-Ziguen/blob/develop/docs/Foto_Gabriela.jpeg'</a>
+<a href= 'https://github.com/GeiseSaunier'><img width="130" src='https://github.com/fga-eps-mds/2020-1-Ziguen/blob/develop/docs/Foto_Geise.jpeg'</a>
+<a href= 'https://github.com/Giuulob89'><img width="130" src='https://github.com/fga-eps-mds/2020-1-Ziguen/blob/develop/docs/Foto_Giulia.jpeg'</a>
+<a href= 'https://github.com/liversonp'><img width="130" src='https://github.com/fga-eps-mds/2020-1-Ziguen/blob/develop/docs/Foto_Liverson.png'</a>
