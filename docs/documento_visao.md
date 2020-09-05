@@ -76,6 +76,9 @@ No caso do comprador, ou seja, o cliente dessas empresas de transporte fluvial a
 
 A plataforma será de uso gratuito: o cadastro de empresas, embarcações e a busca por passagens. O único custo aplicado, será uma taxa sobre o valor da passagem.
 
+**2.1  Situação Atual**
+
+Atualmente, a única maneira possível de adquirir passagens é comprando no local que a embarcação parte. Além disso, apesar de ter um cronograma, não existe a possibilidade de comprar passagens online com antecedência, ou seja, o cliente só pode adquirir no momento de partida da embarcação ou diretamente na agência física, o que gera filas, espera e principalmente constrangimentos, pois uma vez que a embarcação atinge a lotação máxima os usuários que não foram contemplados simplesmente não podem fazer nada e perdem o tempo de locomoção e fila.
 
 
 ### 3. Requisitos
