@@ -80,5 +80,11 @@ A plataforma será de uso gratuito: o cadastro de empresas, embarcações e a bu
 
 Atualmente, a única maneira possível de adquirir passagens é comprando no local que a embarcação parte. Além disso, apesar de ter um cronograma, não existe a possibilidade de comprar passagens online com antecedência, ou seja, o cliente só pode adquirir no momento de partida da embarcação ou diretamente na agência física, o que gera filas, espera e principalmente constrangimentos, pois uma vez que a embarcação atinge a lotação máxima os usuários que não foram contemplados simplesmente não podem fazer nada e perdem o tempo de locomoção e fila.
 
+**2.2  Escopo**
+
+| Num  |  Módulo  | Descrição |  
+| ------------------- | ------------------- | ------------------- | 
+|  1 |  Sistema web (responsivo.) |O sistema deve funcionar em um servidor web e ser acessível a internet.
+|  
 
 ### 3. Requisitos
