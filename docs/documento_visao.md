@@ -80,5 +80,75 @@ A plataforma será de uso gratuito: o cadastro de empresas, embarcações e a bu
 
 Atualmente, a única maneira possível de adquirir passagens é comprando no local que a embarcação parte. Além disso, apesar de ter um cronograma, não existe a possibilidade de comprar passagens online com antecedência, ou seja, o cliente só pode adquirir no momento de partida da embarcação ou diretamente na agência física, o que gera filas, espera e principalmente constrangimentos, pois uma vez que a embarcação atinge a lotação máxima os usuários que não foram contemplados simplesmente não podem fazer nada e perdem o tempo de locomoção e fila.
 
+**2.2  Escopo**
+
+| Num  |  Módulo  | Descrição |  
+| ------------------- | ------------------- | ------------------- | 
+|  1 |  Sistema web (responsivo.) |O sistema deve funcionar em um servidor web e ser acessível a internet. 
+
+**2.3 Atores** 
+O sistema possui dois tipos de atores, sendo eles:     
+    Usuário Administrador:      
+    Usuário Cliente:
+Dono da embarcação;
+Tripulante; 
+
+| Num  |  Ator  | Definição e Privilégio de Acesso e Segurança |  
+| ------------------- | ------------------- | ------------------- | 
+|  1 |  Usuário Administrador | Responsável pelo gerenciamento do sistema, realizando diferentes atividades, como: incluir novas viagens, origens, destinos e embarcações, sendo cabível a ele a efetivação das vendas de passagens fluviais. |
+|  2 |  Usuário Cliente | Interage com o sistema a partir de um navegador web. É desejável que seja fácil usar o sistema, mas, em caso de dúvida, deve haver algum tipo de suporte ao usuário cliente.|
 
 ### 3. Requisitos
+
+### 4. Regras de Negócio
+
+
+| Num | Requisito Associado | Descrição |
+| ---- | ----| ----|
+| RN 01 | Cadastro e inclusão de embarcações. | Uma embarcação só poderá ser cadastrada se informar: nome da embarcação, origem, destino, data e hora da viagem.|
+| RN 02 | Compra de passagens. | Para realizar uma compra, o usuário cliente poderá realizar de forma direta ou realizando um cadastro no site. |
+| RN 03 | Compra de passagens. | O número de compras deve ser limitado até o valor de passageiros que a embarcação suportar no atual momento da compra. |
+| RN 04 | Realizar pagamento. | O usuário cliente deverá realizar o pagamento inserindo dados de seu cartão de crédito ou débito, ou ainda através de boleto bancário. Ao inserir as informações necessárias, deverá confirmar a compra. |
+| RN 05 | Consulta de passagens. | Para realizar uma busca pelo pedido o usuário cliente precisa estar logado com seu perfil no site. |
+| RN 06 | Cancelamento de compra. | O usuário cliente somente poderá cancelar uma compra se estiver logado com seu perfil no site. |
+| RN 07 | Compra, alteração e cancelamento. | O usuário cliente deve receber um e-mail com as informações necessárias caso realize qualquer uma das três transações, podendo gerar um PDF com essas informações. |
+
+**4.1 Restrições de Software**
+
+| Num | Restrição |
+| ---- | ----|
+| 1 | O aplicativo poderá ser acessado em navegadores web. |
+
+**4.2  Arquitetura de Software – Modelo – Visão – Controlador (MVC)**
+
+Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando sua aplicação em três camadas. A camada de interação do usuário (view), que faz a exibição dos dados, sendo ela por meio de um html ou xml; a camada de manipulação dos dados (model), responsável pela leitura e escrita dos dados, e também suas validações e a camada de controle (controller), responsável por receber todas as requisições do usuário, controlando qual modelo usar e qual view será mostrado ao usuário. Essa divisão em camadas é realizada para facilitar a resolução de um problema maior.
+
+O MVC fora escolhido como padrão arquitetural do ZIGUEN em virtude de este já ser utilizado em muitos projetos devido à arquitetura que possui, o que possibilita a divisão do projeto em camadas muito bem definidas. Para Bastos (2011) uma das vantagens de se utilizar o padrão MVC é que ao realizar qualquer tipo de alteração em uma das camadas não interfere nas demais, facilitando a atualização de layouts, alteração nas regras de negócio e adição de novos recursos. Em caso de grandes projetos, o MVC facilita muito a divisão de tarefas entre a equipe. Em decorrência de todas essas vantagens, a equipe de desenvolvimento optou pela utilização deste, já que
+ele também possibilita a facilidade na manutenção e adição de recursos, maior integração da equipe e/ou divisão de tarefas, além da facilidade em manter o seu código sempre limpo.
+
+O padrão MVC, aplicado ao sistema ZIGUEN, atua como mostra a figura abaixo
+(Arquitetura de Software ZIGUEN):
+
+A comunicação entre interfaces e regras de negócios é definida através de um controlador. Quando um evento é executado na interface gráfica, que é a chamada View, como um clique em um botão, a interface irá se comunicar com o controlador que por sua vez se comunica com as regras de negócios.
+
+**4.3  Identificação dos Casos de Uso**
+
+**4.4  Diagrama de Casos de Uso**
+
+**4.5  Diagrama de Classes**
+
+**4.6  Diagramas de Sequência**
+
+**4.7  Diagramas de Estados**
+
+**4.8  Diagrama de Objetos**
+
+**4.9  Diagrama de Atividades**
+
+**4.10  Diagrama de Componentes**
+
+**4.11  Diagrama de Pacotes**
+
+**4.12  Diagrama de Comunicação**
+
+### 5. Diagrama Entidade Relacionamento
