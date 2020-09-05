@@ -42,8 +42,8 @@
 Este documento tem o propósito de apresentar o sistema ZIGUEN: um sistema para venda de passagens fluviais, bem como seus requisitos funcionais e não-funcionais e diagramas UML.  Além disso, os requisitos dos usuários deverão ser atendidos pelo sistema, que posteriormente será construído neste projeto. 
 Neste documento também estão presentes: uma descrição do produto, interfaces e comportamento esperado do sistema.
 
-
-
+**1.2  Público Alvo**  
+Este documento destina-se aos stackholders (arquitetos de software, engenheiros de software, testadores e usuários classificados como usuários fornecedores).
 
 ### 2. Descrição Geral do Produto
 
