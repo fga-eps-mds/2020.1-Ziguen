@@ -84,7 +84,18 @@ Atualmente, a única maneira possível de adquirir passagens é comprando no loc
 
 | Num  |  Módulo  | Descrição |  
 | ------------------- | ------------------- | ------------------- | 
-|  1 |  Sistema web (responsivo.) |O sistema deve funcionar em um servidor web e ser acessível a internet.
-|  
+|  1 |  Sistema web (responsivo.) |O sistema deve funcionar em um servidor web e ser acessível a internet. 
+
+**2.3 Atores**  
+O sistema possui dois tipos de atores, sendo eles:     
+    Usuário Administrador:      
+    Usuário Cliente:
+Dono da embarcação;
+Tripulante; 
+
+| Num  |  Ator  | Definição e Privilégio de Acesso e Segurança |  
+| ------------------- | ------------------- | ------------------- | 
+|  1 |  Usuário Administrador | Responsável pelo gerenciamento do sistema, realizando diferentes atividades, como: incluir novas viagens, origens, destinos e embarcações, sendo cabível a ele a efetivação das vendas de passagens fluviais. |
+|  2 |  Usuário Cliente | Interage com o sistema a partir de um navegador web. É desejável que seja fácil usar o sistema, mas, em caso de dúvida, deve haver algum tipo de suporte ao usuário cliente.|
 
 ### 3. Requisitos
