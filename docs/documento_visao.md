@@ -47,5 +47,35 @@ Este documento destina-se aos stackholders (arquitetos de software, engenheiros 
 
 ### 2. Descrição Geral do Produto
 
+Com intuito de facilitar a descrição do produto/serviço, será utilizada neste documento a metodologia 5W2H que abordará algumas nuances do produto como do que se trata, a quem se destina, entre outros aspectos que caracterizam a plataforma ZIGUEN.
+
+**O que é**
+
+A ferramenta ZIGUEN tem o propósito de facilitar a integração entre usuários do transporte fluvial e aqueles que detém a propriedade sobre esses meios de transporte, para que assim, o processo de comprar passagens em embarcações seja mais rápido, cômodo, seguro, além de inovador e intuitivo.
+A ferramenta trata-se de uma aplicação mobile e plataforma web onde as pessoas poderão adquirir passagens sem sair de casa, podendo conferir disponibilidade, horários e formas de pagamento com alguns cliques.
+
+**Para quem e onde**
+
+A ferramenta foi conceitualizada, desenvolvida, implementada, testada e lançada por estudantes da Universidade de Brasília para todos aqueles, que a princípio, utilizam das embarcações para se locomover na região de Maués até Manaus no estado do Amazonas. Bem como, os proprietários dos barcos que querem comercializar o serviço.
+
+**Por quê**
+
+A ZIGUEN vem com o intuito de preencher um gap que é o usuário pode programar sua viagem com antecedência e assegurar esse direito. Além de possibilitar uma melhor organização tanto para o comprador quanto para o vendedor a respeito do controle de passageiros, quantia arrecadada por embarcação etc.
+
+**Quando utilizar**
+
+A plataforma vem com a proposta de ser utilizada a qualquer momento desde que haja disponibilidade de passagem no horário e trajeto desejado.
+
+**Como será utilizada**
+
+A plataforma tem o intuito de facilitar a interação entre comprador e vendedor, portanto ela visa atender ambos.
+No caso do vendedor, ou seja, o proprietário da empresa que presta o serviço de transporte fluvial, a plataforma poderá ser usada para cadastrar as informações primordiais da empresa (nome, CNPJ, etc.), das embarcações (modelo, última vistoria, capacidade, etc.), além dos dados bancários para recebimento das passagens vendidas e dos horários programados para a partida dos barcos e o local de partida.
+No caso do comprador, ou seja, o cliente dessas empresas de transporte fluvial a plataforma será utilizada com os dados do usuário (nome, CPF etc.). O usuário poderá pesquisar a rota desejada, empresas que fazem esse trajeto (se houver), horários, bem como os valores. Uma vez selecionado, ele poderá comprar escolhendo a forma de pagamento. No seu e-mail (ou aplicativo) ele receberá a confirmação e comprovante da passagem após a confirmação do pagamento.
+
+**Quanto custará**
+
+A plataforma será de uso gratuito: o cadastro de empresas, embarcações e a busca por passagens. O único custo aplicado, será uma taxa sobre o valor da passagem.
+
+
 
 ### 3. Requisitos
