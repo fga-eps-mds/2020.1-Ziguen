@@ -123,6 +123,20 @@ Tripulante;
 |  RF 17  |  O sistema deve permitir ao usuário cliente a opção de imprimir uma ficha de compensação bancária para a realização do pagamento.   |  Essencial   |
 |   |    |    |
 
+**3.2 Requisitos Não Funcionais**
+
+|ID| Descrição| Prioridade|
+|--------|--------|--------|
+| RF 01| Os dados dos usuários clientes serão gravados no sistema de banco de dados utilizando criptografia de dados SHA3.| Segurança |
+| RF 02| O sistema deve ser desenvolvido para Web.| Interoperabilidade |
+| RF 03| O sistema deve dispor de design responsivo.| Usabilidade |
+| RF 04| O sistema deve utilizar o padrão UML 2.0 para a documentação.| Padrões |
+| RF 05| O sistema deve utilizar a linguagem de programação Python.| Portabilidade |
+| RF 06| A interface do sistema deve ser de fácil manipulação.| Usabilidade | 
+| RF 07| O sistema deve dispor de tratamento de requisições de formulários em sites públicos captcha.| Segurança |
+| RF 08| Os dados dos usuários clientes serão trafegados no sistema de banco de dados utilizando criptografia de dados SHA3. | Segurança |
+| | | |
+
 ### 4. Regras de Negócio
 
 
