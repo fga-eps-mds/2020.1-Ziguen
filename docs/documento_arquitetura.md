@@ -3,8 +3,8 @@
 | Versão  |  Data  | Autor  |  Descrição  |
 | ------------------- | ------------------- | ------------------- | ------------------- |
 | 0.1 | 05/09/2020  | Francisco   | Estrutura inicial  |
-| 0.2 | 06/09/2020  | Liverson e Francisco  | Implementação da representação de arquitetura  |
-
+| 0.2 | 06/09/2020  | Liverson e Francisco  | Implementação da representação de arquitetura |
+| 0.3 | 06/09/2020  | Liverson e Francisco  | Implementação das metas e restrições da arquitetura|
 
 
 ## 1 - Introdução
@@ -13,9 +13,9 @@
 ### 2.1 - Padrão Arquitetural	
 Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando sua aplicação em três camadas. A camada de interação do usuário (view), que faz a exibição dos dados, sendo ela por meio de um html ou xml; a camada de manipulação dos dados (model), responsável pela leitura e escrita dos dados, e também suas validações e a camada de controle (controller), responsável por receber todas as requisições do usuário, controlando qual model usar e qual view será mostrado ao usuário. Essa divisão em camadas é realizada para facilitar a resolução de um problema maior.
 
-    * Model: Camada da arquitetura responsável pela lógica de négocio, manipulação e validação de dados na aplicação.
-    * View: Camada da arquitetura responsável pela exibição da interface com o usuário.
-    * Controller: Camada da arquitetura responsável pela validação das requisições dos usuário de acordo com as regras de autenticação e autorização da aplicação.
+* Model: Camada da arquitetura responsável pela lógica de négocio, manipulação e validação de dados na aplicação.
+* View: Camada da arquitetura responsável pela exibição da interface com o usuário.
+* Controller: Camada da arquitetura responsável pela validação das requisições dos usuário de acordo com as regras de autenticação e autorização da aplicação.
 
 ### 2.2 - Tecnologias
 |tecnologias | descrição |
@@ -34,6 +34,15 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 |Travis-CI | é um serviço de integração contínua distribuído e disponível na nuvem, utilizado para criar e testar projetos de software hospedados no GitHub. |
 
 ## 3 - Metas e Restrições da Arquitetura
+### 3.1- Metas da Ziguen
+* Facilitar a compra de passagens;
+* Facilitar os transportes fluviais;
+* Diminuir tempos de espera em filas para compra de passagens.
+
+### 3.2- Restrições da Arquitetura
+* Ter acesso à internet;
+* Criar um cadastro ziguen;
+* Ter um navegador de internet.
 
 ## 4 - Visão de Caso de Uso
 
