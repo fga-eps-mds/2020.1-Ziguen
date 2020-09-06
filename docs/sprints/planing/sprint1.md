@@ -3,9 +3,10 @@ Duração: 27/08 à 03/09
 
 
 ## Reunião
-* Data: 27/08
+* Data: 27/08 e 02/09
 * Hora: 20h
 * Local: Reunião online (Jitsi)
+
 
 
 ## Objetivo
@@ -28,26 +29,16 @@ Duração: 27/08 à 03/09
 ## Backlog
 | Issue | Descrição | Pontuação | Responsáveis | Status |
 | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
-|   |   |  - |   |   |
-|   |   |  - |   |   |
-|   |   |  - |   |   |
-|   |   |  - |   |   |
-|   |   |  - |   |   |
-|   |   |  - |   |   |
-|   |   |  - |   |   |
-|   |   |  - |   |   |
-|   |   |  - |   |   |
-|   |   |  - |   |   |
-|   |   |  - |   |   |
-|   |   |  - |   |   |
-|   |   |  - |   |   |
+|  (#17) |  Gestão da Sprint 1 |  - | Giulia / Liverson  | Nova  |
+| (#18)  |  Documentação do Projeto | -  | Geise  |  Nova |
+| (#19)  | Treinamento Docker  |  - | Francisco  | Nova  |
 
 
 ## Pareamento
 Foi definido o pareamento para implementação dos seguintes requisitos funcionais (RF):
-| Issue | Pareamento | RF |
-| ------------------| ------------------- | ------------------- |
-|   |  Geise e Gabi |  RF 02 |
-|   |  Liverson e Giulia |  RF 03 |
-|   |  Liverson e Giulia |  RF 04 |
-|   |  Edson e Francisco |  RF 05 |
+| Pareamento | RF |
+| ------------------- | ------------------- |
+|  Geise e Gabi |  RF 02 |
+|  Liverson e Giulia |  RF 03 |
+|  Liverson e Giulia |  RF 04 |
+|  Edson e Francisco |  RF 05 |
