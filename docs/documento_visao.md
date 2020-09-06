@@ -100,6 +100,29 @@ Tripulante;
 
 ### 3. Requisitos
 
+**3.1 Requisitos Funcionais**
+
+|ID| Descrição| Prioridade|
+|--------|--------|--------|
+|  RF 01  |  O sistema deve realizar a venda de passagens fluviais.   |  Essencial   |
+|  RF 02  |  O sistema deve permitir ao usuário administrador o cadastro das embarcações.  |  Essencial   |
+|  RF 03  |  O sistema deve permitir ao usuário administrador a inclusão de embarcações.   |  Essencial   |
+|  RF 04  |  O sistema deve permitir ao usuário administrador a exclusão de embarcações.   |  Essencial   |
+|  RF 05  |  O sistema deve permitir ao usuário administrador a alteração de embarcações.   |  Essencial   |
+|  RF 06  |  O sistema deve permitir que o usuário cliente adquira uma ou mais passagens.   |  Essencial   |
+|  RF 07  |  O sistema deve permitir ao usuário cliente consultar as viagens programadas.   |  Essencial   |
+|  RF 08  |  O sistema deve permitir uma interface diferenciada ao usuário administrador.   |  Essencial   |
+|  RF 09  |  O sistema deve permitir uma interface específica ao usuário cliente.   |  Essencial   |
+|  RF 10  |  O sistema deve permitir que o usuário cliente realize um cadastro pessoal.   |  Essencial   |
+|  RF 11  |  O sistema deve permitir que a consulta as viagens programadas possam ser realizadas através do nome das cidades, origem, destino e por embarcações.   |  Essencial   |
+|  RF 12  |  O sistema deve emitir comprovante online de passagens adquiridas.   |  Essencial   |
+|  RF 13  |  O sistema deve prover de uma interface com dados das viagens: origem, destino, data e hora, bem como as embarcações disponíveis para cada viagem.   |  Essencial   |
+|  RF 14  |  O sistema deve permitir ao usuário cliente inserir seus dados para então efetivar a compra de passagens.   |  Essencial   |
+|  RF 15  |  O sistema deve permitir que o cliente usuário possa cancelar uma compra de passagem realizada.   |  Essencial   |
+|  RF 16  |  O sistema deve permitir ao usuário cliente realizar pagamento através de cartão de crédito ou débito.   |  Essencial   |
+|  RF 17  |  O sistema deve permitir ao usuário cliente a opção de imprimir uma ficha de compensação bancária para a realização do pagamento.   |  Essencial   |
+|   |    |    |
+
 ### 4. Regras de Negócio
 
 
