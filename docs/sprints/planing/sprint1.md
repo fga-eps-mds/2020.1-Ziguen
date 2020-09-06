@@ -29,9 +29,9 @@ Duração: 27/08 à 03/09
 ## Backlog
 | Issue | Descrição | Pontuação | Responsáveis | Status |
 | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
-|  (#17) |  Gestão da Sprint 1 |  - | Giulia / Liverson  | Nova  |
-| (#18)  |  Documentação do Projeto | -  | Geise  |  Nova |
-| (#19)  | Treinamento Docker  |  - | Francisco  | Nova  |
+|  [#17](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/17) |  Gestão da Sprint 1 |  - | Giulia / Liverson  | Nova  |
+| [#18](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/18)  |  Documentação do Projeto | -  | Geise  |  Nova |
+| [#19](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/19)  | Treinamento Docker  |  - | Francisco  | Nova  |
 
 
 ## Pareamento
