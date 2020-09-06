@@ -5,9 +5,25 @@
 | 0.1 | 05/09/2020  | Francisco   | Estrutura inicial  |
 | 0.2 | 06/09/2020  | Liverson e Francisco  | Implementação da representação de arquitetura |
 | 0.3 | 06/09/2020  | Liverson e Francisco  | Implementação das metas e restrições da arquitetura|
+| 0.4 | 06/09/2020  | Liverson e Francisco  | Implementação da Introdução do Documento de arquitetura|
 
 
 ## 1 - Introdução
+
+### 1.1 - Finalidade
+O objetivo deste documento é apresentar a arquitetura do projeto Ziguen. Apresentando os principais aspectos do software como um todo, apresentando decisões arquiteturais para o projeto e por fim contém informações que serão utilizadas por desenvolvedores e gestores para compreender a arquitetura utilizada no desenvolvimento, fluxo de informações e as tecnologias envolvidas no projeto.
+
+### 1.2 - Escopo
+A ferramenta ZIGUEN tem o propósito de facilitar a integração entre usuários do transporte fluvial e aqueles que detém a propriedade sobre esses meios de transporte, para que assim, o processo de comprar passagens em embarcações seja mais rápido, cômodo, seguro, além de inovador e intuitivo. A ferramenta trata-se de uma aplicação mobile e plataforma web onde as pessoas poderão adquirir passagens sem sair de casa, podendo conferir disponibilidade, horários e formas de pagamento com alguns cliques.
+
+
+### 1.3 - Visão Geral
+O documento está segmento em Representação de Arquitetura, Metas e Restrições da Arquitetura, Visão de Casos de Uso, Visão Lógica e Visão de Dados.
+
+### 1.4 - Definições, acrônomos e Abreviações
+
+* API - Application Programming Interface: conjunto de rotinas e padrões estabelecidos por um software para a utilização das suas funcionalidades por demais aplicativos que desejam utilizar seu serviço
+* Framework: Conjuntos de funções e componentes pré definidos.
 
 ## 2 - Representação de Arquitetura
 ### 2.1 - Padrão Arquitetural	
