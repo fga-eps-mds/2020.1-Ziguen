@@ -1,4 +1,4 @@
-# Histórico de Versões
+## Histórico de Versões
 | Versão  |  Data  | Autor  |  Descrição  |
 | ------------------- | ------------------- | ------------------- | ------------------- |
 |  1.0 |  28/08/2020 |  Edson, Francisco, Gabriela, Geise, Giulia e Liverson |  Documento de visão |
@@ -31,6 +31,27 @@
 - 2.2. Escopo
 - .3. Atores
 3. **Requisitos**
+- 3.1 Requisitos Funcionais
+- 3.2 Requisitos Não Funcionais
+4. **Regras de Negócio**
+- 4.1 Restrições de Software
+- 4.2 Arquitetura de Software - Modelo-Visão-Controlador (MVC)
+- 4.3 Identificação dos Casos de Uso
+- 4.4 Diagrama de Casos de Uso
+- 4.5 Diagrama de Classes
+- 4.6 Diagramas de Sequência
+- 4.7 Diagramas de Estados
+- 4.8 Diagrama de Objetos
+- 4.9 Diagrama de Atividades
+- 4.10 Diagrama de Componentes
+- 4.11 Diagrama de Pacotes
+- 4.12 Diagrama de Comunicação
+5. **Diagrama Entidade Relacionamento**
+6. **Modelo Lógico**
+7. **Projeto Interface**
+- 7.1 Baixa Fidelidade
+- 7.2 Alta Fidelidade
+8. **Referências**
 
 
 
