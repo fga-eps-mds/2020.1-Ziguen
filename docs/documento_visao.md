@@ -8,8 +8,8 @@
 |  2.0.2 | 16/09/2020  |  Geise e Gabriela |  Diagrama de Classes, diagrama de Estados, diagrama de objetos e diagrama de comunicação |
 | 2.0.3  |  16/09/2020 |  Francisco e Edson |  Diagrama de Atividades, diagrama de componentes, diagrama de pacotes e diagrama entidade relacionamento |
 |  3.0 | 23/09/2020  |  Edson, Francisco, Gabriela, Geise, Giulia e Liverson |  Projeto interface: baixa fidelidade |
-|  3.0.1 | 23/09/2020  |  Equipe - Edson, Francisco, Gabriela, Geise, Giulia e Liverson |  Projeto interface: alta fidelidade (front-end) |
-|  3.0.2 | 30/09/2020  |  Equipe - Edson, Francisco, Gabriela, Geise, Giulia e Liverson |  Iniciando o back-end |
+|  3.0.1 | 23/09/2020  |  Edson, Francisco, Gabriela, Geise, Giulia e Liverson |  Projeto interface: alta fidelidade (front-end) |
+|  3.0.2 | 30/09/2020  |  Edson, Francisco, Gabriela, Geise, Giulia e Liverson |  Iniciando o back-end |
 |   |   |   |   |
 |   |   |   |   |
 |   |   |   |   |
