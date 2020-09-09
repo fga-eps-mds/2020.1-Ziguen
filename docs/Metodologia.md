@@ -3,7 +3,7 @@ Data|Versão|Descrição|Autor
 -|-|-|-
 09/09/2020|1.0.0|Adição dos artefatos da metodologia aplicada | @GeiseSaunier
 09/09/2020|1.0.1|Adição das nossas modificações em cima do SCRUM | @GeiseSaunier
-*******|1.0.2|Adição do diagrama metodológico do time | 
+11/09/2020 |1.0.2|Adição do diagrama metodológico do time | 
 
 
 ## 1. Justificativa 
@@ -56,4 +56,49 @@ Os artefatos do Scrum são:
 
 ## 3. Descrição da Metodologia
 
+## Nossas Modificações
 
+Durante a primeira semana de projeto fizemos uma reuniao geral acerca da estrutura do projeto. Em seguida, elaboramos uma planilha para que cada integrante da equipe pudesse preencher com seus horários disponíveis, objetivando assim escolher o melhor horário para as reuniões semanais. Após a escolha do horário, definimos o planejamento de acordo com a divisão abaixo:
+
+##### - Sprint (7 dias)
+
+Percebemos que um bom período da sprint seria de 7 dias e que um tempo maior que isso acabaria trazendo falta de comunicação e erros no andamento do projeto. A nossa sprint tem início na quinta, após a aula de MDS e finaliza na quarta, às 23h:59min.
+
+#### - Daily segunda, quarta e sexta, via telegram, até às 18h
+
+Optamos pela Daily em três dias semanais apenas, pois achamos mais coerente com a realização. Todos os integrantes devem responder as seguintes perguntas:
+- O que você fez desde a última sprint?
+- O que pretende fazer até a próxima?
+- Há algum obstáculo que esteja impedindo você ou a equipe de alcançar a meta do sprint?
+
+Ressalta-se que a equipe realiza comunicação diária acerca do projeto, tanto no telegram quanto nas issues criadas para cada assunto.
+
+#### - Planejamento na sexta: das 20h às 22h (horário sempre oscilante)
+
+Vimos que seria necessário fazer reuniões para definir o planejamento da semana e essa reunião acontece toda sexta, conforme o horário descrito acima. 
+
+#### - ZenHub
+
+Utilizaremos o ZenHub para melhor organização e acompanhamento das atividades desenvolvidas.
+
+#### - Velocity
+
+Ainda utilizando o plugin do ZenHub vai ser útil para comparar o andamento do time durante as sprints
+
+#### - Integração contínua e Deploy Contínuo
+
+Para evitar possíveis erros na branch de produção e para melhorar o fluxo de entrega contínua vamos aplicar o conceito de **integração contínua** e **deploy contínuo** que será utilizado um fluxo de build, testes e deploy.
+
+#### - Teste de Regressão
+
+#### - Definição de Pronto
+
+Vamos definir que alguma feature ou bug está concluído quando ele possuir 3 coisas
+```
+Código -> Teste -> Review
+```
+#### - Análise estática de código
+
+Para analisar o nível do código sendo produzido vamos utilizar ferramentas de análise estática.
+
+## Diagrama metodológico
