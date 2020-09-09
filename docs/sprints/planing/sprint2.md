@@ -28,13 +28,13 @@ Duração: 03/09 à 10/09
 
 
 ## Backlog
-| Issue | Descrição | Pontuação | Responsáveis | Status |
-| ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
-|  [#20](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/20) | Estudo e Criação de Diagramas UML (versão 2.0.2)   |  - | Gabriela / Geise  | Nova  |
-|  [#21](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/21) |  Estudo de tecnologias para desenvolvimento do front-end | -  | Grupo  |  Nova |
-| [#22](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/22)  | Estudo e Criação de Diagramas UML (versão 2.0.3)  |  - | Edson / Francisco  | Nova  |
-| [#23](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/23)  | Documento de Arquitetura  |  - | Francisco / Liverson | Nova  |
-| [#24](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/24)  | Estudo e criação de diagrama UML (versão 2.0.1)  |  - | Giulia / Liverson | Nova  |
+| Issue | Descrição | Pontuação | Responsáveis | Status | Prazo |
+| ------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
+|  [#20](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/20) | Estudo e Criação de Diagramas UML (versão 2.0.2)   |  - | Gabriela / Geise  | Nova  | 16/09
+|  [#21](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/21) |  Estudo de tecnologias para desenvolvimento do front-end | -  | Grupo  |  Nova | 09/09
+| [#22](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/22)  | Estudo e Criação de Diagramas UML (versão 2.0.3)  |  - | Edson / Francisco  | Nova  | 16/09
+| [#23](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/23)  | Documento de Arquitetura  |  - | Francisco / Liverson | Nova  | 09/09
+| [#24](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/24)  | Estudo e criação de diagrama UML (versão 2.0.1)  |  - | Giulia / Liverson | Nova  | 16/09
 
 
 
