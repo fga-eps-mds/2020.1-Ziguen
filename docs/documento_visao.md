@@ -177,36 +177,24 @@ Tripulante;
 | ---- | ----|
 | 1 | O aplicativo poderá ser acessado em navegadores web. |
 
-**4.2  Arquitetura de Software – Modelo – Visão – Controlador (MVC)**
+**4.2  Identificação dos Casos de Uso**
 
-Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando sua aplicação em três camadas. A camada de interação do usuário (view), que faz a exibição dos dados, sendo ela por meio de um html ou xml; a camada de manipulação dos dados (model), responsável pela leitura e escrita dos dados, e também suas validações e a camada de controle (controller), responsável por receber todas as requisições do usuário, controlando qual modelo usar e qual view será mostrado ao usuário. Essa divisão em camadas é realizada para facilitar a resolução de um problema maior.
+**4.3  Diagrama de Casos de Uso**
 
-O MVC fora escolhido como padrão arquitetural do ZIGUEN em virtude de este já ser utilizado em muitos projetos devido à arquitetura que possui, o que possibilita a divisão do projeto em camadas muito bem definidas. Para Bastos (2011) uma das vantagens de se utilizar o padrão MVC é que ao realizar qualquer tipo de alteração em uma das camadas não interfere nas demais, facilitando a atualização de layouts, alteração nas regras de negócio e adição de novos recursos. Em caso de grandes projetos, o MVC facilita muito a divisão de tarefas entre a equipe. Em decorrência de todas essas vantagens, a equipe de desenvolvimento optou pela utilização deste, já que
-ele também possibilita a facilidade na manutenção e adição de recursos, maior integração da equipe e/ou divisão de tarefas, além da facilidade em manter o seu código sempre limpo.
+**4.4  Diagrama de Classes**
 
-O padrão MVC, aplicado ao sistema ZIGUEN, atua como mostra a figura abaixo
-(Arquitetura de Software ZIGUEN):
+**4.5  Diagramas de Sequência**
 
-A comunicação entre interfaces e regras de negócios é definida através de um controlador. Quando um evento é executado na interface gráfica, que é a chamada View, como um clique em um botão, a interface irá se comunicar com o controlador que por sua vez se comunica com as regras de negócios.
+**4.6  Diagramas de Estados**
 
-**4.3  Identificação dos Casos de Uso**
+**4.7  Diagrama de Objetos**
 
-**4.4  Diagrama de Casos de Uso**
+**4.8  Diagrama de Atividades**
 
-**4.5  Diagrama de Classes**
+**4.9  Diagrama de Componentes**
 
-**4.6  Diagramas de Sequência**
+**4.10  Diagrama de Pacotes**
 
-**4.7  Diagramas de Estados**
-
-**4.8  Diagrama de Objetos**
-
-**4.9  Diagrama de Atividades**
-
-**4.10  Diagrama de Componentes**
-
-**4.11  Diagrama de Pacotes**
-
-**4.12  Diagrama de Comunicação**
+**4.11  Diagrama de Comunicação**
 
 ### 5. Diagrama Entidade Relacionamento
