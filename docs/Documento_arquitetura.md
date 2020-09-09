@@ -67,7 +67,6 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 
 ## 6 - Referências Bibliográficas
 
-
 [Artefato: Documento de Arquitetura de Software](https://www.cin.ufpe.br/~gta/rup-vc/core.base_rup/workproducts/rup_software_architecture_document_C367485C.html)
 
 

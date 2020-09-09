@@ -39,3 +39,14 @@
 | FT07 | Consultar viagens programadas | EP07 |
 | FT08 | Gerar PDF com a confirmação da compra | EP08 |
 
+## User Story
+
+|    ID   |      Tipo     |     Eu como    |      Desejo       | De modo que | Prioridade | Status    | ID RELACIONADO (FEATURES) |
+|:-------:|:-------------:|:--------------:|:-----------------:|:-----------:|:----------:|:---------:|:-------------------------------:|
+|    US01    |   Funcional   | Usuário cliente       | realizar um cadastro na plataforma Ziguen | eu consiga realizar a compra de passagens| Alta | To Do | FT01 |
+|    US02    |   Funcional   | Usuário cliente       | logar e navegar na plataforma | eu consiga fazer aletrações e exclusões do meu cadastro | Alta | To Do | FT03 |
+|    US03    |   Funcional   | Usuário cliente       | ao concluir a compra receber um retono | eu consiga gerar um PDF com a confirmação da compra | Alta | To Do | FT03 |
+|    US04    |   Funcional   | Usuário administrador       |  cadastrar uma embarcação |   seja possível obter todos os dados para efetivação do cadastro   | Alta | To Do | FT02 |
+|    US05   |   Funcional   | Usuário administrador      | ter permissão para acesso aos dados da embarcação | seja possível alterar e excluir o cadastro | Alta | To Do | FT01 |
+
+
