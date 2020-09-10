@@ -104,4 +104,4 @@ Para analisar o nível do código sendo produzido vamos utilizar ferramentas de 
 
 ## Diagrama metodológico
 
-![Imagen](https://github.com/fga-eps-mds/2020-1-Ziguen/tree/develop/docs/diagramas/diagrama_metodologia.png)
+![Imagen](https://raw.githubusercontent.com/fga-eps-mds/2020-1-Ziguen/develop/docs/diagramas/diagrama_metodologia.png)
