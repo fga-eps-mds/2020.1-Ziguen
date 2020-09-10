@@ -1,9 +1,10 @@
 # Histórico de Versionamento
 Data|Versão|Descrição|Autor
 -|-|-|-
-09/09/2020|1.0.0|Adição dos artefatos da metodologia aplicada | @GeiseSaunier
-09/09/2020|1.0.1|Adição das nossas modificações em cima do SCRUM | @GeiseSaunier
-11/09/2020 |1.0.2|Adição do diagrama metodológico do time | 
+|09/09/2020 |1.0.0 |Criando estrutura do arquivo | @Francisco1code|
+09/09/2020|1.0.1|Adição dos artefatos da metodologia aplicada | @GeiseSaunier
+09/09/2020|1.0.2|Adição das nossas modificações em cima do SCRUM | @GeiseSaunier
+11/09/2020 |1.0.3|Adição do diagrama metodológico do time | @Francisco1code |
 
 
 ## 1. Justificativa 
@@ -102,3 +103,5 @@ Código -> Teste -> Review
 Para analisar o nível do código sendo produzido vamos utilizar ferramentas de análise estática.
 
 ## Diagrama metodológico
+
+![Imagen](https://github.com/fga-eps-mds/2020-1-Ziguen/tree/develop/docs/diagramas/diagrama_metodologia.png)
