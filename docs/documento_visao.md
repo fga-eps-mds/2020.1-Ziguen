@@ -181,20 +181,9 @@ Tripulante;
 
 **4.3  Diagrama de Casos de Uso**
 
-**4.4  Diagrama de Classes**
+**4.4  Diagrama de Pacotes**
 
 **4.5  Diagramas de Sequência**
 
-**4.6  Diagramas de Estados**
-
-**4.7  Diagrama de Objetos**
-
-**4.8  Diagrama de Atividades**
-
-**4.9  Diagrama de Componentes**
-
-**4.10  Diagrama de Pacotes**
-
-**4.11  Diagrama de Comunicação**
 
 ### 5. Diagrama Entidade Relacionamento
