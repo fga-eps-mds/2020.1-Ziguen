@@ -2,19 +2,19 @@
 ### ATA DE REUNIÃO - SPRINT 0
 21/08/2020
 
-Redator: Giulia Lobo.
+**Redator:** Giulia Lobo.
 
-**Membros presentes e ausentes**
+### 1. Membros presentes e ausentes
 
 **Presentes:** Edson, Francisco, Gabriela, Geise, Giulia e Liverson.
 
 **Ausentes:** ----
 
-#### Considerações iniciais da reunião
+#### 2. Considerações iniciais da reunião
 
 A reunião iniciou às 20:06hs via Jitsi.
 
-#### Pautas da reunião
+#### 3. Pautas da reunião
 
 **1ª Pauta** -  Apresentação da ementa.
 Foi mostrada a ementa de reunião e editada.
@@ -37,6 +37,6 @@ Geise (Back-End) - Product Owner;
 Francisco (DevOps), Gabriela (Front-End), Giulia (Front-End) e Liverson (DevOps) - Time de Desenvolvimento.
 
 
-#### 4.     Considerações finais
+#### 4. Considerações finais
 
 A reunião se encerrou às 21:38hs.

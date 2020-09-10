@@ -2,19 +2,19 @@
 ### ATA DE REUNIÃO - SPRINT 2
 04/09/2020
 
-Redator: Geise Saunier.
+**Redator:** Geise Saunier.
 
-**Membros presentes e ausentes**
+### 1. Membros presentes e ausentes
 
 **Presentes:** Edson, Francisco, Gabriela, Geise e Giulia.
 
 **Ausentes:** Liverson.
 
-#### Considerações iniciais da reunião
+#### 2. Considerações iniciais da reunião
 
 A reunião iniciou às 20:15hs via Jitsi.
 
-#### Pautas da reunião
+#### 3. Pautas da reunião
 
 **1ª Pauta** - Daily Scrum.
 Cada integrante do grupo citou o que fez desde a última sprint, o que pretende fazer para a próxima e quais as limitações de cada um. Até então, todos estão progredindo conforme planejado.
@@ -33,7 +33,7 @@ Começar a estudar linguagens, frameworks e metodologias que serão utilizadas n
 Realizamos o planning poker para pontuar as próximas atividades que serão realizadas. A integrante do grupo Gabriela anotou as pontuações que serão utilizadas para a etapa final, após a realização das atividades.
 
 
-#### 4.     Considerações finais
+#### 4. Considerações finais
 
 As pautas definidas deverão estar concluídas ou parcialmente finalizadas até a próxima sprint. (Dia 10/09/2020). Ressalta-se a importância de fazer as pontuações correspondentes a cada issue. 
 A reunião se encerrou às 21:30hs.
