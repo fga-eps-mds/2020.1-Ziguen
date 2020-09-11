@@ -8,6 +8,7 @@
 | 0.4 | 06/09/2020  | Liverson e Francisco  | Implementação da Introdução do Documento de arquitetura|
 | 0.5 | 10/09/2020  | Francisco e Edson  | Implementação do MER|
 | 0.6 | 11/09/2020  | Francisco e Edson  | Criação do DER|
+| 0.7 | 11/09/2020  | Liverson e Giulia  | Adição do diagrama de casos de uso|
 
 
 ## 1 - Introdução
@@ -119,9 +120,9 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 ![DER 0.1](https://raw.githubusercontent.com/fga-eps-mds/2020-1-Ziguen/develop/docs/diagramas/der.jpg)
 
 ## 5 - Visão de Caso de Uso
+![Diagrama de casos de uso 0.1](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/develop/docs/diagramas/Diagrama_Casos_de_Uso.jpg)
 
 ## 6 - Visão Logica
-
 
 ## 7 - Referências Bibliográficas
 
