@@ -73,7 +73,7 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 |IdUsuario | Chave Primaria Obrigatória| Integer| Identificação do Usuário|
 |Nome| Obrigatório| String | Nome do usuário|
 | Email | Obrigatório | String | Email do Usuário|
-|
+
 **Administrador**
 |Atributos| Propriedade | Tipo | Descrisão|
 |-----|-----|------|-----|
@@ -81,20 +81,25 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 |IdUsuario| Chave Estrageira Obrigatória | Integer | Identificação do Usuário|
 |Login |Obrigatório |String | Login do Administrador|
 |Senha| Obrigatório |String | Senha do Administrador|
+
 **Cliente**
+
 |Atributos| Propriedade | Tipo | Descrisão|
 |-----|-----|------|-----|
 |IdCliente |Chave Primaria Obrigatória | Integer | Identificação do Administrador|
 |IdUsuario| Chave Estrangeira Obrigatória | Integer | Identificação do Usuário|
 |tipoCliente| Obrigatório| String | Tipo do Cliente
 |Login |Obrigatório |String | Login do Administrador|
-|Senha| Obrigatório |String | Senha do Administrador
+|Senha| Obrigatório |String | Senha do Administrador |
+
 **Embarcação**
+
 |Atributos| Propriedade | Tipo | Descrisão|
 |-----|-----|------|-----|
 |idEmbarcação| Chave Primaria Obrigatória| String | Idetificação da embarcação|
 |Nome | Obrigatório | String | Nome da embarcação|
 |Rota | Obrigatório | String | Nome da Rota|
+
 **Passagem**
 |Atributos| Propriedade | Tipo | Descrisão|
 |-----|-----|------|-----|
