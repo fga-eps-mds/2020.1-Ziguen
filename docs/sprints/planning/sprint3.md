@@ -29,11 +29,11 @@ Duração: 11/09 à 17/09
 ## Backlog
 | Issue | Descrição | Pontuação | Responsáveis | Status | Prioridade |
 | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |------------------- | 
-| #20 |  Diagramas do documento de arquitetura  |  - | Grupo  |  1 | 
-| -  |  Preparar ambiente de desenvolvimento | -  | Francisco  | 1  | 
-| -  | Protótipo de alta fidelidade  |  - | Grupo  |  1 | 
-| -  |  Cadastrar usuário administrador |  - |   | 2  | 
-| -  | Cadastrar usuário cliente  | -  |   |  2 | 
+| #20 |  Diagramas do documento de arquitetura  |  - | Grupo  |  | 1
+| -  |  Preparar ambiente de desenvolvimento | -  | Francisco  |  | 1
+| -  | Protótipo de alta fidelidade  |  - | Grupo  |  | 1
+| -  |  Cadastrar usuário administrador |  - |   |  | 2
+| -  | Cadastrar usuário cliente  | -  |   |  | 2 |
 
 
 ## Pareamento
