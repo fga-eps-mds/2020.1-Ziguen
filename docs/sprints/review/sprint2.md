@@ -22,6 +22,9 @@ Duração: 03/09 à 10/09
 | Giulia Lobo | ✔ | ✔ | ✔ |
 | Liverson Severo | ✔ | ✔ | ✔ |
 
+## Quadro de conhecimento
+![Quadro Resumo](https://drive.google.com/drive/u/0/folders/1iyN9atX1KdSC7_MYAW5LcZhrQrzpiJHZ)
+
 ## Status das Tarefas no Fim da Sprint
 | **Issue** | **História** | **Resposáveis** | **Status** |
 |--|--|--|--|
@@ -39,8 +42,7 @@ Duração: 03/09 à 10/09
 
 
 #### Dívidas técnicas
-- Diagramas do documento de arquitetura
-- Criar diagramas de casos de uso, MER, DER, diagrama de sequência 
+- Criar diagramas de casos de uso, MER, DER, diagrama de sequência, diagrama de pacotes e diagrama lógico 
 
 ### Análise do Scrum Master
 Nessa sprint aconteceram alguns erros com relação a distribuição das issues, mas logo isso foi resolvido em uma _call_ feita antes dessa review. Deixamos de pontuar todas as issues e algumas que foram pontuadas, não tiveram suas pontuações devidamente corretas, tivemos problemas na implementação do _Planning Poker_. Aconteceu um atraso nos estudos das  [tecnologias](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/26) devido uma reunião com Victor Moura, que nos apontou alguns possíveis problemas que poderíamos ter futuramente com as tecnologias que tínhamos escolhido. Realizamos uma pesquisa, conversamos com a professora Carla e resolvemos manter as [nossas escolhas](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/10). O mais relevante, independente da escolha das tecnologias que estávamos analisando,é que no final do desenvolvimento do software, vamos chegar no mesmo resultado.
