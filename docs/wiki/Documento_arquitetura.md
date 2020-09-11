@@ -7,7 +7,7 @@
 | 0.3 | 06/09/2020  | Liverson e Francisco  | Implementação das metas e restrições da arquitetura|
 | 0.4 | 06/09/2020  | Liverson e Francisco  | Implementação da Introdução do Documento de arquitetura|
 | 0.5 | 10/09/2020  | Francisco e Edson  | Implementação do MER|
-
+| 0.6 | 11/09/2020  | Francisco e Edson  | Criação do DER|
 
 
 ## 1 - Introdução
@@ -41,15 +41,15 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 |Bootstrap |  Framework para desenvolvimento em HTML, CSS e JS. |
 |Cascading Style Sheets (CSS) |  Alia-se no desenvolvimento do frontend junto com HTML e JS. |
 |Docker |  Utilizado para configurar o ambiente de desenvolvimento. |
-|Express.js | é um framework para aplicativo da web do Node. js mínimo e flexível que fornece um conjunto robusto de recursos para aplicativos web e móvel. |
-|Git | Git é uma ferramenta de versionamento de arquivos de código livre. |
-|HTML |  Alia-se no desenvolvimento do frontend junto com CSS e JS. |
-|JavaScript |  Alia-se no desenvolvimento do frontend junto com HTML e CSS. |
-|JUnit |  é um framework open-source que dá suporte à criação de teste automatizados. |
-|Node.js | é uma plataforma para construir aplicações web escaláveis de alta performance usando JavaScript. |
-|Python | é uma linguagem de programação cujo objetivo é produtividade e legibilidade. |
-|Sqlite3 | SQLite é uma biblioteca em linguagem C que implementa um banco de dados SQL embutido. |
-|Travis-CI | é um serviço de integração contínua distribuído e disponível na nuvem, utilizado para criar e testar projetos de software hospedados no GitHub. |
+|Express.js | é um framework para aplicativo da web do Node. js mínimo e flexível que fornece um conjunto robusto de recursos para aplicativos web e móvel |
+|Git | Git é uma ferramenta de versionamento de arquivos de código livre |
+|HTML |  Alia-se no desenvolvimento do frontend junto com CSS e JS |
+|JavaScript |  Alia-se no desenvolvimento do frontend junto com HTML e CSS |
+|JUnit |  é um framework open-source que dá suporte à criação de teste automatizados |
+|Node.js | é uma plataforma para construir aplicações web escaláveis de alta performance usando JavaScript |
+|Python | é uma linguagem de programação cujo objetivo é produtividade e legibilidade |
+|Sqlite3 | SQLite é uma biblioteca em linguagem C que implementa um banco de dados SQL embutido |
+|Travis-CI | é um serviço de integração contínua distribuído e disponível na nuvem, utilizado para criar e testar projetos de software hospedados no GitHub |
 
 ## 3 - Metas e Restrições da Arquitetura
 ### 3.1- Metas da Ziguen
@@ -77,15 +77,14 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 **Administrador**
 |Atributos| Propriedade | Tipo | Descrisão|
 |-----|-----|------|-----|
-|IdAdm |Chave Primaria Obrigatória | Integer | Identificação do Administrador
+|IdAdm |Chave Primaria Obrigatória | Integer | Identificação do Administrador|
 |IdUsuario| Chave Estrageira Obrigatória | Integer | Identificação do Usuário|
 |Login |Obrigatório |String | Login do Administrador|
-|Senha| Obrigatório |String | Senha do Administrador
-|
+|Senha| Obrigatório |String | Senha do Administrador|
 **Cliente**
 |Atributos| Propriedade | Tipo | Descrisão|
 |-----|-----|------|-----|
-|IdCliente |Chave Primaria Obrigatória | Integer | Identificação do Administrador
+|IdCliente |Chave Primaria Obrigatória | Integer | Identificação do Administrador|
 |IdUsuario| Chave Estrangeira Obrigatória | Integer | Identificação do Usuário|
 |tipoCliente| Obrigatório| String | Tipo do Cliente
 |Login |Obrigatório |String | Login do Administrador|
@@ -93,30 +92,33 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 **Embarcação**
 |Atributos| Propriedade | Tipo | Descrisão|
 |-----|-----|------|-----|
-|idEmbarcação| Chave Primaria Obrigatória| String | Idetificação da embarcação
-|Nome | Obrigatório | String | Nome da embarcação
-|Rota | Obrigatório | String | Nome da Rota
+|idEmbarcação| Chave Primaria Obrigatória| String | Idetificação da embarcação|
+|Nome | Obrigatório | String | Nome da embarcação|
+|Rota | Obrigatório | String | Nome da Rota|
 **Passagem**
 |Atributos| Propriedade | Tipo | Descrisão|
 |-----|-----|------|-----|
 |IdPassagem |Chave Primaria Obrigatória| String| Identificação da Passagem|
-|Preço| Obrigatória | String | Preço da passagem
+|Preço| Obrigatória | String | Preço da passagem|
 |Data | Obrigatório | String | Data da passagem|
 |Horario | Obrigatório| String | Horario da passagem|
 |Origem | Obrigatório | String | Origem do passageiro|
 |Destino |Obrigatório | String | Destino do passageiro|
-|
 
 #### 4.1.2 Relacionamento
 **Usuario** pode ser um **Cliente** ou **Administrador** pois ambos compartilham vários atributos.
 
 
-## 4 - Visão de Caso de Uso
+### 4.2 DER
 
-## 5 - Visão Logica
+![DER 0.1](https://raw.githubusercontent.com/fga-eps-mds/2020-1-Ziguen/develop/docs/diagramas/der.jpg)
+
+## 5 - Visão de Caso de Uso
+
+## 6 - Visão Logica
 
 
-## 6 - Referências Bibliográficas
+## 7 - Referências Bibliográficas
 
 [Artefato: Documento de Arquitetura de Software](https://www.cin.ufpe.br/~gta/rup-vc/core.base_rup/workproducts/rup_software_architecture_document_C367485C.html)
 
