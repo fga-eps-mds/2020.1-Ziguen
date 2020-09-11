@@ -23,7 +23,7 @@ Duração: 03/09 à 10/09
 | Liverson Severo | ✔ | ✔ | ✔ |
 
 ## Quadro de conhecimento
-![Quadro Resumo](https://drive.google.com/drive/u/0/folders/1iyN9atX1KdSC7_MYAW5LcZhrQrzpiJHZ)
+![Quadro Resumo](https://raw.githubusercontent.com/fga-eps-mds/2020-1-Ziguen/develop/docs/imagens/quadro_conhecimento.jpg)
 
 ## Status das Tarefas no Fim da Sprint
 | **Issue** | **História** | **Resposáveis** | **Status** |
