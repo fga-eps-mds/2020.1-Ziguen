@@ -6,6 +6,8 @@
 | 0.2 | 06/09/2020  | Liverson e Francisco  | Implementação da representação de arquitetura |
 | 0.3 | 06/09/2020  | Liverson e Francisco  | Implementação das metas e restrições da arquitetura|
 | 0.4 | 06/09/2020  | Liverson e Francisco  | Implementação da Introdução do Documento de arquitetura|
+| 0.5 | 10/09/2020  | Francisco e Edson  | Implementação do MER|
+
 
 
 ## 1 - Introdução
@@ -59,6 +61,55 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 * Ter acesso à internet;
 * Criar um cadastro ziguen;
 * Ter um navegador de internet.
+
+## 4 - Visão de Dados
+### 4.1 - MER
+#### 4.1.1 -Entidades
+
+**Usuário**
+
+|Atributos| Propriedade | Tipo | Descrisão|
+|-----|-----|------|-----|
+|IdUsuario | Chave Primaria Obrigatória| Integer| Identificação do Usuário|
+|Nome| Obrigatório| String | Nome do usuário|
+| Email | Obrigatório | String | Email do Usuário|
+|
+**Administrador**
+|Atributos| Propriedade | Tipo | Descrisão|
+|-----|-----|------|-----|
+|IdAdm |Chave Primaria Obrigatória | Integer | Identificação do Administrador
+|IdUsuario| Chave Estrageira Obrigatória | Integer | Identificação do Usuário|
+|Login |Obrigatório |String | Login do Administrador|
+|Senha| Obrigatório |String | Senha do Administrador
+|
+**Cliente**
+|Atributos| Propriedade | Tipo | Descrisão|
+|-----|-----|------|-----|
+|IdCliente |Chave Primaria Obrigatória | Integer | Identificação do Administrador
+|IdUsuario| Chave Estrangeira Obrigatória | Integer | Identificação do Usuário|
+|tipoCliente| Obrigatório| String | Tipo do Cliente
+|Login |Obrigatório |String | Login do Administrador|
+|Senha| Obrigatório |String | Senha do Administrador
+**Embarcação**
+|Atributos| Propriedade | Tipo | Descrisão|
+|-----|-----|------|-----|
+|idEmbarcação| Chave Primaria Obrigatória| String | Idetificação da embarcação
+|Nome | Obrigatório | String | Nome da embarcação
+|Rota | Obrigatório | String | Nome da Rota
+**Passagem**
+|Atributos| Propriedade | Tipo | Descrisão|
+|-----|-----|------|-----|
+|IdPassagem |Chave Primaria Obrigatória| String| Identificação da Passagem|
+|Preço| Obrigatória | String | Preço da passagem
+|Data | Obrigatório | String | Data da passagem|
+|Horario | Obrigatório| String | Horario da passagem|
+|Origem | Obrigatório | String | Origem do passageiro|
+|Destino |Obrigatório | String | Destino do passageiro|
+|
+
+#### 4.1.2 Relacionamento
+**Usuario** pode ser um **Cliente** ou **Administrador** pois ambos compartilham vários atributos.
+
 
 ## 4 - Visão de Caso de Uso
 
