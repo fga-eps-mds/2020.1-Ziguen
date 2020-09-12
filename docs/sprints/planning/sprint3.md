@@ -29,14 +29,14 @@ Duração: 11/09 à 17/09
 ## Backlog
 | Issue | Descrição | Pontuação | Responsáveis | Status | Prioridade |
 | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |------------------- | 
-| #20 |  Diagramas do documento de arquitetura  |  - | Grupo  |  | 1
-| -  |  Preparar ambiente de desenvolvimento | -  | Francisco  |  | 1
-| -  | Protótipo de alta fidelidade  |  - | Grupo  |  | 1
-| -  |  Cadastrar usuário administrador |  - |   |  | 2
-| -  | Cadastrar usuário cliente  | -  |   |  | 2 |
+| [#20] |  Diagramas do documento de arquitetura  | 2 | Grupo |  | 1
+| [#32]  |  Preparar ambiente de desenvolvimento | 3 | Geise e Francisco |  | 1
+| [#33]  | Protótipo de alta fidelidade  | 3 | Gabriela e Giulia  |  | 1
+| [#35]  |  Cadastrar usuário administrador | 5 | Edson e Francisco  |  | 2
+| [#34]  | Cadastrar usuário cliente  | 5 | Geise e Liverson  |  | 2 |
 
 
 ## Pareamento
-- 
-- 
-- 
+- Edson e Francisco 
+- Geise e Liverson 
+- Gabriela e Giulia 
