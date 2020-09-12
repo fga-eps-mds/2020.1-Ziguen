@@ -1,3 +1,4 @@
+
 ## Histórico de Versões
 
 | Versão  |  Data  | Autor  |  Descrição  |
@@ -10,8 +11,44 @@
 | 0.6 | 11/09/2020  | Francisco e Edson  | Criação do DER|
 | 0.7 | 11/09/2020  | Liverson e Giulia  | Adição do diagrama de casos de uso|
 
+## Sumário
+1- [Introdução](#1--introdução)
+* [1.1 - Finalidade](#1.1---finalidade)
+* [1.2 - Escopo](#1.2---escopo)
+* [1.3 - Visão Geral](#1.3---Visão-Geral)
+* [1.4 - Definições,-acrônomos-e-Abreviações](#1.4---Definições,-acrônomos-e-Abreviações)
 
-## 1 - Introdução
+2- [Representação de Arquitetura](##-2---Representação-de-Arquitetura
+)
+
+* [2.1 - Padrão Arquitetural](###2.1---Padrão-Arquitetural)
+* [2.2 - Tecnologias](#2.2---Tecnologias)
+
+3- [Metas e Restrições da Arquitetura](#3---Metas-e-Restrições-da-Arquitetura)
+
+* [ 3.1- Metas da Ziguen](#3.1--Metas-da-Ziguen)
+* [3.2- Restrições da Arquitetura](#3.2--Restrições-da-Arquitetura)
+
+
+4- [Visão de Dados](#4---Visão-de-Dados)
+* [2.1 - Finalidade](s)
+* [2.2 - Finalidade](s)
+* [2.3 - Finalidade](s)
+
+5- [Visão de Caso de Uso](#5---Visão-de-Caso-de-Uso)
+* [2.1 - Finalidade](s)
+* [2.2 - Finalidade](s)
+* [2.3 - Finalidade](s)
+
+6- [Visão Logica](#6---Visão-Logica)
+* [2.1 - Finalidade](s)
+* [2.2 - Finalidade](s)
+* [2.3 - Finalidade](s)
+
+7- [Referências Bibliográficas](#7---Referências-Bibliográficas)
+
+
+## 1- Introdução
 
 ### 1.1 - Finalidade
 O objetivo deste documento é apresentar a arquitetura do projeto Ziguen. Apresentando os principais aspectos do software como um todo, apresentando decisões arquiteturais para o projeto e por fim contém informações que serão utilizadas por desenvolvedores e gestores para compreender a arquitetura utilizada no desenvolvimento, fluxo de informações e as tecnologias envolvidas no projeto.
