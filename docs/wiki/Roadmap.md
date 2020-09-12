@@ -4,6 +4,7 @@
 |:----------:|:------:|:-----------------------------------------------------------------:|:-------------------------------------------:|
 | 09/09/2020 |   0.1  | Criação do Roadmap |                Edson Soares                 |                |
 | 09/09/2020 |   0.2  | Preenchendo dados das Sprint0 + Sprint1 + Sprint2 |                Edson Soares                 |                |
+| 11/09/2020 |   0.3  | Preenchendo dados da sprint3 |   @GeiseSaunier                 |                |
 
 ## Release 1
 
