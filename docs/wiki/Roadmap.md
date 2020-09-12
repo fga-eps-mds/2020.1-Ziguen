@@ -22,3 +22,14 @@
 * [Linguagens e frameworks para o front-end](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/21)
 * Metodologias que serão usadas nos processos do projeto: []()
 * [Planning Poker](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/25)
+
+### Sprint 3
+* [Documento de metodologia](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/develop/docs/wiki/Metodologia.md)
+* [Documento de visão](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/develop/docs/wiki/documento_visao.md)
+* [Documento de arquitetura](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/develop/docs/wiki/Documento_arquitetura.md)
+* [Documento de gerência de riscos](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/develop/docs/wiki/Documento-de-gerencia-de-riscos.md)
+* [Backlog do produto](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/develop/docs/wiki/Backlog-do-Produto.md)
+* [Diagramas UML](https://github.com/fga-eps-mds/2020-1-Ziguen/tree/develop/docs/diagramas)
+* [Protótipo de alta fidelidade](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/33)
+* [Cadastro do usuário tripulante](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/34)
+* [Cadastro do administrador](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/35)
