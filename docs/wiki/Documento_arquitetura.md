@@ -107,50 +107,76 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 
 **Usuário**
 
-|Atributos| Propriedade | Tipo | Descrisão|
+|Atributos| Propriedade | Tipo | Descrição|
 |-----|-----|------|-----|
-|IdUsuario | Chave Primaria Obrigatória| Integer| Identificação do Usuário|
-|Nome| Obrigatório| String | Nome do usuário|
-| Email | Obrigatório | String | Email do Usuário|
+|idUsuario | Chave primária obrigatória| String| Identificação do Usuário|
+|nome| Obrigatório| String | Nome do usuário|
+| email | Obrigatório | String | Email do usuário|
+| cpf | Obrigatório | String | cpf do usuário|
+|login |Obrigatório |String | Login do usuário|
+|senha| Obrigatório |String | Senha do usuário |
 
 **Administrador**
-|Atributos| Propriedade | Tipo | Descrisão|
+|Atributos| Propriedade | Tipo | Descrição|
 |-----|-----|------|-----|
-|IdAdm |Chave Primaria Obrigatória | Integer | Identificação do Administrador|
-|IdUsuario| Chave Estrageira Obrigatória | Integer | Identificação do Usuário|
-|Login |Obrigatório |String | Login do Administrador|
-|Senha| Obrigatório |String | Senha do Administrador|
+|idAdm |Chave primária obrigatória | String | Identificação do Administrador|
+|idTripulante| Chave estrangeira obrigatória | String | Identificação do usuário|
+|idProprietario |Chave estrangeira obrigatória | String | Identificação do Proprietário|
 
-**Cliente**
 
-|Atributos| Propriedade | Tipo | Descrisão|
+**Tripulante**
+
+|Atributos| Propriedade | Tipo | Descrição|
 |-----|-----|------|-----|
-|IdCliente |Chave Primaria Obrigatória | Integer | Identificação do Administrador|
-|IdUsuario| Chave Estrangeira Obrigatória | Integer | Identificação do Usuário|
-|tipoCliente| Obrigatório| String | Tipo do Cliente
-|Login |Obrigatório |String | Login do Administrador|
-|Senha| Obrigatório |String | Senha do Administrador |
+|idTripulante |Chave primária obrigatória | String | Identificação do Tripulante|
+|idUsuario| Chave estrangeira obrigatória | String | Identificação do usuário|
+
+**Proprietário da embarcação**
+|Atributos| Propriedade | Tipo | Descrição|
+|-----|-----|------|-----|
+|idProprietario |Chave primária obrigatória | String | Identificação do Proprietário|
+|idUsuario| Chave estrangeira obrigatória | String | Identificação do usuário|
 
 **Embarcação**
 
-|Atributos| Propriedade | Tipo | Descrisão|
+|Atributos| Propriedade | Tipo | Descrição|
 |-----|-----|------|-----|
-|idEmbarcação| Chave Primaria Obrigatória| String | Idetificação da embarcação|
-|Nome | Obrigatório | String | Nome da embarcação|
-|Rota | Obrigatório | String | Nome da Rota|
+|idEmbarcacao| Chave primária obrigatória| String | Idetificação da embarcação|
+|idProprietario |Chave estrangeira obrigatória | String | Identificação do proprietário|
+|nome | Obrigatório | String | Nome da embarcação|
+
+
+**Viagem**
+|Atributos| Propriedade | Tipo | Descrição|
+|-----|-----|------|-----|
+|idViagem|Chave primária obrigatória | String | Identificação da viagem|
+|idEmbarcação| Chave estrangeira obrigatória| String | Idetificação da embarcação|
+|origem | Obrigatório | String | Origem da viagem|
+|destino |Obrigatório | String | Destino da viagem|
+|data | Obrigatório | String | Data da viagem|
+|horario | Obrigatório| String | Horário da viagem|
+
 
 **Passagem**
-|Atributos| Propriedade | Tipo | Descrisão|
+|Atributos| Propriedade | Tipo | Descrição|
 |-----|-----|------|-----|
-|IdPassagem |Chave Primaria Obrigatória| String| Identificação da Passagem|
-|Preço| Obrigatória | String | Preço da passagem|
-|Data | Obrigatório | String | Data da passagem|
-|Horario | Obrigatório| String | Horario da passagem|
-|Origem | Obrigatório | String | Origem do passageiro|
-|Destino |Obrigatório | String | Destino do passageiro|
+|idPassagem |Chave primária obrigatória| String| Identificação da passagem|
+|idViagem| Chave estrangeira obrigatória | String | Identificação da viagem|
+|idTripulante |Chave estrangeira obrigatória | String | Identificação do tripulante|
+|preco| Obrigatória | String | Preço da passagem|
+
 
 #### 4.1.2 Relacionamento
-**Usuario** pode ser um **Cliente** ou **Administrador** pois ambos compartilham vários atributos.
+**Usuário** especializa totalmente **Tripulante**, **Proprietário** ou **Administrador** pois ambos compartilham vários atributos.
+
+**Viagem** -- gera -- **Passagem** Uma viagem gera varias passagens, e uma passagem é valida apena para uma viagem. (Cardinalidade 1:n)
+
+**Embarcação** -- realiza -- **Viagem** Uma embarcação pode realizar uma ou mais viagens e uam viagem pode ser realizadas por varias embarcações. (Cardinalidade n:m)
+
+**Administrador** -- cadastra -- **Embarcação** O administrador responsável por cadastrar varias embarcações e as embarcaçãoes são cadastradas por um administrador. (Cardinalidade 1:n)
+
+**Tripulante** -- compra -- **Viagem** Um Tripulante compra uma única viagem, uma viagem poder ser vendida para varios Tripulantes. (Cardinalidade 1:n)
+ 
 
 
 ### 4.2 DER
