@@ -32,7 +32,6 @@ Começar a estudar linguagens, frameworks e metodologias que serão utilizadas n
 **4ª Pauta** - Planning Poker.
 Realizamos o planning poker para pontuar as próximas atividades que serão realizadas. A integrante do grupo Gabriela anotou as pontuações que serão utilizadas para a etapa final, após a realização das atividades.
 
-
 #### 4. Considerações finais
 
 As pautas definidas deverão estar concluídas ou parcialmente finalizadas até a próxima sprint. (Dia 10/09/2020). Ressalta-se a importância de fazer as pontuações correspondentes a cada issue. 

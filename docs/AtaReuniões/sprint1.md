@@ -2,15 +2,13 @@
 ### ATA DE REUNIÃO - SPRINT 1
 21/08/2020
 
-
 **Redator:** Liverson Paulo.
-
 
 #### 1.Membros presentes e ausentes
 
 **Presentes:** Edson, Francisco, Gabriela, Geise, Giulia e Liverson.
 
-**Ausentes:** --.
+**Ausentes:** ----
 
 #### 2.Considerações iniciais da reunião
 
