@@ -16,13 +16,16 @@ A reunião iniciou às 19:30hs via Jitsi.
 
 #### 3. Pautas da reunião
 
-**1ª Pauta** - Nova divisão de papéis
+**1ª Pauta - Nova divisão de papéis**
+
 Foi definido que todos iremos trabalhar na documentação, documento de visão, documento de arquitetura e na parte do frontend (protótipo de alta fidelidade) até a primeira Release (R1).
 
-**2ª Pauta** - Atualização da documentação
+**2ª Pauta - Atualização da documentação**
+
 Ajustes no Histórico de revisões do Documento, tarefas que cada membro ficará responsável. Editamos o Escopo, os Atores, Requisitos Funcionais
 
-**3ª Pauta** - Divisão de quem irá subir cada tópico da documentação no github.
+**3ª Pauta - Divisão de quem irá subir cada tópico da documentação no github**
+
 Edson - Sumário
 Geise - Tópicos 1 e 2
 Francisco - Tópico 3
