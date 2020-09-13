@@ -184,7 +184,7 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 ![DER 0.1](https://raw.githubusercontent.com/fga-eps-mds/2020-1-Ziguen/develop/docs/diagramas/der.jpg)
 
 ## 5 - Visão de Caso de Uso
-![Diagrama de casos de uso 0.1](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/develop/docs/diagramas/Diagrama_Casos_de_Uso.jpg)
+![Diagrama de casos de uso 0.1](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/develop/docs/diagramas/Diagrama_Casos_de_Uso.png)
 
 ## 6 - Visão Logica
 
