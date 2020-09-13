@@ -4,7 +4,7 @@
 
 **Redator:** Giulia Lobo.
 
-### 1. Membros presentes e ausentes
+#### 1. Membros presentes e ausentes
 
 **Presentes:** Edson, Francisco, Gabriela, Geise, Giulia e Liverson.
 

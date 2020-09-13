@@ -1,22 +1,22 @@
 
-###ATA DE REUNIÃO - SPRINT 1
+### ATA DE REUNIÃO - SPRINT 1
 21/08/2020
 
 
 **Redator:** Liverson Paulo.
 
 
-Membros presentes e ausentes
+#### 1.Membros presentes e ausentes
 
 **Presentes:** Edson, Francisco, Gabriela, Geise, Giulia e Liverson.
 
 **Ausentes:** --.
 
-Considerações iniciais da reunião
+#### 2.Considerações iniciais da reunião
 
 A reunião iniciou às 20:20hs via Jitsi.
 
-Pautas da reunião
+#### 3.Pautas da reunião
 
 **1ª Pauta** - Definição dos usos do aplicativos
 foi definido que o usuário foco é o administrador. Sendo as funcionalidades RF2 até RF5 as funcionalidades fundamentais definidas.
@@ -32,7 +32,7 @@ Foi discutido e decidido que será definido um novo usuário que será referente
 **3ª Pauta** - Treinamento Docker
 O Francisco foi nosso batedor em relação à docker e fará o nosso treinamento de forma assíncrona
 
-###Considerações finais
+#### 4.Considerações finais
 
 O nome do repositório no github foi alterado para o nome referente ao início do projeto e logo em seguida o nome oficial em que o projeto foi batizado.
 
