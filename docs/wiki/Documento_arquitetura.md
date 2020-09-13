@@ -31,19 +31,20 @@
 
 
 4- [Visão de Dados](#4---Visão-de-Dados)
-* [2.1 - Finalidade](s)
-* [2.2 - Finalidade](s)
-* [2.3 - Finalidade](s)
+* [4.1 - MER](#4.1---MER)
+  * [4.1.1 -Entidades](#4.1.1--Entidades)
+  * [4.1.2 Relacionamento](4.1.2-Relacionamento)
+
+* [4.2 DER
+](#4.2-DER
+)
+
 
 5- [Visão de Caso de Uso](#5---Visão-de-Caso-de-Uso)
-* [2.1 - Finalidade](s)
-* [2.2 - Finalidade](s)
-* [2.3 - Finalidade](s)
+
 
 6- [Visão Logica](#6---Visão-Logica)
-* [2.1 - Finalidade](s)
-* [2.2 - Finalidade](s)
-* [2.3 - Finalidade](s)
+
 
 7- [Referências Bibliográficas](#7---Referências-Bibliográficas)
 
