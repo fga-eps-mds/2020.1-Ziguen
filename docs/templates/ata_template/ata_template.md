@@ -1,4 +1,4 @@
-### ATA DE REUNIÃO - SPRINT 1
+### ATA DE REUNIÃO - SPRINT < número >
 < dd/mm/aaaa >
 
 **Redator:** < nome. >
