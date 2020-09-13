@@ -10,6 +10,8 @@
 | 0.5 | 10/09/2020  | Francisco e Edson  | Implementação do MER|
 | 0.6 | 11/09/2020  | Francisco e Edson  | Criação do DER|
 | 0.7 | 11/09/2020  | Liverson e Giulia  | Adição do diagrama de casos de uso|
+| 0.8 | 13/09/2020  | Francisco e Edson  | Ajustes no MER|
+| 0.9 | 13/09/2020  | Francisco e Edson  | Ajustes no DER|
 
 ## Sumário
 1- [Introdução](#1--introdução)
@@ -167,7 +169,6 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 
 
 #### 4.1.2 Relacionamento
-**Usuário** especializa totalmente **Tripulante**, **Proprietário** ou **Administrador** pois ambos compartilham vários atributos.
 
 **Viagem** -- gera -- **Passagem** Uma viagem gera varias passagens, e uma passagem é valida apena para uma viagem. (Cardinalidade 1:n)
 
