@@ -5,6 +5,8 @@ Data|Versão|Descrição|Autor
 09/09/2020|1.0.1|Adição dos artefatos da metodologia aplicada | @GeiseSaunier
 09/09/2020|1.0.2|Adição das nossas modificações em cima do SCRUM | @GeiseSaunier
 11/09/2020 |1.0.3|Adição do diagrama metodológico do time | @Francisco1code |
+15/09/2020 |1.0.4|Atualização dos novos dias da Daily | @GeiseSaunier |
+
 
 
 ## 1. Justificativa 
@@ -65,9 +67,9 @@ Durante a primeira semana de projeto fizemos uma reuniao geral acerca da estrutu
 
 Percebemos que um bom período da sprint seria de 7 dias e que um tempo maior que isso acabaria trazendo falta de comunicação e erros no andamento do projeto. A nossa sprint tem início na sexta, após a aula de MDS e finaliza na quinta, às 11h:00min.
 
-#### - Daily segunda, quarta e sexta, via telegram, até às 18h
+#### - Daily ( De segunda a quinta)
 
-Optamos pela Daily em três dias semanais apenas, pois achamos mais coerente com a realização. Todos os integrantes devem responder as seguintes perguntas:
+Optamos pela Daily em quatro dias semanais apenas, pois achamos coerente quanto a comunicação. Todos os integrantes devem responder as seguintes perguntas:
 - O que você fez desde a última sprint?
 - O que pretende fazer até a próxima?
 - Há algum obstáculo que esteja impedindo você ou a equipe de alcançar a meta do sprint?
