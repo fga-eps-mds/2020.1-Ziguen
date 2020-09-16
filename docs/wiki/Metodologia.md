@@ -67,7 +67,7 @@ Durante a primeira semana de projeto fizemos uma reuniao geral acerca da estrutu
 
 Percebemos que um bom período da sprint seria de 7 dias e que um tempo maior que isso acabaria trazendo falta de comunicação e erros no andamento do projeto. A nossa sprint tem início na sexta, após a aula de MDS e finaliza na quinta, às 11h:00min.
 
-#### - Daily ( De segunda a quinta)
+#### - Daily (De segunda a quinta)
 
 Optamos pela Daily em quatro dias semanais apenas, pois achamos coerente quanto a comunicação. Todos os integrantes devem responder as seguintes perguntas:
 - O que você fez desde a última sprint?
