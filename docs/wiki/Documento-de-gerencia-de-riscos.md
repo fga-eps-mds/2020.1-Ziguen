@@ -5,6 +5,8 @@
 | 09/09/2020 |   0.1  | Criação do documento | @Geise Saunier |
 | 09/09/2020 |   0.2  | Adicionando referência de quantificação | @Geise Saunier |
 | 09/09/2020 | 1.0 | Adicionando tratamento de riscos | @Geise Saunier |
+| 15/09/2020 | 2.0 | Adicionando controle de riscos | @Geise Saunier |
+
 
 ## 1- Levantamento de Riscos Negativos
 
