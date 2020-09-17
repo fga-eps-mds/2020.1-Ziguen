@@ -112,15 +112,15 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 |nome| Obrigatório| String | Nome do usuário|
 | email | Obrigatório | String | Email do usuário|
 | cpf | Obrigatório | String | cpf do usuário|
-|login |Obrigatório |String | Login do usuário|
+|telefone |Obrigatório |String | Login do usuário|
 |senha| Obrigatório |String | Senha do usuário |
 
 **ADIMINISTRADOR**
 |Atributos| Propriedade | Tipo | Descrição|
 |-----|-----|------|-----|
 |idAdm |Chave primária obrigatória | String | Identificação do Administrador|
-|idTripulante| Chave estrangeira obrigatória | String | Identificação do usuário|
-|idProprietario |Chave estrangeira obrigatória | String | Identificação do Proprietário|
+|idUsuario| Chave estrangeira obrigatória | String | Identificação do usuário|
+|idPassagem |Chave estrangeira obrigatória | String | Identificação do Proprietário|
 
 
 **TRIPULANTE**
