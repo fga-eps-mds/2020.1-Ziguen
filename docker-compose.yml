@@ -1,7 +1,24 @@
 version: "3"
 
 services:
+  db:
+    image: postgres
+    container_name: "db"
+    environment:
+      POSTGRES_DB: db
+      POSTGRES_USER: username
+      POSTGRES_PASSWORD: pgpassword
+
+    volumes:
+      - "./data/postgres:/var/lib/postgresql/data"
+    ports:
+      - 5432:5432
+    networks:
+      - compose-network
+
   app:
+    depends_on:
+      - db
     build: .
     command: yarn start
     ports:
@@ -12,20 +29,5 @@ services:
       - compose-network
       
 
-  postgres:
-    image: postgres
-    environment:
-      POSTGRES_DB: postgres
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-    ports:
-      - "5432:5432"
-    volumes:
-      - /home/Docker-Compose
-    networks:
-      - compose-network
-      
-
 networks: 
   compose-network:
-    driver: bridge
