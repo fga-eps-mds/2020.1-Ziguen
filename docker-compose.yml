@@ -9,22 +9,23 @@ services:
     volumes:
       - .:/app
     networks:
-      - postgres-compose-network
+      - compose-network
       
 
-  teste-postgres-compose:
-    restart: always
+  postgres:
     image: postgres
     environment:
-      POSTGRES_PASSWORD: "ziguen"
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
     ports:
-      - "2222:2222"
+      - "5432:5432"
     volumes:
-      - /home/Docker-Compose/PostgreSQL:/var/lib/postgresql/data 
+      - /home/Docker-Compose
     networks:
-      - postgres-compose-network
+      - compose-network
       
 
 networks: 
-  postgres-compose-network:
+  compose-network:
     driver: bridge
