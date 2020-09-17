@@ -1,11 +1,21 @@
 import {Router} from 'express';
+import User from './app/models/User';
 
 const routes = new Router();
 
 
-routes.get('/teste',(req,res)=> {
-    return res.json({ok: true})
-})
+
+routes.get('/t',async (req,res)=> {
+    const user = await User.create({
+        nome: 'admin',
+        email: 'adm@gmail.com',
+        cpf: '00242222',
+        telefone: '0800453332',
+        senha_hash: '123456',
+    })
+
+    return res.json(user)
+}); 
 
 
-export default routes;
+export default routes;  
