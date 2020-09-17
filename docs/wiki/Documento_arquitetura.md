@@ -45,9 +45,6 @@
 5- [Visão de Caso de Uso](#5---Visão-de-Caso-de-Uso)
 
 
-6- [Visão Logica](#6---Visão-Logica)
-
-
 7- [Referências Bibliográficas](#7---Referências-Bibliográficas)
 
 
@@ -89,13 +86,13 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 |JUnit |  é um framework open-source que dá suporte à criação de teste automatizados |
 |Node.js | é uma plataforma para construir aplicações web escaláveis de alta performance usando JavaScript |
 |Python | é uma linguagem de programação cujo objetivo é produtividade e legibilidade |
-|Sqlite3 | SQLite é uma biblioteca em linguagem C que implementa um banco de dados SQL embutido |
+|Postgres | PostgreSQL é um sistema gerenciador de banco de dados objeto relacional (SGBD), desenvolvido como projeto de código aberto |
 |Travis-CI | é um serviço de integração contínua distribuído e disponível na nuvem, utilizado para criar e testar projetos de software hospedados no GitHub |
 
 ## 3 - Metas e Restrições da Arquitetura
 ### 3.1- Metas da Ziguen
 * Facilitar a compra de passagens;
-* Facilitar os transportes fluviais;
+* Facilitar os transportes fluviais
 * Diminuir tempos de espera em filas para compra de passagens.
 
 ### 3.2- Restrições da Arquitetura
@@ -107,7 +104,7 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 ### 4.1 - MER
 #### 4.1.1 -Entidades
 
-**Usuário**
+**USUARIO**
 
 |Atributos| Propriedade | Tipo | Descrição|
 |-----|-----|------|-----|
@@ -115,31 +112,31 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 |nome| Obrigatório| String | Nome do usuário|
 | email | Obrigatório | String | Email do usuário|
 | cpf | Obrigatório | String | cpf do usuário|
-|login |Obrigatório |String | Login do usuário|
+|telefone |Obrigatório |String | Login do usuário|
 |senha| Obrigatório |String | Senha do usuário |
 
-**Administrador**
+**ADIMINISTRADOR**
 |Atributos| Propriedade | Tipo | Descrição|
 |-----|-----|------|-----|
 |idAdm |Chave primária obrigatória | String | Identificação do Administrador|
-|idTripulante| Chave estrangeira obrigatória | String | Identificação do usuário|
-|idProprietario |Chave estrangeira obrigatória | String | Identificação do Proprietário|
+|idUsuario| Chave estrangeira obrigatória | String | Identificação do usuário|
+|idPassagem |Chave estrangeira obrigatória | String | Identificação do Proprietário|
 
 
-**Tripulante**
+**TRIPULANTE**
 
 |Atributos| Propriedade | Tipo | Descrição|
 |-----|-----|------|-----|
 |idTripulante |Chave primária obrigatória | String | Identificação do Tripulante|
 |idUsuario| Chave estrangeira obrigatória | String | Identificação do usuário|
 
-**Proprietário da embarcação**
+**PROPIETARIO**
 |Atributos| Propriedade | Tipo | Descrição|
 |-----|-----|------|-----|
 |idProprietario |Chave primária obrigatória | String | Identificação do Proprietário|
 |idUsuario| Chave estrangeira obrigatória | String | Identificação do usuário|
 
-**Embarcação**
+**EMBARCACAO**
 
 |Atributos| Propriedade | Tipo | Descrição|
 |-----|-----|------|-----|
@@ -148,7 +145,7 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 |nome | Obrigatório | String | Nome da embarcação|
 
 
-**Viagem**
+**VIAGEM**
 |Atributos| Propriedade | Tipo | Descrição|
 |-----|-----|------|-----|
 |idViagem|Chave primária obrigatória | String | Identificação da viagem|
@@ -159,7 +156,7 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 |horario | Obrigatório| String | Horário da viagem|
 
 
-**Passagem**
+**PASSAGEM**
 |Atributos| Propriedade | Tipo | Descrição|
 |-----|-----|------|-----|
 |idPassagem |Chave primária obrigatória| String| Identificação da passagem|
@@ -170,13 +167,15 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 
 #### 4.1.2 Relacionamento
 
-**Viagem** -- gera -- **Passagem** Uma viagem gera varias passagens, e uma passagem é valida apena para uma viagem. (Cardinalidade 1:n)
+**VIAGEM** -- gera -- **PASSAGEM** Uma viagem gera varias passagens, e uma passagem é valida apena para uma viagem. (Cardinalidade 1:n)
 
-**Embarcação** -- realiza -- **Viagem** Uma embarcação pode realizar uma ou mais viagens e uam viagem pode ser realizadas por varias embarcações. (Cardinalidade n:m)
+**EMBARCACAO** -- realiza -- **VIAGEM** Uma embarcação pode realizar uma ou mais viagens e uam viagem pode ser realizadas por varias embarcações. (Cardinalidade n:m)
 
-**Administrador** -- cadastra -- **Embarcação** O administrador responsável por cadastrar varias embarcações e as embarcaçãoes são cadastradas por um administrador. (Cardinalidade 1:n)
+**ADIMINISTRADOR** -- cadastra -- **EMBARCACAO** O administrador responsável por cadastrar varias embarcações e as embarcaçãoes são cadastradas por um administrador. (Cardinalidade 1:n)
 
-**Tripulante** -- compra -- **Viagem** Um Tripulante compra uma única viagem, uma viagem poder ser vendida para varios Tripulantes. (Cardinalidade 1:n)
+**ADMINISTRADOR** -- cadastra -- **PROPIETARIO** O administrador responsável por cadastrar varios proprietários de embarcaçãoes são cadastradas por um administrador. (Cardinalidade 1:n)
+
+**TRIPULANTE** -- compra -- **VIAGEM** Um Tripulante compra uma única viagem, uma viagem poder ser vendida para varios Tripulantes. (Cardinalidade 1:n)
  
 
 
@@ -187,9 +186,8 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 ## 5 - Visão de Caso de Uso
 ![Diagrama de casos de uso 0.1](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/develop/docs/diagramas/Diagrama_Casos_de_Uso.png)
 
-## 6 - Visão Logica
 
-## 7 - Referências Bibliográficas
+## 6 - Referências Bibliográficas
 
 [Artefato: Documento de Arquitetura de Software](https://www.cin.ufpe.br/~gta/rup-vc/core.base_rup/workproducts/rup_software_architecture_document_C367485C.html)
 
