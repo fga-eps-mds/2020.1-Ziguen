@@ -14,6 +14,10 @@
   <li> Jit.si; </li>
   <li> Docker; </li>
   <li> Linux; </li>
+  <li> HTML 5; </li>
+  <li> CSS 3; </li>
+  <li> Bootstrap; </li>
+  <li> Java Script; </li>
   <li> GitHub. </li>
 </ul>
 <h2> :whale: Uso do Docker </h2>
