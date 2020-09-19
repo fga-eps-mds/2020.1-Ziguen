@@ -11,15 +11,18 @@ routes.get('/t1', (req, res)=> {
 
 
 routes.get('/t', async (req,res)=> {
-    const users = await User.create({
-        nome: 'admin',
-        email: 'adm@gmail.com',
-        password_hash: '123456',
-        provider: true
+    const user = await User.create({
+        id: '2',
+        nome: 'tew',
+        email: 'adm@gmaiwel.com',
+        cpf: '00242wew222',
+        telefone: '0800453sd332',
+        senha_hash: '123sdsd456',
     });
 
-    return res.json(users)
+    return res.json(user)
 }); 
+
 
 
 export default routes;  
