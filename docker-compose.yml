@@ -6,13 +6,9 @@ services:
     image: "postgres" 
     env_file:
       - database.env 
-    ports:
-      - 5432:5432
+    
     volumes:
-      - ./dados:/var/lib/postgresql/data
-    networks:
-      - compose-network
-      
+    - postgres_data:/var/lib/postgresql/data  
     
   app:
     depends_on:
@@ -23,12 +19,9 @@ services:
       - 3333:3333
     volumes:
       - .:/app
-    networks:
-      - compose-network
+      - node_modules:/app/node_modules
 
-networks:
-  compose-network:
-    external:
-      name: compose-network
-
-
+    
+volumes: 
+  postgres_data:
+  node_modules:
