@@ -9,12 +9,12 @@
   "author": "francisco1code <francisco170142329@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "nodemon": "^2.0.4",
     "pg": "^8.3.3",
     "pg-hstore": "^2.3.3",
-    "sequelize": "^6.3.5",
-    "sqlite3": "^5.0.0"
+    "sequelize": "^6.3.5"
   },
   "devDependencies": {
     "sequelize-cli": "^6.2.0",
