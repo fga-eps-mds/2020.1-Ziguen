@@ -7,7 +7,8 @@
   A ferramenta ZIGUEN tem o propósito de facilitar a integração entre usuários do transporte fluvial e aqueles que detém a propriedade sobre esses meios de  transporte, para que, assim, o processo da compra das passagens em embarcações seja mais rápido, cômodo, seguro, inovador e intuitivo.
 </p>
 <h2> Front-End</h2>
-<a href=“http:https://github.com/fga-eps-mds/2020.1-Ziguen-Front/“>Repositório do front-end</a>
+
+[Repositório do front-end](https://github.com/fga-eps-mds/2020.1-Ziguen-Front)
 
 <h2> :computer: Tecnologias </h2>
 <ul>
