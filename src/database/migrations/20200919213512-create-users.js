@@ -3,13 +3,13 @@ module.exports = {
     
     return queryInterface.createTable('users', { 
       id: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING,
         allowNull: false,
+        primaryKey: true,
         autoIcrement: true,
-        primaryKey: true
-        
+         
       },
-      nome: {
+      name: {
         type: Sequelize.STRING,
         allowNull: false,
 
@@ -20,18 +20,12 @@ module.exports = {
         unique: true,
 
       },
-      cpf: {
-        type: Sequelize.STRING,
-        allowNull: false,
-        unique: true,
-
-      },
-      telefone: {
+      telephone: {
         type: Sequelize.STRING,
         allowNull: false
 
       },
-      senha_hash: {
+      password_hash: {
         type: Sequelize.STRING,
         allowNull: false,
 

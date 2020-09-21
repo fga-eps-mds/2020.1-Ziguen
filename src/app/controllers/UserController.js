@@ -1,7 +1,25 @@
+import * as  Yup from 'yup';
 import User from '../models/User';
 
 class UserController {
   async store(req, res) {
+
+    const schema = Yup.object().shape({
+      id: Yup.number().required(),
+      name: Yup.string().required(),
+      email: Yup.string()
+        .required(),
+      password: Yup.string()
+        .required()
+        .min(6),
+
+
+    })
+
+    if(!(await schema.isValid(req.body))){
+      return res.status(400).json({ error: 'Falha na validação das informações.' });
+    }
+
     const userExists = await User.findOne({ 
       where: { email: req.body.email } 
     });
@@ -10,7 +28,7 @@ class UserController {
       return res.status(400).json({ error: 'Usuario já Cadastrado' });
     }
 
-    const { id, nome, email } = await User.create(req.body);
+    const { id, name, email } = await User.create(req.body);
 
     return res.json({
       id,
@@ -34,15 +52,15 @@ class UserController {
     }
     if(oldpassword && !(await user.checkPassword(oldpassword))){
 
-      return res.status(400).json({ error: 'Senha incorreta.' });
+      return res.status(400).json({ error: 'password incorreta.' });
     }
 
-    const  {id , nome } = await user.update(req.body);
+    const  {id , name } = await user.update(req.body);
 
 
     return res.json({
       id,
-      nome,
+      name,
       email,
     });
 
