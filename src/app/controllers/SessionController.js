@@ -17,6 +17,7 @@ class SessionController {
         return res.status(401).json({ error: 'Senha incorreta.'});
 
      }
+     
      const {id, nome} = user;
 
      return res.json({
