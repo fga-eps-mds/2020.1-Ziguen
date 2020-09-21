@@ -68,7 +68,7 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
  **4.1 - MER**
  * **4.1.1 -Entidades**
 
-**Usuário**
+  **Usuário**
 
 |Atributos| Propriedade | Tipo | Descrição|
 |-----|-----|------|-----|
@@ -79,7 +79,9 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 |login |Obrigatório |String | Login do usuário|
 |senha| Obrigatório |String | Senha do usuário |
 
-**Administrador**
+
+
+  **Administrador**
 
 |Atributos| Propriedade | Tipo | Descrição|
 |-----|-----|------|-----|
@@ -88,21 +90,28 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 |idProprietario |Chave estrangeira obrigatória | String | Identificação do Proprietário|
 
 
-**Tripulante**
+
+  **Tripulante**
 
 |Atributos| Propriedade | Tipo | Descrição|
 |-----|-----|------|-----|
 |idTripulante |Chave primária obrigatória | String | Identificação do Tripulante|
 |idUsuario| Chave estrangeira obrigatória | String | Identificação do usuário|
 
-**Proprietário da embarcação**
+
+
+
+  **Proprietário da embarcação**
 
 |Atributos| Propriedade | Tipo | Descrição|
 |-----|-----|------|-----|
 |idProprietario |Chave primária obrigatória | String | Identificação do Proprietário|
 |idUsuario| Chave estrangeira obrigatória | String | Identificação do usuário|
 
-**Embarcação**
+
+
+
+  **Embarcação**
 
 |Atributos| Propriedade | Tipo | Descrição|
 |-----|-----|------|-----|
@@ -111,7 +120,10 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 |nome | Obrigatório | String | Nome da embarcação|
 
 
-**Viagem**
+
+
+
+   **Viagem**
 
 |Atributos| Propriedade | Tipo | Descrição|
 |-----|-----|------|-----|
@@ -123,7 +135,10 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 |horario | Obrigatório| String | Horário da viagem|
 
 
-**Passagem**
+
+
+
+   **Passagem**
 
 |Atributos| Propriedade | Tipo | Descrição|
 |-----|-----|------|-----|
@@ -150,6 +165,6 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 ![DER 0.1](https://raw.githubusercontent.com/fga-eps-mds/2020-1-Ziguen/develop/docs/diagramas/der.jpg)
 
 ## 5 - Visão de Caso de Uso
-![Diagrama de casos de uso 0.1](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/develop/docs/diagramas/Diagrama_Casos_de_Uso.png)
+![Diagrama de casos de uso 0.1](https://raw.githubusercontent.com/fga-eps-mds/2020-1-Ziguen/master/docs/diagramas/Diagrama_Casos_de_Uso.png)
 
 
