@@ -28,7 +28,8 @@ class UserController {
     }
 
     const userExists = await User.findOne({ 
-      where: { email: req.body.email } 
+      where: { email: req.body.email }, 
+      where: { id: req.body.id}
     });
 
     if (userExists) {
@@ -59,7 +60,7 @@ class UserController {
     }
     if(oldpassword && !(await user.checkPassword(oldpassword))){
 
-      return res.status(400).json({ error: 'password incorreta.' });
+      return res.status(400).json({ error: 'Senha incorreta.' });
     }
 
     const  {id , name } = await user.update(req.body);
