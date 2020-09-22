@@ -18,6 +18,7 @@ routes.use(authMiddleware);
 
 routes.put('/users', authMiddleware, UserController.update);
 routes.get('/users/list', authMiddleware, UserController.index);
+routes.delete('/users', authMiddleware, UserController.destroy);
 
 
 

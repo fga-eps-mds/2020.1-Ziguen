@@ -72,6 +72,34 @@ class UserController {
     });
 
   }
+
+  async destroy(req, res) {
+    const schema = Yup.object().shape({
+      id: Yup.number()
+      .required()
+      .positive()
+   });
+
+    if (!(await schema.isValid(req.body))) {
+      return res
+      .status(400)
+      .json({ error: 'Falha na validação das informações.' });
+    }
+
+   const { id } = req.body;
+
+   const user = await User.findByPk(id);
+
+   if (!user) {
+     return res.json({ error: 'Usuario não existe' });
+   }
+
+    await user.destroy();
+
+    return res.status(200).json({ message: 'Exclusão foi bem sucedida.' });
+  }
+
+
 }
 
 export default new UserController(); 
