@@ -4,11 +4,13 @@ import authMiddleware from './app/middlewares/auth';
 
 import UserController from "./app/controllers/UserController";
 import SessionController from './app/controllers/SessionController';
+import TravelerController from './app/controllers/TravelerController';
 
 
 
 const routes = new Router();
 
+routes.post('/travelers', TravelerController.store);
 routes.post('/users', UserController.store);
 routes.post('/sessions', SessionController.store);
 
