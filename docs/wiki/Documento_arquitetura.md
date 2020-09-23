@@ -12,6 +12,7 @@
 | 0.7 | 11/09/2020  | Liverson e Giulia  | Adição do diagrama de casos de uso|
 | 0.8 | 13/09/2020  | Francisco e Edson  | Ajustes no MER|
 | 0.9 | 13/09/2020  | Francisco e Edson  | Ajustes no DER|
+| 1.0 | 22/09/2020  | Edson e Francisco  | Revisão do documento de arquitetura|
 
 ## Sumário
 1- [Introdução](#1--introdução)
@@ -64,9 +65,12 @@ O documento está segmento em Representação de Arquitetura, Metas e Restriçõ
 
 * API - Application Programming Interface: conjunto de rotinas e padrões estabelecidos por um software para a utilização das suas funcionalidades por demais aplicativos que desejam utilizar seu serviço
 * Framework: Conjuntos de funções e componentes pré definidos.
+* Promises: Uma Promise é um objeto que representa a eventual conclusão ou falha de uma operação assincrona.
+* ORM: Mapeamento objeto-relacional é uma técnica de desenvolvimento utilizada para reduzir a impedância da programação orientada aos objetos utilizando bancos de dados relacionais
 
 ## 2 - Representação de Arquitetura
 ### 2.1 - Padrão Arquitetural	
+
 Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando sua aplicação em três camadas. A camada de interação do usuário (view), que faz a exibição dos dados, sendo ela por meio de um html ou xml; a camada de manipulação dos dados (model), responsável pela leitura e escrita dos dados, e também suas validações e a camada de controle (controller), responsável por receber todas as requisições do usuário, controlando qual model usar e qual view será mostrado ao usuário. Essa divisão em camadas é realizada para facilitar a resolução de um problema maior.
 
 * Model: Camada da arquitetura responsável pela lógica de négocio, manipulação e validação de dados na aplicação.
@@ -79,20 +83,22 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 |Bootstrap |  Framework para desenvolvimento em HTML, CSS e JS. |
 |Cascading Style Sheets (CSS) |  Alia-se no desenvolvimento do frontend junto com HTML e JS. |
 |Docker |  Utilizado para configurar o ambiente de desenvolvimento. |
-|Express.js | é um framework para aplicativo da web do Node. js mínimo e flexível que fornece um conjunto robusto de recursos para aplicativos web e móvel |
+|Docker-compose |  Usado para orquestrar os containers do docker |
+|Express.js | é um framework para aplicativo da web do Node.js mínimo e flexível que fornece um conjunto robusto de recursos para aplicativos web e móvel |
 |Git | Git é uma ferramenta de versionamento de arquivos de código livre |
 |HTML |  Alia-se no desenvolvimento do frontend junto com CSS e JS |
 |JavaScript |  Alia-se no desenvolvimento do frontend junto com HTML e CSS |
 |JUnit |  é um framework open-source que dá suporte à criação de teste automatizados |
 |Node.js | é uma plataforma para construir aplicações web escaláveis de alta performance usando JavaScript |
-|Python | é uma linguagem de programação cujo objetivo é produtividade e legibilidade |
 |Postgres | PostgreSQL é um sistema gerenciador de banco de dados objeto relacional (SGBD), desenvolvido como projeto de código aberto |
 |Travis-CI | é um serviço de integração contínua distribuído e disponível na nuvem, utilizado para criar e testar projetos de software hospedados no GitHub |
+| Sequelize| ORM baseado em promises para Node.js, que suporta vários dialetos, entre eles PostgreSQL |
+
 
 ## 3 - Metas e Restrições da Arquitetura
 ### 3.1- Metas da Ziguen
 * Facilitar a compra de passagens;
-* Facilitar os transportes fluviais
+* Facilitar os transportes fluviais;
 * Diminuir tempos de espera em filas para compra de passagens.
 
 ### 3.2- Restrições da Arquitetura
