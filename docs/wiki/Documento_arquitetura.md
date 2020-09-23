@@ -13,6 +13,7 @@
 | 0.8 | 13/09/2020  | Francisco e Edson  | Ajustes no MER|
 | 0.9 | 13/09/2020  | Francisco e Edson  | Ajustes no DER|
 | 1.0 | 22/09/2020  | Edson e Francisco  | Revisão do documento de arquitetura|
+| 1.1 | 23/09/2020  | Edson e Francisco  | Diagrama de representação|
 
 ## Sumário
 1- [Introdução](#1--introdução)
@@ -69,6 +70,9 @@ O documento está segmento em Representação de Arquitetura, Metas e Restriçõ
 * ORM: Mapeamento objeto-relacional é uma técnica de desenvolvimento utilizada para reduzir a impedância da programação orientada aos objetos utilizando bancos de dados relacionais
 
 ## 2 - Representação de Arquitetura
+
+![Diagrama de representação](https://raw.githubusercontent.com/fga-eps-mds/2020-1-Ziguen/develop/docs/diagramas/diagrama_representacao.jpg)
+
 ### 2.1 - Padrão Arquitetural	
 
 Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando sua aplicação em três camadas. A camada de interação do usuário (view), que faz a exibição dos dados, sendo ela por meio de um html ou xml; a camada de manipulação dos dados (model), responsável pela leitura e escrita dos dados, e também suas validações e a camada de controle (controller), responsável por receber todas as requisições do usuário, controlando qual model usar e qual view será mostrado ao usuário. Essa divisão em camadas é realizada para facilitar a resolução de um problema maior.
