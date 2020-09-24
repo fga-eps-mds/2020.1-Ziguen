@@ -71,7 +71,7 @@ O documento está segmento em Representação de Arquitetura, Metas e Restriçõ
 
 ## 2 - Representação de Arquitetura
 
-![Diagrama de representação](https://raw.githubusercontent.com/fga-eps-mds/2020-1-Ziguen/develop/docs/diagramas/diagrama_representacao.jpg)
+![Diagrama de representação](https://raw.githubusercontent.com/fga-eps-mds/2020-1-Ziguen/develop/docs/diagramas/diagrama_representacao.png)
 
 ### 2.1 - Padrão Arquitetural	
 
