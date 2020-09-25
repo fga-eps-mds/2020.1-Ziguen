@@ -79,7 +79,7 @@ class UserController {
       id: Yup.number()
       .required()
       .positive()
-   });
+    });
 
     if (!(await schema.isValid(req.body))) {
       return res

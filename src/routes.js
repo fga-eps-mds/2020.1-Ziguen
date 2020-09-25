@@ -11,6 +11,7 @@ import TravelerController from './app/controllers/TravelerController';
 const routes = new Router();
 
 routes.post('/travelers', TravelerController.store);
+routes.get('/travelers/list', TravelerController.list);
 routes.post('/users', UserController.store);
 routes.post('/sessions', SessionController.store);
 
