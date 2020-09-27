@@ -3,6 +3,13 @@ import Travel from '../models/Travel';
 
 class TravelController {
 
+    async index(req,res){
+    const { id } = req.query;
+    const travels = await Travel.findAll({id});
+    return res.json(travels);
+  }
+
+
   async store(req, res) {
 
     const travelExists = await Travel.findOne({ 
