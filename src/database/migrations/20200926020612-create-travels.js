@@ -1,3 +1,6 @@
+const sequelize = require("sequelize");
+const { date } = require("yup");
+
 module.exports = {
   up: (queryInterface, Sequelize) => {
     
@@ -9,15 +12,23 @@ module.exports = {
         //autoIcrement: true,
          
       },
-      origem: {
+      origin: {
         type: Sequelize.STRING,
         allowNull: false,
 
       },
-      destino: {
+      destiny: {
         type: Sequelize.STRING,
         allowNull: false,
 
+      },
+      hour: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      date: {
+        type: Sequelize.STRING,
+        allowNull: false,
       },
       created_at: {
         type: Sequelize.STRING,

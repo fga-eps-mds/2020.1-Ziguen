@@ -1,9 +1,11 @@
 import Sequelize from 'sequelize';
+import TravelController from '../app/controllers/TravelController';
+import Travel from '../app/models/Travel';
 import User from '../app/models/User';
 
 import databaseConfig from '../config/database';
 
-const models = [User];
+const models = [User, Travel];
 
 class Database {
   constructor() {
