@@ -17,10 +17,10 @@ Duração: 18/09 à 24/09
 |--|--|--|--|--|
 | Edson Soares | ✔ | ✔ | ✔ | ✔ |
 | Francisco Emanoel | ✔ | ✔ | ✔ | ✔ |
-| Gabriela Pivetta | ✔ | ✔ | ✔ | ✔ |
-| Geise Saunier | ✔ | ✔ | ✔ | ✔ |
+| Gabriela Pivetta | ✔ | ✔ | ✔ | ✘ |
+| Geise Saunier | ✔ | ✔ | ✘ | ✘ |
 | Giulia Lobo | ✔ | ✔ | ✔ | ✔ |
-| Liverson Severo | ✔ | ✔ | ✔ | ✔ |
+| Liverson Severo | ✔ | ✔ | ✔ | ✘ |
 
 ## Quadro de conhecimento
 ![Quadro Resumo](https://raw.githubusercontent.com/fga-eps-mds/2020-1-Ziguen/develop/docs/imagens/quadro_conhecimento_s4.jpg)
