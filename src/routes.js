@@ -4,7 +4,8 @@ import authMiddleware from './app/middlewares/auth';
 
 import UserController from "./app/controllers/UserController";
 import SessionController from './app/controllers/SessionController';
-import BoatControlle from "./app/controllers/BoatController"
+import BoatController from "./app/controllers/BoatController"
+import BoatController from './app/controllers/BoatController';
 
 
 
@@ -12,7 +13,8 @@ const routes = new Router();
 
 routes.post('/users', UserController.store);
 routes.post('/sessions', SessionController.store);
-routes.post('/boats', BoatControlle.store);
+routes.post('/boats', BoatController.store);
+routes.get('/boats/list', BoatController.index)
 
 
 

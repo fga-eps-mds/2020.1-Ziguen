@@ -1,7 +1,12 @@
-import * as  Yup from 'yup';
 import Boat from '../models/Boat'
 
 class BoatController {
+
+  async index(req,res){
+    const { id } = req.query;
+    const Boats = await Boat.findAll({id});
+    return res.json(Boats);
+  }
 
   async store(req, res) {
 
