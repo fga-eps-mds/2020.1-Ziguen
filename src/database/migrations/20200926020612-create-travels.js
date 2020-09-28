@@ -9,7 +9,7 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
         primaryKey: true,
-        //autoIcrement: true,
+        autoIcrement: true,
          
       },
       origin: {
@@ -24,6 +24,13 @@ module.exports = {
       },
       hour: {
         type: Sequelize.STRING,
+        allowNull: false,
+      },
+      user_id: {
+        type: Sequelize.STRING,
+        references: {model: 'users', key: 'id'},
+        onUpdate: 'CASCADE',
+        onDelete: 'SET NULL',
         allowNull: false,
       },
       date: {
