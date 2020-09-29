@@ -5,6 +5,7 @@ import authMiddleware from './app/middlewares/auth';
 import UserController from "./app/controllers/UserController";
 import SessionController from './app/controllers/SessionController';
 import TravelController from './app/controllers/TravelController';
+import Travel from './app/models/Travel';
 
 
 
@@ -15,6 +16,7 @@ routes.post('/sessions', SessionController.store);
 routes.post('/travels', TravelController.store);
 routes.put('/travels', TravelController.update);
 routes.get('/travels', TravelController.index);
+routes.delete('/travels', TravelController.destroy);
 
 
 

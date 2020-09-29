@@ -80,6 +80,33 @@ class TravelController {
 
   }
 
+  async destroy(req, res) {
+    const schema = Yup.object().shape({
+      id: Yup.number()
+      .required()
+   });
+
+    if (!(await schema.isValid(req.body))) {
+      return res
+      .status(400)
+      .json({ error: 'Falha na validação das informações.' });
+    }
+
+  
+   const travelExists = await Travel.findOne({
+     where: {id: req.body.id}
+   })
+
+   if (!travelExists) {
+     return res.json({ error: 'Viagem não existe' });
+   }
+
+    await travelExists.destroy();
+
+    return res.status(200).json({ message: 'Exclusão foi bem sucedida.' });
+  }
+
+
 }
 
 export default new TravelController(); 
