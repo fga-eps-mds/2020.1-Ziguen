@@ -1,7 +1,8 @@
 import * as  Yup from 'yup';
 import User from '../models/User';
 
-class UserController {
+
+class UserController{
 
   async index(req,res){
     const { name } = req.query;
@@ -19,6 +20,8 @@ class UserController {
       password: Yup.string()
         .required()
         .min(6),
+      telephone: Yup.string()
+        .required()
 
 
     })

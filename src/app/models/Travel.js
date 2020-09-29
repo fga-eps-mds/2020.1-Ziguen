@@ -9,15 +9,13 @@ class Travel extends Model {
           destiny: Sequelize.STRING,
           hour: Sequelize.STRING,
           date: Sequelize.STRING,
+          user_id: Sequelize.NUMBER,
         },
         {
             sequelize,
         }
         );
         return this;
-    }
-    static associate(models){
-      this.belongsTo(models.User, {foreignKey: 'user_id', as: 'user'})
     }
 }
 export default Travel;

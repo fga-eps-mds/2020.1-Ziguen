@@ -1,16 +1,13 @@
-const sequelize = require("sequelize");
-const { date } = require("yup");
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
     
     return queryInterface.createTable('travels', { 
       id: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: false,
         primaryKey: true,
         autoIcrement: true,
-         
       },
       origin: {
         type: Sequelize.STRING,
@@ -27,10 +24,7 @@ module.exports = {
         allowNull: false,
       },
       user_id: {
-        type: Sequelize.STRING,
-        references: {model: 'users', key: 'id'},
-        onUpdate: 'CASCADE',
-        onDelete: 'SET NULL',
+        type: Sequelize.INTEGER,
         allowNull: false,
       },
       date: {

@@ -1,5 +1,4 @@
 import Sequelize from 'sequelize';
-import TravelController from '../app/controllers/TravelController';
 import Travel from '../app/models/Travel';
 import User from '../app/models/User';
 
@@ -15,7 +14,7 @@ class Database {
   init() {
     this.connection = new Sequelize(databaseConfig);
 
-    models.map(model => model.init(this.connection));
+    models.map(model => model.init(this.connection))
   }
 }
 
