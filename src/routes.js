@@ -16,13 +16,15 @@ routes.post('/sessions', SessionController.store);
 routes.post('/boats', BoatController.store);
 routes.get('/boats/list', BoatController.index);
 routes.put('/boats/update', BoatController.update);
+routes.delete('/boats/del', BoatController.destroy);
+
 
 
 // Todas as rotas a baixo desse middleware tem que ser autenticadas
 routes.use(authMiddleware); 
-routes.put('/users', authMiddleware, UserController.update);
-routes.get('/users/list', authMiddleware, UserController.index);
-routes.delete('/users', authMiddleware, UserController.destroy);
+routes.put('/users', UserController.update);
+routes.get('/users/list', UserController.index);
+routes.delete('/users', UserController.destroy);
 
 
 

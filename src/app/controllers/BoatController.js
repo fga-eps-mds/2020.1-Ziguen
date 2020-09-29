@@ -73,7 +73,33 @@ class BoatController {
       name,
     })
 
+  };
+
+  async destroy(req, res) {
+    const schema = Yup.object().shape({
+      id: Yup.number().required()
+   });
+
+    if (!(await schema.isValid(req.body))) {
+      return res
+      .status(400)
+      .json({ error: 'Falha na validação das informações.' });
+    }
+
+   const boatExists = await Boat.findOne({
+    where: { id: req.body.id }
+   });
+
+   if (!boatExists) {
+     return res.json({ error: 'Usuario não existe' });
+   }
+
+    await boatExists.destroy();
+
+    return res.status(200).json({ message: 'Exclusão foi bem sucedida.' });
   }
+
+
 }
 
 export default new BoatController(); 
