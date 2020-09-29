@@ -6,7 +6,6 @@ import SessionController from './app/controllers/SessionController';
 import TravelerController from './app/controllers/TravelerController';
 
 
-
 const routes = new Router();
 
 routes.post('/travelers', TravelerController.store);
@@ -23,6 +22,7 @@ routes.put('/travelers/update', authMiddleware, TravelerController.update);
 routes.get('/travelers/list', authMiddleware,TravelerController.list);
 routes.get('/users/list', authMiddleware, UserController.index);
 routes.delete('/users', authMiddleware, UserController.destroy);
+routes.delete('/travelers', TravelerController.destroy);
 
 
 
