@@ -49,25 +49,29 @@ class BoatController {
   }
 
    async update(req,res){
-    const { name } = req.body;
 
-    const boats = await Boat.findByPk(req.userId);
+    const schema = Yup.object().shape({
+      name: Yup.string().required(),
+      id: Yup.number().required(),
+    });
+    if(!(await schema.isValid(req.body))){
+      return res.status(400).json({ error: 'Preencha todos os campos' });
+    }
 
-    const conect = await Boat.create({
+    const boatExists = await Boat.findOne({
       where: { id: req.body.id }
        
-    })
-    if(!conect){
+    })    
+    if(!boatExists){
       return res.status(400).json({ error: 'Embarcação não existe' });
     }
 
-    //const { name } = await update(req.body);
+    const { name } = await boatExists.update(req.body);
 
 
-    /* return res.json({
+    return res.json({
       name,
-    }); */
-    res.json({conect})
+    })
 
   }
 }
