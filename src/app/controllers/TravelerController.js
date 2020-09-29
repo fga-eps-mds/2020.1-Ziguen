@@ -41,15 +41,14 @@ class TravelerController{
   async update(req,res){
     const { email, oldpassword } = req.body;
 
-    const traveler = await Traveler.findByPk(req.travelerId);
+    const traveler = await Traveler.findByPk(req.userId);
 
     if(email != traveler.email){
-
-      const userExists = await Traveler.findOne({ 
+      const travelerExists = await Traveler.findOne({ 
         where: { email } 
       });
   
-      if (userExists) {
+      if (travelerExists) {
         return res.status(400).json({ error: 'Usuario já Cadastrado.' });
       }
     }

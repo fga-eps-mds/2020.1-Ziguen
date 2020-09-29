@@ -19,7 +19,7 @@ routes.post('/sessions/trav', SessionController.store_trav);
 routes.use(authMiddleware); 
 
 routes.put('/users', authMiddleware, UserController.update);
-routes.put('/travelers', authMiddleware, TravelerController.update);
+routes.put('/travelers/update', authMiddleware, TravelerController.update);
 routes.get('/travelers/list', authMiddleware,TravelerController.list);
 routes.get('/users/list', authMiddleware, UserController.index);
 routes.delete('/users', authMiddleware, UserController.destroy);
