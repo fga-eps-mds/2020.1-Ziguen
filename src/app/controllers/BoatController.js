@@ -1,4 +1,6 @@
 import Boat from '../models/Boat'
+import * as  Yup from 'yup';
+import User from '../models/User'
 
 class BoatController {
 
@@ -10,25 +12,64 @@ class BoatController {
 
   async store(req, res) {
 
-    const boatExists = await Boat.findOne({ 
-      where: { name: req.body.name }, 
+    const schema = Yup.object().shape({
+      name: Yup.string().required(),
+      id: Yup.number().required(),
+      user_id: Yup.number().required(),
+   });
+
+    if(!(await schema.isValid(req.body))){
+      return res.status(400).json({ error: 'Falha na validação das informações.' });
+    }
+
+    const boatExists = await Boat.findOne({       
       where: { id: req.body.id}
     });
 
+    const userExists = await User.findOne({
+      where: {id: req.body.user_id}
+    });
+
+    if (!userExists) {
+      return res.status(400).json({ error: 'Administrador inexistente' });
+    };
+
     if (boatExists) {
       return res.status(400).json({ error: 'Embarcação já Cadastrada' });
-    }
+    };
 
-    const { id ,name } = await Boat.create(req.body);
+    const { id ,name, user_id } = await Boat.create(req.body);
 
     return res.json({
+      id,
       name,
-      id
+      user_id
     }); 
 
   }
 
+   async update(req,res){
+    const { name } = req.body;
 
+    const boats = await Boat.findByPk(req.userId);
+
+    const conect = await Boat.create({
+      where: { id: req.body.id }
+       
+    })
+    if(!conect){
+      return res.status(400).json({ error: 'Embarcação não existe' });
+    }
+
+    //const { name } = await update(req.body);
+
+
+    /* return res.json({
+      name,
+    }); */
+    res.json({conect})
+
+  }
 }
 
 export default new BoatController(); 

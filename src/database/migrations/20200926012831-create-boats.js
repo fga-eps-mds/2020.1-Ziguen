@@ -3,17 +3,20 @@ module.exports = {
     
     return queryInterface.createTable('boats', { 
       id: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: false,
         primaryKey: true,
         autoIcrement: true,
-         
       },
       name: {
         type: Sequelize.STRING,
         allowNull: false,
-
       },
+      user_id: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      },
+
       created_at: {
         type: Sequelize.STRING,
         allowNull: false,
