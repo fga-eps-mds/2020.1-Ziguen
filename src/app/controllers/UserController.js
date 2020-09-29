@@ -1,7 +1,8 @@
 import * as  Yup from 'yup';
 import User from '../models/User';
 
-class UserController {
+
+class UserController{
 
   async index(req,res){
     const { name } = req.query;
@@ -19,6 +20,8 @@ class UserController {
       password: Yup.string()
         .required()
         .min(6),
+      telephone: Yup.string()
+        .required()
 
 
     })
@@ -78,7 +81,6 @@ class UserController {
     const schema = Yup.object().shape({
       id: Yup.number()
       .required()
-      .positive()
    });
 
     if (!(await schema.isValid(req.body))) {
@@ -87,9 +89,8 @@ class UserController {
       .json({ error: 'Falha na validação das informações.' });
     }
 
-   const { id } = req.body;
-
-   const user = await User.findByPk(id);
+  
+   const user = await User.findOne(req.body.id)
 
    if (!user) {
      return res.json({ error: 'Usuario não existe' });
