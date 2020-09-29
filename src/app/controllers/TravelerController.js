@@ -88,6 +88,25 @@ class TravelerController{
     return res.status(200).json({message:"excluído com sucesso"});
 
   }
+
+  async descript(req, res){
+    const schema = Yup.object().shape({
+      id: Yup.number().required().positive()
+    });
+    if(!(await schema.isValid(req.body))){
+      return res.status(400).json({error:"Informações incoerentes"});
+    }
+
+    const {id} = req.body;
+
+    const traveler = await Traveler.findByPk(id);
+
+    if(!traveler){
+      return res.json({error:"Usuário inexistente"});
+    }
+    
+    return res.json(traveler);
+  }
 }
 
 

@@ -20,6 +20,7 @@ routes.use(authMiddleware);
 routes.put('/users', authMiddleware, UserController.update);
 routes.put('/travelers/update', authMiddleware, TravelerController.update);
 routes.get('/travelers/list', authMiddleware,TravelerController.list);
+routes.get('/travelers/list/:id', authMiddleware,TravelerController.descript);
 routes.get('/users/list', authMiddleware, UserController.index);
 routes.delete('/users', authMiddleware, UserController.destroy);
 routes.delete('/travelers', TravelerController.destroy);
