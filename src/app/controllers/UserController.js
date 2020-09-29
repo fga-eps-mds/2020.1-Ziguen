@@ -81,7 +81,6 @@ class UserController{
     const schema = Yup.object().shape({
       id: Yup.number()
       .required()
-      .positive()
    });
 
     if (!(await schema.isValid(req.body))) {
@@ -90,9 +89,8 @@ class UserController{
       .json({ error: 'Falha na validação das informações.' });
     }
 
-   const { id } = req.body;
-
-   const user = await User.findByPk(id);
+  
+   const user = await User.findOne(req.body.id)
 
    if (!user) {
      return res.json({ error: 'Usuario não existe' });
