@@ -41,11 +41,11 @@ class TravelerController{
   async update(req,res){
     const { email, oldpassword } = req.body;
 
-    const user = await User.findByPk(req.userId);
+    const traveler = await Traveler.findByPk(req.travelerId);
 
-    if(email !== user.email){
+    if(email != traveler.email){
 
-      const userExists = await User.findOne({ 
+      const userExists = await Traveler.findOne({ 
         where: { email } 
       });
   
@@ -53,12 +53,12 @@ class TravelerController{
         return res.status(400).json({ error: 'Usuario já Cadastrado.' });
       }
     }
-    if(oldpassword && !(await user.checkPassword(oldpassword))){
 
+    if(oldpassword && !(await traveler.checkPassword(oldpassword))){
       return res.status(400).json({ error: 'Senha incorreta.' });
     }
 
-    const  {id , name } = await user.update(req.body);
+    const  {id , name } = await traveler.update(req.body);
 
 
     return res.json({
@@ -66,7 +66,6 @@ class TravelerController{
       name,
       email,
     });
-
   }
 
 }

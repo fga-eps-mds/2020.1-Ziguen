@@ -43,6 +43,7 @@ class UserController {
       email,
     });
   }
+
   async update(req,res){
     const { email, oldpassword } = req.body;
 
@@ -71,7 +72,6 @@ class UserController {
       name,
       email,
     });
-
   }
 
   async destroy(req, res) {
