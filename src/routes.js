@@ -6,6 +6,7 @@ import UserController from "./app/controllers/UserController";
 import SessionController from './app/controllers/SessionController';
 import TravelController from './app/controllers/TravelController';
 import Travel from './app/models/Travel';
+import BoatController from './app/controllers/BoatController';
 
 
 
@@ -17,6 +18,10 @@ routes.post('/travels', TravelController.store);
 routes.put('/travels', TravelController.update);
 routes.get('/travels', TravelController.index);
 routes.delete('/travels', TravelController.destroy);
+routes.post('/boats', BoatController.store);
+routes.get('/boats/list', BoatController.index);
+routes.put('/boats/update', BoatController.update);
+routes.delete('/boats/del', BoatController.destroy);
 
 
 
