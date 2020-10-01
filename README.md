@@ -3,7 +3,7 @@
 </p>
 
 ## Padrão de contribuição
-* [Configuração do ambiente de desenvolvimento](https://github.com/fga-eps-mds/2020-1-Ziguen/edit/master/README.md#configuracao-do-ambiente-de-desenvolvimento)
+* Configuração do ambiente de desenvolvimento
 
 * [Template criação de issues](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/master/docs/templates/issue_template/issue_template.md)
 
