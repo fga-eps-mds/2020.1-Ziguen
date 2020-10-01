@@ -2,12 +2,21 @@
   <img src="https://raw.githubusercontent.com/fga-eps-mds/2020-1-Ziguen/develop/docs/imagens/logo.png"/>
 </p>
 
+## Padrão de contribuição
+* [Configuração do ambiente de desenvolvimento](https://github.com/fga-eps-mds/2020-1-Ziguen/edit/master/README.md#configuracao-do-ambiente-de-desenvolvimento)
+
+* [Template criação de issues](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/master/docs/templates/issue_template/issue_template.md)
+
+* [Template criação de commit](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/master/docs/templates/commit_template/commit_policy.md)
+
+* [Template criação de pull request](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/master/docs/templates/pull_request_template/pull_request_template.md)
+
 ## Como rodar o ziguen na minha maquina? 🤔🤔
 
 ## Configuração do ambiente de desenvolvimento
 
 
- 1- [**Instalação do Dokcer e Docker-compose**](https://github.com/francisco1code/docs/blob/master/Docker-e-Docker-compose.md)
+ 1- [**Instalação do Docker e Docker-compose**](https://github.com/francisco1code/docs/blob/master/Docker-e-Docker-compose.md)
 
 Verifique sua versão
   
@@ -34,7 +43,6 @@ Verifique sua versão
 [Documentação](https://fga-eps-mds.github.io/2020-1-Ziguen/)
 
 [Front-end](https://github.com/fga-eps-mds/2020.1-Ziguen-Front)
-
 
 ## Referências
  * [**Documentação Docker**](https://docs.docker.com/get-docker/)
