@@ -2,7 +2,9 @@
   <img src="https://raw.githubusercontent.com/fga-eps-mds/2020-1-Ziguen/develop/docs/imagens/logo.png"/>
 </p>
 <h1> Ziguen </h1>
+
 ***Sobre o projeto***
+
 <p>
   A ferramenta ZIGUEN tem o propósito de facilitar a integração entre usuários do transporte fluvial e aqueles que detém a propriedade sobre esses meios de  transporte, para que, assim, o processo da compra das passagens em embarcações seja mais rápido, cômodo, seguro, inovador e intuitivo.
 </p>
@@ -13,7 +15,7 @@
   <li> Google Drive; </li>
   <li> Telegram; </li>
   <li> ZenHub; </li>
-  <li> Jit.si; </li>
+  <li> Google meet; </li>
   <li> Docker; </li>
   <li> Linux; </li>
   <li> HTML 5; </li>
@@ -21,6 +23,7 @@
   <li> Bootstrap; </li>
   <li> Java Script; </li>
   <li> GitHub. </li>
+
 </ul>
 
 
@@ -58,6 +61,9 @@ O documento está segmento em Representação de Arquitetura, Metas e Restriçõ
 * Framework: Conjuntos de funções e componentes pré definidos.
 
 ### 2 - Representação de Arquitetura
+
+![Diagrama de representação](https://raw.githubusercontent.com/fga-eps-mds/2020-1-Ziguen/develop/docs/diagramas/diagrama_representacao.png)
+
 **2.1 - Padrão Arquitetural**	
 Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando sua aplicação em três camadas. A camada de interação do usuário (view), que faz a exibição dos dados, sendo ela por meio de um html ou xml; a camada de manipulação dos dados (model), responsável pela leitura e escrita dos dados, e também suas validações e a camada de controle (controller), responsável por receber todas as requisições do usuário, controlando qual model usar e qual view será mostrado ao usuário. Essa divisão em camadas é realizada para facilitar a resolução de um problema maior.
 
@@ -76,10 +82,9 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 |Git | Git é uma ferramenta de versionamento de arquivos de código livre |
 |HTML |  Alia-se no desenvolvimento do frontend junto com CSS e JS |
 |JavaScript |  Alia-se no desenvolvimento do frontend junto com HTML e CSS |
-|JUnit |  é um framework open-source que dá suporte à criação de teste automatizados |
+|Jest |  estrutura de teste de JavaScript  |
 |Node.js | é uma plataforma para construir aplicações web escaláveis de alta performance usando JavaScript |
-|Python | é uma linguagem de programação cujo objetivo é produtividade e legibilidade |
-|Sqlite3 | SQLite é uma biblioteca em linguagem C que implementa um banco de dados SQL embutido |
+|Postgres | Sistema gerenciador de banco de dados relacional,é um projeto desenvolvido de código aberto |
 |Travis-CI | é um serviço de integração contínua distribuído e disponível na nuvem, utilizado para criar e testar projetos de software hospedados no GitHub |
 
 ### 3 - Metas e Restrições da Arquitetura
