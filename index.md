@@ -118,16 +118,16 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 |Atributos| Propriedade | Tipo | Descrição|
 |-----|-----|------|-----|
 |idAdm |Chave primária obrigatória | String | Identificação do Administrador|
-|idTripulante| Chave estrangeira obrigatória | String | Identificação do usuário|
+|idPassageiro| Chave estrangeira obrigatória | String | Identificação do usuário|
 |idProprietario |Chave estrangeira obrigatória | String | Identificação do Proprietário|
 
 
 
-  **Tripulante**
+  **Passageiro**
 
 |Atributos| Propriedade | Tipo | Descrição|
 |-----|-----|------|-----|
-|idTripulante |Chave primária obrigatória | String | Identificação do Tripulante|
+|idPassageiro |Chave primária obrigatória | String | Identificação do passageiro|
 |idUsuario| Chave estrangeira obrigatória | String | Identificação do usuário|
 
 
@@ -176,7 +176,7 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 |-----|-----|------|-----|
 |idPassagem |Chave primária obrigatória| String| Identificação da passagem|
 |idViagem| Chave estrangeira obrigatória | String | Identificação da viagem|
-|idTripulante |Chave estrangeira obrigatória | String | Identificação do tripulante|
+|idPassageiro |Chave estrangeira obrigatória | String | Identificação do Passageiro|
 |preco| Obrigatória | String | Preço da passagem|
 
 
@@ -188,7 +188,7 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 
 **Administrador** -- cadastra -- **Embarcação** O administrador responsável por cadastrar varias embarcações e as embarcaçãoes são cadastradas por um administrador. (Cardinalidade 1:n)
 
-**Tripulante** -- compra -- **Viagem** Um Tripulante compra uma única viagem, uma viagem poder ser vendida para varios Tripulantes. (Cardinalidade 1:n)
+**Passageiro** -- compra -- **Viagem** Um Passageiro compra uma única viagem, uma viagem poder ser vendida para varios Passageiros. (Cardinalidade 1:n)
  
 
 
