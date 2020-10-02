@@ -38,6 +38,11 @@ Verifique sua versão
   3- Derrubar container
       
     make down
+    
+  4- Limpar volumes do docker-compose
+  
+    make down-volumes
+
 
 ## Sobre o ziguen
 [Documentação](https://fga-eps-mds.github.io/2020-1-Ziguen/)
