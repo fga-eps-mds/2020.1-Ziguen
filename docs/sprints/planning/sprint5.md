@@ -33,7 +33,7 @@ Duração: 25/09 à 01/10
 |  [#3](https://github.com/fga-eps-mds/2020.1-Ziguen-Front/issues/3) |  Implementação da Tela Login | 3  | Gabriela, Giulia e Geise  |  Desenvolvimento |  1 |  [Frontend](https://github.com/fga-eps-mds/2020.1-Ziguen-Front/issues/3) |
 |  [#5](https://github.com/fga-eps-mds/2020.1-Ziguen-Front/issues/5) |  Implementação das telas do tripulante  | 5  | Gabriela, Giulia e Geise | Nova | 2 | [Frontend](https://github.com/fga-eps-mds/2020.1-Ziguen-Front/issues/5) |
 | [#55](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/55) | Implementar embarcação   |  5 | Edson e Francisco | Nova | 1 | [Backend](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/55) |
-| [#56](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/56) |  Implementar passagem  |  8 | Edson, Francisco e Liverson | Nova | 2 | [Backend](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/56) |
+| [#56](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/56) |  Implementar entidade viagem  |  8 | Edson, Francisco e Liverson | Nova | 2 | [Backend](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/56) |
 
 
 ## Pareamento
