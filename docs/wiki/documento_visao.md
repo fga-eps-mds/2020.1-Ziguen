@@ -10,7 +10,7 @@
 |  3.0 | 23/09/2020  |  Edson, Francisco, Gabriela, Geise, Giulia e Liverson |  Projeto interface: baixa fidelidade |
 |  3.0.1 | 23/09/2020  |  Edson, Francisco, Gabriela, Geise, Giulia e Liverson |  Projeto interface: alta fidelidade (front-end) |
 |  3.0.2 | 30/09/2020  |  Edson, Francisco, Gabriela, Geise, Giulia e Liverson |  Iniciando o back-end |
-|   |   |   |   |
+| 3.0.3  |  02/10/2020 | Edson e Geise  |  Revisão e inclusão do ator usuário proprietário |
 |   |   |   |   |
 |   |   |   |   |
 |   |   |   |   |
@@ -108,16 +108,16 @@ Atualmente, a única maneira possível de adquirir passagens é comprando no loc
 |  1 |  Sistema web (responsivo.) |O sistema deve funcionar em um servidor web e ser acessível a internet. 
 
 **2.3 Atores** 
-O sistema possui dois tipos de atores, sendo eles:     
-    Usuário Administrador:      
-    Usuário Cliente:
-Dono da embarcação;
-Tripulante; 
+O sistema possui três tipos de atores, sendo eles:     
+    Usuário Administrador;      
+    Usuário Cliente (Passageiro);
+    Usuário Proprietário (Dono da embarcação) 
 
 | Num  |  Ator  | Definição e Privilégio de Acesso e Segurança |  
 | ------------------- | ------------------- | ------------------- | 
 |  1 |  Usuário Administrador | Responsável pelo gerenciamento do sistema, realizando diferentes atividades, como: incluir novas viagens, origens, destinos e embarcações, sendo cabível a ele a efetivação das vendas de passagens fluviais. |
 |  2 |  Usuário Cliente | Interage com o sistema a partir de um navegador web. É desejável que seja fácil usar o sistema, mas, em caso de dúvida, deve haver algum tipo de suporte ao usuário cliente.|
+|  3 |  Usuário Proprietário | O usuário proprietário será cadastrado pelo administrador e sua interação com o sistema é basicamente visualizar os dados referentes a sua embarcação|
 
 ### 3. Requisitos
 
@@ -142,7 +142,9 @@ Tripulante;
 |  RF 15  |  O sistema deve permitir que o cliente usuário possa cancelar uma compra de passagem realizada.   |  Essencial   |
 |  RF 16  |  O sistema deve permitir ao usuário cliente realizar pagamento através de cartão de crédito ou débito.   |  Essencial   |
 |  RF 17  |  O sistema deve permitir ao usuário cliente a opção de imprimir uma ficha de compensação bancária para a realização do pagamento.   |  Essencial   |
+|  RF 18 |  O sistema deve permitir ao usuário administrador o cadastro do usuário proprietário.  |  Essencial  |
 |   |    |    |
+
 
 **3.2 Requisitos Não Funcionais**
 
@@ -152,10 +154,10 @@ Tripulante;
 | RF 02| O sistema deve ser desenvolvido para Web.| Interoperabilidade |
 | RF 03| O sistema deve dispor de design responsivo.| Usabilidade |
 | RF 04| O sistema deve utilizar o padrão UML 2.0 para a documentação.| Padrões |
-| RF 05| O sistema deve utilizar a linguagem de programação Python.| Portabilidade |
+| RF 05| O sistema deve utilizar a linguagem de programação Javascript.| Portabilidade |
 | RF 06| A interface do sistema deve ser de fácil manipulação.| Usabilidade | 
 | RF 07| O sistema deve dispor de tratamento de requisições de formulários em sites públicos captcha.| Segurança |
-| RF 08| Os dados dos usuários clientes serão trafegados no sistema de banco de dados utilizando criptografia de dados SHA3. | Segurança |
+| RF 08| Os dados do usuário cliente serão trafegados no sistema de banco de dados utilizando criptografia de dados SHA3. | Segurança |
 | | | |
 
 ### 4. Regras de Negócio
@@ -163,7 +165,7 @@ Tripulante;
 
 | Num | Requisito Associado | Descrição |
 | ---- | ----| ----|
-| RN 01 | Cadastro e inclusão de embarcações. | Uma embarcação só poderá ser cadastrada se informar: nome da embarcação, origem, destino, data e hora da viagem.|
+| RN 01 | Cadastro e inclusão de embarcações. | Uma embarcação só poderá ser cadastrada se informar: nome da embarcação, nome do proprietário, origem, destino, data e hora da viagem.|
 | RN 02 | Compra de passagens. | Para realizar uma compra, o usuário cliente poderá realizar de forma direta ou realizando um cadastro no site. |
 | RN 03 | Compra de passagens. | O número de compras deve ser limitado até o valor de passageiros que a embarcação suportar no atual momento da compra. |
 | RN 04 | Realizar pagamento. | O usuário cliente deverá realizar o pagamento inserindo dados de seu cartão de crédito ou débito, ou ainda através de boleto bancário. Ao inserir as informações necessárias, deverá confirmar a compra. |
