@@ -43,6 +43,7 @@ class UserController {
       email,
     });
   }
+
   async update(req,res){
     const { email, oldpassword } = req.body;
 
@@ -71,7 +72,6 @@ class UserController {
       name,
       email,
     });
-
   }
 
   async destroy(req, res) {
@@ -79,7 +79,7 @@ class UserController {
       id: Yup.number()
       .required()
       .positive()
-   });
+    });
 
     if (!(await schema.isValid(req.body))) {
       return res
