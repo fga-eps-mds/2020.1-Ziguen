@@ -14,6 +14,8 @@
 | 0.9 | 13/09/2020  | Francisco e Edson  | Ajustes no DER|
 | 1.0 | 22/09/2020  | Edson e Francisco  | Revisão do documento de arquitetura|
 | 1.1 | 23/09/2020  | Edson e Francisco  | Diagrama de representação|
+| 1.2 | 02/10/2020  | Edson e Geise  | Atualização do DER |
+
 
 ## Sumário
 1- [Introdução](#1--introdução)
