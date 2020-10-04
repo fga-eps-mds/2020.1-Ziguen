@@ -6,6 +6,7 @@
 |  | 0.2 | Revisão dos termos utilizados  | |
 |  | 0.3 | Generalização de termos  |  |
 |  | 0.4 | Adicionando novas Features e User Storys  |  |
+|  | 0.5 | Ajustes na ortografia  |  |
 
 # Versão 1
 
@@ -21,7 +22,7 @@
 | EP02 | Como um usuário cliente, eu desejo me cadastrar na plataforma Ziguen | TM01 |
 | EP03 | Como um usuário cliente, eu desejo fazer alterações em meu perfil de cadastro | TM01 |
 | EP04 | Como um usuário cliente, eu desejo efetuar compras na plataforma | TM01 |
-| EP05 | Como um usuário cliente, eu desejo ter ajuda no uso do sistema | TM01 |
+| EP05 | Como um usuário cliente, eu desejo contar com um soporte técnico do sistema | TM01 |
 | EP06 | Como um usuário cliente, eu desejo realizar um pagamento através de cartão de crédito, débito ou boleto | TM01 |
 | EP07 | Como um usuário cliente, eu desejo visualizar as viagens programadas | TM01 |
 | EP08 | Como um usuário cliente, eu desejo receber um comprovante da compra realizada | TM01 |
@@ -45,7 +46,7 @@
 |:-------:|:-------------:|:--------------:|:-----------------:|:-----------:|:----------:|:---------:|:-------------------------------:|
 |    US01    |   Funcional   | Usuário cliente       | realizar um cadastro na plataforma Ziguen | eu consiga realizar a compra de passagens| Alta | To Do | FT01 |
 |    US02    |   Funcional   | Usuário cliente       | logar e navegar na plataforma | eu consiga fazer aletrações e exclusões do meu cadastro | Alta | To Do | FT03 |
-|    US03    |   Funcional   | Usuário cliente       | ao concluir a compra receber um retono | eu consiga gerar um PDF com a confirmação da compra | Alta | To Do | FT03 |
+|    US03    |   Funcional   | Usuário cliente       | ao concluir a compra recebe um comprovante | eu consiga gerar um PDF com a confirmação da compra | Alta | To Do | FT03 |
 |    US04    |   Funcional   | Usuário administrador       |  cadastrar uma embarcação |   seja possível obter todos os dados para efetivação do cadastro   | Alta | To Do | FT02 |
 |    US05   |   Funcional   | Usuário administrador      | ter permissão para acesso aos dados da embarcação | seja possível alterar e excluir o cadastro | Alta | To Do | FT01 |
 
