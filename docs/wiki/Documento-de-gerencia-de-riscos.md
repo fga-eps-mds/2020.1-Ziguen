@@ -2,10 +2,12 @@
 
 |    Data    | Versão |                             Alteração                             |                    Autor                    |
 |:----------:|:------:|:-----------------------------------------------------------------:|:-------------------------------------------:|
-| 09/09/2020 |   0.1  | Criação do documento | @Geise Saunier |
-| 09/09/2020 |   0.2  | Adicionando referência de quantificação | @Geise Saunier |
-| 09/09/2020 | 1.0 | Adicionando tratamento de riscos | @Geise Saunier |
-| 15/09/2020 | 2.0 | Adicionando controle de riscos | @Geise Saunier |
+| 09/09/2020 |   0.1  | Criação do documento | @GeiseSaunier |
+| 09/09/2020 |   0.2  | Adicionando referência de quantificação | @GeiseSaunier |
+| 09/09/2020 | 1.0 | Adicionando tratamento de riscos | @GeiseSaunier |
+| 15/09/2020 | 2.0 | Adicionando controle de riscos | @GeiseSaunier |
+| 03/10/2020 | 2.1 | R14 levantamento de riscos positivos | @edsondearaujo e @GeiseSaunier |
+
 
 
 ## 1- Levantamento de Riscos Negativos
@@ -30,6 +32,9 @@
 | R11 | Alta produtividade da equipe | Alta produtividade da equipe reduz a probabilidade de se ocorrerem atrasos | - | - |
 | R12 | Estabilidade técnica dos pipelines de produção | Com os pipelines estáveis, tem-se mais tempo para ser dedicado às outras atividades pertinentes ao projeto | - | - |
 | R13 | Arquitetura estar bem definida | Com uma arquitetura bem definida, menos mudanças impactantes ocorrem e, portanto, ocorre menos retrabalho | - | - |
+| R14 | Feedback de mentores | A equipe vem buscando apoio de monitores e com isso avançando no desenvolvimento do projeto | - | - |
+
+
 
 ## 3- Probabilidade x Impacto
 

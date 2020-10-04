@@ -14,6 +14,9 @@
 | 0.9 | 13/09/2020  | Francisco e Edson  | Ajustes no DER|
 | 1.0 | 22/09/2020  | Edson e Francisco  | Revisão do documento de arquitetura|
 | 1.1 | 23/09/2020  | Edson e Francisco  | Diagrama de representação|
+| 1.2 | 02/10/2020  | Edson e Geise  | Atualização do DER |
+| 1.3 | 03/10/2020  | Edson e Geise  | Inclusão de tecnologias e alteração de tripulante para passageiro |
+
 
 ## Sumário
 1- [Introdução](#1--introdução)
@@ -85,6 +88,7 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 |tecnologias | descrição |
 | ------------------- | ------------------- |
 |Bootstrap |  Framework para desenvolvimento em HTML, CSS e JS. |
+| React |  Biblioteca em javascript com foco em criar inteface de usuário em páginas web. |
 |Cascading Style Sheets (CSS) |  Alia-se no desenvolvimento do frontend junto com HTML e JS. |
 |Docker |  Utilizado para configurar o ambiente de desenvolvimento. |
 |Docker-compose |  Usado para orquestrar os containers do docker |
@@ -92,11 +96,12 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 |Git | Git é uma ferramenta de versionamento de arquivos de código livre |
 |HTML |  Alia-se no desenvolvimento do frontend junto com CSS e JS |
 |JavaScript |  Alia-se no desenvolvimento do frontend junto com HTML e CSS |
-|JUnit |  é um framework open-source que dá suporte à criação de teste automatizados |
+| Jest |  Estrutura de teste de JavaScript |
 |Node.js | é uma plataforma para construir aplicações web escaláveis de alta performance usando JavaScript |
 |Postgres | PostgreSQL é um sistema gerenciador de banco de dados objeto relacional (SGBD), desenvolvido como projeto de código aberto |
 |Travis-CI | é um serviço de integração contínua distribuído e disponível na nuvem, utilizado para criar e testar projetos de software hospedados no GitHub |
 | Sequelize| ORM baseado em promises para Node.js, que suporta vários dialetos, entre eles PostgreSQL |
+| Nginx| É um servidor leve de HTTP, proxy reverso.  |
 
 
 ## 3 - Metas e Restrições da Arquitetura
@@ -133,11 +138,11 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 |idPassagem |Chave estrangeira obrigatória | String | Identificação do Proprietário|
 
 
-**TRIPULANTE**
+**PASSAGEIRO**
 
 |Atributos| Propriedade | Tipo | Descrição|
 |-----|-----|------|-----|
-|idTripulante |Chave primária obrigatória | String | Identificação do Tripulante|
+|idPassageiro |Chave primária obrigatória | String | Identificação do Passageiro|
 |idUsuario| Chave estrangeira obrigatória | String | Identificação do usuário|
 
 **PROPIETARIO**
@@ -153,6 +158,8 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 |idEmbarcacao| Chave primária obrigatória| String | Idetificação da embarcação|
 |idProprietario |Chave estrangeira obrigatória | String | Identificação do proprietário|
 |nome | Obrigatório | String | Nome da embarcação|
+|capacidade | Obrigatório | Integer | Capacidade da embarcação|
+
 
 
 **VIAGEM**
@@ -171,7 +178,7 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 |-----|-----|------|-----|
 |idPassagem |Chave primária obrigatória| String| Identificação da passagem|
 |idViagem| Chave estrangeira obrigatória | String | Identificação da viagem|
-|idTripulante |Chave estrangeira obrigatória | String | Identificação do tripulante|
+|idPassageiro |Chave estrangeira obrigatória | String | Identificação do passageiro|
 |preco| Obrigatória | String | Preço da passagem|
 
 
@@ -185,7 +192,7 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 
 **ADMINISTRADOR** -- cadastra -- **PROPIETARIO** O administrador responsável por cadastrar varios proprietários de embarcaçãoes são cadastradas por um administrador. (Cardinalidade 1:n)
 
-**TRIPULANTE** -- compra -- **VIAGEM** Um Tripulante compra uma única viagem, uma viagem poder ser vendida para varios Tripulantes. (Cardinalidade 1:n)
+**Passageiro** -- compra -- **VIAGEM** Um passageiro compra uma única viagem, uma viagem poder ser vendida para varios Passageiro. (Cardinalidade 1:n)
  
 
 
