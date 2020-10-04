@@ -6,6 +6,10 @@ import SessionController from './app/controllers/SessionController';
 import TravelerController from './app/controllers/TravelerController';
 import TravelController from './app/controllers/TravelController';
 
+
+import BoatController from './app/controllers/BoatController';
+
+
 const routes = new Router();
 
 routes.post('/travelers', TravelerController.store);
@@ -16,6 +20,10 @@ routes.post('/travels', TravelController.store);
 routes.put('/travels', TravelController.update);
 routes.get('/travels', TravelController.index);
 routes.delete('/travels', TravelController.destroy);
+routes.post('/boats', BoatController.store);
+routes.get('/boats/list', BoatController.index);
+routes.put('/boats/update', BoatController.update);
+routes.delete('/boats/del', BoatController.destroy);
 
 
 
