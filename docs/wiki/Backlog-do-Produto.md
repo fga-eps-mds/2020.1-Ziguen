@@ -6,7 +6,7 @@
 |  | 0.2 | Revisão dos termos utilizados  | |
 |  | 0.3 | Generalização de termos  |  |
 |  | 0.4 | Adicionando novas Features e User Storys  |  |
-|  | 0.5 | Ajustes na ortografia  |  |
+| 03/10/20 | 0.5 | Ajustes na ortografia  | Edson e Geise |
 
 # Versão 1
 
