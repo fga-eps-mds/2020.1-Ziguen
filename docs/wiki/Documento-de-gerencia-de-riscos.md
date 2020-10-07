@@ -7,34 +7,34 @@
 | 09/09/2020 | 1.0 | Adicionando tratamento de riscos | @GeiseSaunier |
 | 15/09/2020 | 2.0 | Adicionando controle de riscos | @GeiseSaunier |
 | 03/10/2020 | 2.1 | R14 levantamento de riscos positivos | @edsondearaujo e @GeiseSaunier |
-
-
+| 07/10/2020 | 2.2 | Revisando gerência de riscos| @GeiseSaunier e @liversonp |
 
 ## 1- Levantamento de Riscos Negativos
 
 | Label | Título | Descrição | Probabilidade | Nível do Impacto |
 | ----- | ------ | --------- | ------------- | ---------------- |
-| R01 | Escopo do projeto | O escopo do projeto é grande e pode ser que não seja possível finalizar | - | - |
-| R02 | Tecnologia desconhecida | Falta de conhecimento da tecnologia pode dificultar o desenvolvimento do projeto | - | - |
-| R03 | Atraso nas entregas | Entregas não condizentes com o planejamento realizado | - | - |
-| R04 |  Baixa produtividade da equipe | Entregas não condizentes com o planejamento realizado | - | - |
-| R05 |  Falta de documentação | Falta de documentação atualizada com a implementação pode dificultar o acompanhamento do projeto | - | - |
-| R06 |   Complexidade da arquitetura | Arquiteturas complexas podem, por conta da curva de aprendizado, reduzir a produtividade do time | - | - |
-| R07 |   Falta de disponibilidade dos membros | Membros não presentes nos rituais da metodologia acabam ficando desatualizados em relação ao andamento do projeto | - | - |
-| R08 |   Pandemia | Membros podem produzir menos devido a situação atual | - | - |
+| R01 | Escopo do projeto | O escopo do projeto é grande e pode ser que não seja possível finalizar | Alta | 20 |
+| R02 | Tecnologia desconhecida | Falta de conhecimento da tecnologia pode dificultar o desenvolvimento do projeto | Alta | 20 |
+| R03 | Atraso nas entregas | Entregas não condizentes com o planejamento realizado | Moderada | 12 |
+| R04 |  Baixa produtividade da equipe | Entregas não condizentes com o planejamento realizado | Moderada | 15 |
+| R05 |  Falta de documentação | Falta de documentação atualizada com a implementação pode dificultar o acompanhamento do projeto | Muito alta | 25 |
+| R06 |   Complexidade da arquitetura | Arquiteturas complexas podem, por conta da curva de aprendizado, reduzir a produtividade do time | Alta | 20 |
+| R07 |   Falta de disponibilidade dos membros | Membros não presentes nos rituais da metodologia acabam ficando desatualizados em relação ao andamento do projeto | Muito alta | 20 |
+| R08 |   Pandemia | Membros podem produzir menos devido a situação atual | Muito alta | 25 |
+| R09 |   Comunicação entre o front-end e o back-end | Membros com pouco conhecimento em relação as tecnologias pode dificultar tal comunicação | Muito alta | 25 |
+| R10 |   Mudança nas tecnologias | Tecnologias escolhidas em primeiro momento, por conta da inexperiência, podem não ser suficientes para desenvolver todo o projeto em si | Alta | 20 |
+| R11 |   Problemas com equipamento de trabalho | Membros da equipe podem ser menos produtivos nas entregas devido ao baixo desempenho da máquina  | Moderada | 9 |
 
 ## 2- Levantamento de Riscos Positivos
 
 | Label | Título | Descrição | Probabilidade | Nível do Impacto |
 | ----- | ------ | --------- | ------------- | ---------------- |
-| R09 | Boa integração do time | Times bem integrados possuem um melhor ambiente de trabalho, propiciando o aumento da produtividade e o engajamento dos membros | - | - |
-| R10 | Engajamento dos membros em relação ao projeto | Membros mais engajados estimulam a criatividade e a resiliência durante o processo de desenvolvimento | - | - |
-| R11 | Alta produtividade da equipe | Alta produtividade da equipe reduz a probabilidade de se ocorrerem atrasos | - | - |
-| R12 | Estabilidade técnica dos pipelines de produção | Com os pipelines estáveis, tem-se mais tempo para ser dedicado às outras atividades pertinentes ao projeto | - | - |
-| R13 | Arquitetura estar bem definida | Com uma arquitetura bem definida, menos mudanças impactantes ocorrem e, portanto, ocorre menos retrabalho | - | - |
-| R14 | Feedback de mentores | A equipe vem buscando apoio de monitores e com isso avançando no desenvolvimento do projeto | - | - |
-
-
+| R12 | Boa integração do time | Times bem integrados possuem um melhor ambiente de trabalho, propiciando o aumento da produtividade e o engajamento dos membros | Muito alta | 25 |
+| R13 | Engajamento dos membros em relação ao projeto | Membros mais engajados estimulam a criatividade e a resiliência durante o processo de desenvolvimento | Muito alta | 25 |
+| R14 | Alta produtividade da equipe | Alta produtividade da equipe reduz a probabilidade de se ocorrerem atrasos | Moderada | 15 |
+| R15 | Estabilidade técnica dos pipelines de produção | Com os pipelines estáveis, tem-se mais tempo para ser dedicado às outras atividades pertinentes ao projeto | Alta | 20 |
+| R16 | Arquitetura estar bem definida | Com uma arquitetura bem definida, menos mudanças impactantes ocorrem e, portanto, ocorre menos retrabalho | Muito alta | 25 |
+| R17 | Feedback de mentores | A equipe vem buscando apoio de monitores e com isso avançando no desenvolvimento do projeto | Moderada | 12 |
 
 ## 3- Probabilidade x Impacto
 
@@ -110,3 +110,6 @@ Essa estratégia consiste em reconhecer que essa oportunidade existe porém não
 | R06 | Complexidade da arquitetura | arquitetura mal definida pode acarretar problemas ao desenvolvimento.| incentivar estudos de arquitetura, de forma que a equipe esteja sempre alinhada quanto as decisões.|
 | R07 | Falta de disponibilidade dos membros | membros não presentes na reunião podem ficar desatualizados quanto ao sistema | criar ata de reunião para atualizar os membros ausentes de todas as decisões. (Ressalta-se a importância de reforçar ao membros da equipe que a presença nas reuniões é primordial.) |
 | R08 | Pandemia | Membros podem produzir menos devido a situação atual | Incentivar os membros a desenvolver no seu tempo, priorizando sua saúde mental.|
+| R09 |   Comunicação entre o front-end e o back-end | Membros com pouca carga de conhecimento referente a essas duas frentes pode dificultar o desenvolvimento do projeto | Pesquisar, compartilhar e reunir o grupo para estudar possíveis soluções para resolver o problema.| 
+| R10 |   Mudança nas tecnologias | As tecnologias escolhidas podem não ser a melhor solução e dessa forma provocar uma mudança repentina no desenvolvimento projeto | Estudar, junto a equipe, soluções viáveis e pesquisar projetos de equipes anteriores ajuda a encontrar novos caminhos. |
+| R11 |   Problemas com equipamento de trabalho | Possíveis falhas na máquina dos membros da equipe. | Buscar identificar qual membro está com esse problema e oferecer um suporte adequado, seja emprestando outra ferramenta ou fazendo trabalho pareado, para que ambos participem. |
