@@ -7,34 +7,35 @@
 | 09/09/2020 | 1.0 | Adicionando tratamento de riscos | @GeiseSaunier |
 | 15/09/2020 | 2.0 | Adicionando controle de riscos | @GeiseSaunier |
 | 03/10/2020 | 2.1 | R14 levantamento de riscos positivos | @edsondearaujo e @GeiseSaunier |
-| 07/10/2020 | 2.2 | Revisando gerência de riscos| @GeiseSaunier e @liversonp |
+| 07/10/2020 | 2.2 | Revisando gerência de riscos | @GeiseSaunier e @liversonp |
+| 07/10/2020 | 2.3 | Editidando erros na gerência de riscos | @gabrielapivetta e @liversonp |
 
 ## 1- Levantamento de Riscos Negativos
 
 | Label | Título | Descrição | Probabilidade | Nível do Impacto |
 | ----- | ------ | --------- | ------------- | ---------------- |
-| R01 | Escopo do projeto | O escopo do projeto é grande e pode ser que não seja possível finalizar | Alta | 20 |
-| R02 | Tecnologia desconhecida | Falta de conhecimento da tecnologia pode dificultar o desenvolvimento do projeto | Alta | 20 |
-| R03 | Atraso nas entregas | Entregas não condizentes com o planejamento realizado | Moderada | 12 |
-| R04 |  Baixa produtividade da equipe | Entregas não condizentes com o planejamento realizado | Moderada | 15 |
-| R05 |  Falta de documentação | Falta de documentação atualizada com a implementação pode dificultar o acompanhamento do projeto | Muito alta | 25 |
-| R06 |   Complexidade da arquitetura | Arquiteturas complexas podem, por conta da curva de aprendizado, reduzir a produtividade do time | Alta | 20 |
-| R07 |   Falta de disponibilidade dos membros | Membros não presentes nos rituais da metodologia acabam ficando desatualizados em relação ao andamento do projeto | Muito alta | 20 |
-| R08 |   Pandemia | Membros podem produzir menos devido a situação atual | Muito alta | 25 |
-| R09 |   Comunicação entre o front-end e o back-end | Membros com pouco conhecimento em relação as tecnologias pode dificultar tal comunicação | Muito alta | 25 |
-| R10 |   Mudança nas tecnologias | Tecnologias escolhidas em primeiro momento, por conta da inexperiência, podem não ser suficientes para desenvolver todo o projeto em si | Alta | 20 |
-| R11 |   Problemas com equipamento de trabalho | Membros da equipe podem ser menos produtivos nas entregas devido ao baixo desempenho da máquina  | Moderada | 9 |
+| R01 | Escopo do projeto | O escopo do projeto é grande e pode ser que não seja possível finalizar | Alta | 5 |
+| R02 | Tecnologia desconhecida | Falta de conhecimento da tecnologia pode dificultar o desenvolvimento do projeto | Alta | 5 |
+| R03 | Atraso nas entregas | Entregas não condizentes com o planejamento realizado | Moderada | 4 |
+| R04 |  Baixa produtividade da equipe | Entregas não condizentes com o planejamento realizado | Moderada | 5 |
+| R05 |  Falta de documentação | Falta de documentação atualizada com a implementação pode dificultar o acompanhamento do projeto | Muito alta | 5 |
+| R06 |   Complexidade da arquitetura | Arquiteturas complexas podem, por conta da curva de aprendizado, reduzir a produtividade do time | Alta | 5 |
+| R07 |   Falta de disponibilidade dos membros | Membros não presentes nos rituais da metodologia acabam ficando desatualizados em relação ao andamento do projeto | Muito alta | 4 |
+| R08 |   Pandemia | Membros podem produzir menos devido a situação atual | Muito alta | 5 |
+| R09 |   Comunicação entre o front-end e o back-end | Membros com pouco conhecimento em relação as tecnologias pode dificultar tal comunicação | Muito alta | 5 |
+| R10 |   Mudança nas tecnologias | Tecnologias escolhidas em primeiro momento, por conta da inexperiência, podem não ser suficientes para desenvolver todo o projeto em si | Alta | 5 |
+| R11 |   Problemas com equipamento de trabalho | Membros da equipe podem ser menos produtivos nas entregas devido ao baixo desempenho da máquina  | Moderada | 3 |
 
 ## 2- Levantamento de Riscos Positivos
 
 | Label | Título | Descrição | Probabilidade | Nível do Impacto |
 | ----- | ------ | --------- | ------------- | ---------------- |
-| R12 | Boa integração do time | Times bem integrados possuem um melhor ambiente de trabalho, propiciando o aumento da produtividade e o engajamento dos membros | Muito alta | 25 |
-| R13 | Engajamento dos membros em relação ao projeto | Membros mais engajados estimulam a criatividade e a resiliência durante o processo de desenvolvimento | Muito alta | 25 |
-| R14 | Alta produtividade da equipe | Alta produtividade da equipe reduz a probabilidade de se ocorrerem atrasos | Moderada | 15 |
-| R15 | Estabilidade técnica dos pipelines de produção | Com os pipelines estáveis, tem-se mais tempo para ser dedicado às outras atividades pertinentes ao projeto | Alta | 20 |
-| R16 | Arquitetura estar bem definida | Com uma arquitetura bem definida, menos mudanças impactantes ocorrem e, portanto, ocorre menos retrabalho | Muito alta | 25 |
-| R17 | Feedback de mentores | A equipe vem buscando apoio de monitores e com isso avançando no desenvolvimento do projeto | Moderada | 12 |
+| R12 | Boa integração do time | Times bem integrados possuem um melhor ambiente de trabalho, propiciando o aumento da produtividade e o engajamento dos membros | Muito alta | 5 |
+| R13 | Engajamento dos membros em relação ao projeto | Membros mais engajados estimulam a criatividade e a resiliência durante o processo de desenvolvimento | Muito alta | 5 |
+| R14 | Alta produtividade da equipe | Alta produtividade da equipe reduz a probabilidade de se ocorrerem atrasos | Moderada | 5 |
+| R15 | Estabilidade técnica dos pipelines de produção | Com os pipelines estáveis, tem-se mais tempo para ser dedicado às outras atividades pertinentes ao projeto | Alta | 5 |
+| R16 | Arquitetura estar bem definida | Com uma arquitetura bem definida, menos mudanças impactantes ocorrem e, portanto, ocorre menos retrabalho | Muito alta | 5 |
+| R17 | Feedback de mentores | A equipe vem buscando apoio de monitores e com isso avançando no desenvolvimento do projeto | Moderada | 4 |
 
 ## 3- Probabilidade x Impacto
 
