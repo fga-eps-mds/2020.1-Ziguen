@@ -109,9 +109,9 @@ Atualmente, a única maneira possível de adquirir passagens é comprando no loc
 
 **2.3 Atores** 
 O sistema possui três tipos de atores, sendo eles:     
-    Usuário Administrador;      
-    Usuário Cliente (Passageiro);
-    Usuário Proprietário (Dono da embarcação) 
+   - Usuário Administrador;      
+   - Usuário Cliente (Passageiro);
+   - Usuário Proprietário (Dono da embarcação) 
 
 | Num  |  Ator  | Definição e Privilégio de Acesso e Segurança |  
 | ------------------- | ------------------- | ------------------- | 
