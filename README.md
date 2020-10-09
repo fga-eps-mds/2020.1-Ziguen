@@ -8,11 +8,11 @@
 ## Padrão de contribuição
 * Configuração do ambiente de desenvolvimento
 
-* [Template criação de issues](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/master/docs/templates/issue_template/issue_template.md)
+* [Template criação de issues](https://github.com/fga-eps-mds/2020-1-Ziguen/tree/master/.github/issue_template)
 
-* [Template criação de commit](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/master/docs/templates/commit_template/commit_policy.md)
+* [Template criação de commit](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/master/.github/commit_template/commit_policy.md)
 
-* [Template criação de pull request](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/master/docs/templates/pull_request_template/pull_request_template.md)
+* [Template criação de pull request](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/master/.github/pull_request_template/pull_request_template.md)
 
 ## Como rodar o ziguen na minha maquina? 🤔🤔
 
