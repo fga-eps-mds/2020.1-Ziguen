@@ -1,20 +1,18 @@
----
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
-
----
-
-| nome | assunto| titulo| label | assignees |
-|------|------|------|------|-----|
-|  |  |  | | @usuario  | 
+| nome | atividade | label | assignees |
+|------|------|------|-----|
+| nome da issue | atividade a ser realizada | label  | @nome_dos_assignees   | 
 
 ## Descrição
-Texto breve sobre do que se trata a issue
+Descreva a atividade da issue.
    
 ## Tarefa 
+   - [ ] Tarefa 1.
+   - [ ] Tarefa 2.
+   - [ ] Tarefa :.
+   - [ ] Tarefa n.
 
-   - [ ] tarefa 1
-   - [ ] tarefa 2
+## Critério de aceitação
+- [ ] Critério 1.
+- [ ] Critério 2.
+- [ ] Critério :.
+- [ ] Critério n.
