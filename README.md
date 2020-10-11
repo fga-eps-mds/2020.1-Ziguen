@@ -4,6 +4,7 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/fga-eps-mds/2020-1-Ziguen.svg)](http://isitmaintained.com/project/fga-eps-mds/2020-1-Ziguen "Percentage of issues still open")
+[![Build Status](https://travis-ci.com/fga-eps-mds/2020-1-Ziguen.svg?branch=master)](https://travis-ci.com/fga-eps-mds/2020-1-Ziguen)
 
 ## Padrão de contribuição
 * Configuração do ambiente de desenvolvimento
