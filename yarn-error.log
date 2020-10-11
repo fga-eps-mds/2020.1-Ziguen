@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/node /usr/share/yarn/bin/yarn.js add cors
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add dotenv
 
 PATH: 
   /home/francisco/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/home/francisco/work/bin
@@ -14,7 +14,8 @@ Platform:
   linux x64
 
 Trace: 
-  Error: EACCES: permission denied, unlink '/home/francisco/zzz/ziguen/2020-1-Ziguen/node_modules/.yarn-integrity'
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com registry.yarnpkg.com:443
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
 
 npm manifest: 
   {
@@ -22,7 +23,7 @@ npm manifest:
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-      "start": "nodemon ./src/server.js",
+      "start": "nodemon ./src/server.js --ignore __tests__",
       "test": "jest"
     },
     "repository": "https://github.com/fga-eps-mds/2020-1--Grupo-1.git",
