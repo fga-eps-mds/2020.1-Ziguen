@@ -1,5 +1,11 @@
+require("dotenv").config({
+  path: process.env.NODE_ENV == 'test' ? '.env.test' : 'database.env'
+})
+
+
 module.exports = {
-    dialect: 'postgres',
+    dialect: 'postgres'|| 'postgres',
+    storage: './__tests__/database.sqlite',
     host: 'db',
     username: 'postgres',
     password: 'postgres',
@@ -10,3 +16,4 @@ module.exports = {
       underscoredAll: true
     }
   };
+  
