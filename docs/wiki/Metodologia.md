@@ -6,6 +6,7 @@ Data|Versão|Descrição|Autor
 09/09/2020|1.0.2|Adição das nossas modificações em cima do SCRUM | @GeiseSaunier
 11/09/2020 |1.0.3|Adição do diagrama metodológico do time | @Francisco1code |
 15/09/2020 |1.0.4|Atualização dos novos dias da Daily | @GeiseSaunier |
+07/10/2020 |1.0.5|Atualização dados da Daily, hora da reunião | @edsondearaujo |
 
 
 
@@ -61,28 +62,29 @@ Os artefatos do Scrum são:
 
 ## Nossas Modificações
 
-Durante a primeira semana de projeto fizemos uma reuniao geral acerca da estrutura do projeto. Em seguida, elaboramos uma planilha para que cada integrante da equipe pudesse preencher com seus horários disponíveis, objetivando assim escolher o melhor horário para as reuniões semanais. Após a escolha do horário, definimos o planejamento de acordo com a divisão abaixo:
+Durante a primeira semana de projeto fizemos uma reunião geral acerca da estrutura do projeto. Em seguida, elaboramos uma planilha para que cada integrante da equipe pudesse preencher com seus horários disponíveis, objetivando assim escolher o melhor horário para as reuniões semanais. Após a escolha do horário, definimos o planejamento de acordo com a divisão abaixo:
 
 ##### - Sprint (7 dias)
 
-Percebemos que um bom período da sprint seria de 7 dias e que um tempo maior que isso acabaria trazendo falta de comunicação e erros no andamento do projeto. A nossa sprint tem início na sexta, após a aula de MDS e finaliza na quinta, às 11h:00min.
+Percebemos que um bom período da sprint seria de 7 dias e que um tempo maior que isso acabaria trazendo falta de comunicação e erros no andamento do projeto. A nossa sprint tem início na quinta-feira, às 14h e finaliza na quinta-feira da próxima semana às 11h:59min.
 
-#### - Daily (De segunda a quinta)
+#### - Daily (De segunda-feira a quarta-feira)
 
-Optamos pela Daily em quatro dias semanais apenas, pois achamos coerente quanto a comunicação. Todos os integrantes devem responder as seguintes perguntas:
+Optamos pela Daily em três dias semanais apenas, pois achamos coerente quanto a comunicação e devido a disponibilidade do grupo. Todos os integrantes devem responder as seguintes perguntas:
 - O que você fez desde a última sprint?
 - O que pretende fazer até a próxima?
 - Há algum obstáculo que esteja impedindo você ou a equipe de alcançar a meta do sprint?
 
 Ressalta-se que a equipe realiza comunicação diária acerca do projeto, tanto no telegram quanto nas issues criadas para cada assunto.
 
-#### - Planejamento na sexta: das 20h às 22h (horário sempre oscilante)
+#### - Planejamento na quinta-feira: de 12h às 13h:30min (horário sempre oscilante)
 
-Vimos que seria necessário fazer reuniões para definir o planejamento da semana e essa reunião acontece toda sexta, conforme o horário descrito acima. 
+- Review
+- Planning 
 
 #### - ZenHub
 
-Utilizaremos o ZenHub para melhor organização e acompanhamento das atividades desenvolvidas.
+Utilizaremos o ZenHub para melhor organização e acompanhamento das atividades desenvolvidas. Essa ferramenta nos permite criar um Roadmap interativo e ter uma visão ilustrativa do andamento do projeto.
 
 #### - Velocity
 
@@ -106,4 +108,4 @@ Para analisar o nível do código sendo produzido vamos utilizar ferramentas de 
 
 ## Diagrama metodológico
 
-![Imagen](https://raw.githubusercontent.com/fga-eps-mds/2020-1-Ziguen/develop/docs/diagramas/diagrama_metodologia.png)
+![Imagen](https://raw.githubusercontent.com/fga-eps-mds/2020-1-Ziguen/develop/docs/diagramas/diagrama_metodologias.png)

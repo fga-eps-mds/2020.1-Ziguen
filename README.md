@@ -4,15 +4,16 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/fga-eps-mds/2020-1-Ziguen.svg)](http://isitmaintained.com/project/fga-eps-mds/2020-1-Ziguen "Percentage of issues still open")
+[![Build Status](https://travis-ci.com/fga-eps-mds/2020-1-Ziguen.svg?branch=master)](https://travis-ci.com/fga-eps-mds/2020-1-Ziguen)
 
 ## Padrão de contribuição
 * Configuração do ambiente de desenvolvimento
 
-* [Template criação de issues](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/master/docs/templates/issue_template/issue_template.md)
+* [Template criação de issues](https://github.com/fga-eps-mds/2020-1-Ziguen/tree/master/.github/issue_template)
 
-* [Template criação de commit](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/master/docs/templates/commit_template/commit_policy.md)
+* [Template criação de commit](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/master/.github/commit_template/commit_policy.md)
 
-* [Template criação de pull request](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/master/docs/templates/pull_request_template/pull_request_template.md)
+* [Template criação de pull request](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/master/.github/pull_request_template/pull_request_template.md)
 
 ## Como rodar o ziguen na minha maquina? 🤔🤔
 
@@ -28,6 +29,10 @@ Verifique sua versão
 2- Faça o clone do projeto
 
        git clone https://github.com/fga-eps-mds/2020-1-Ziguen.git
+       
+3- Crie uma conexao local do docker na sua máquina para que o docker do front e backend possam se comunicar.
+
+        docker network create network-api
 
 ## Comandos
 

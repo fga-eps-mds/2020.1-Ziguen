@@ -104,7 +104,6 @@ Front-end: View
 |Postgres | PostgreSQL é um sistema gerenciador de banco de dados objeto relacional (SGBD), desenvolvido como projeto de código aberto |
 |Travis-CI | é um serviço de integração contínua distribuído e disponível na nuvem, utilizado para criar e testar projetos de software hospedados no GitHub |
 | Sequelize| ORM baseado em promises para Node.js, que suporta vários dialetos, entre eles PostgreSQL |
-| Nginx| É um servidor leve de HTTP, proxy reverso.  |
 
 
 ## 3 - Metas e Restrições da Arquitetura
@@ -133,7 +132,7 @@ Front-end: View
 |telefone |Obrigatório |String | Login do usuário|
 |senha| Obrigatório |String | Senha do usuário |
 
-**ADIMINISTRADOR**
+**ADMINISTRADOR**
 |Atributos| Propriedade | Tipo | Descrição|
 |-----|-----|------|-----|
 |idAdm |Chave primária obrigatória | String | Identificação do Administrador|
@@ -191,9 +190,9 @@ Front-end: View
 
 **EMBARCACAO** -- realiza -- **VIAGEM** Uma embarcação pode realizar uma ou mais viagens e uam viagem pode ser realizadas por varias embarcações. (Cardinalidade n:m)
 
-**ADIMINISTRADOR** -- cadastra -- **EMBARCACAO** O administrador responsável por cadastrar varias embarcações e as embarcaçãoes são cadastradas por um administrador. (Cardinalidade 1:n)
+**ADMINISTRADOR** -- cadastra -- **EMBARCACAO** O administrador responsável por cadastrar varias embarcações e as embarcaçãoes são cadastradas por um administrador. (Cardinalidade 1:n)
 
-**ADMINISTRADOR** -- cadastra -- **PROPIETARIO** O administrador responsável por cadastrar varios proprietários de embarcaçãoes são cadastradas por um administrador. (Cardinalidade 1:n)
+**ADMINISTRADOR** -- cadastra -- **PROPRIETARIO** O administrador responsável por cadastrar varios proprietários de embarcaçãoes são cadastradas por um administrador. (Cardinalidade 1:n)
 
 **Passageiro** -- compra -- **VIAGEM** Um passageiro compra uma única viagem, uma viagem poder ser vendida para varios Passageiro. (Cardinalidade 1:n)
  

@@ -5,6 +5,7 @@
 | 09/09/2020 |   0.1  | Criação do Roadmap |                Edson Soares                 |                |
 | 09/09/2020 |   0.2  | Preenchendo dados das Sprint0 + Sprint1 + Sprint2 |                Edson Soares                 |                |
 | 11/09/2020 |   0.3  | Preenchendo dados da sprint3 |   @GeiseSaunier                 |                |
+| 07/10/2020 |   0.4  | Preenchendo dados da sprint 4, sprint 5 e sprint 6 |   @liversonp                 |                |
 
 ## Release 1
 
@@ -34,3 +35,30 @@
 * [Protótipo de alta fidelidade](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/33)
 * [Cadastro do usuário tripulante](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/34)
 * [Cadastro do administrador](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/35)
+
+### Sprint 4
+* [Protótipo de alta fidelidade](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/33)
+* [Cadastrar usuário cliente](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/34)
+* [Cadastrar usuário administrador](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/35)
+* [Protótipo de baixa fidelidade](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/40)
+* [Implementação da tela de cadastro e login](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/43)
+* [Bug no Backend](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/44)
+
+### Sprint 5
+* [Protótipo de alta fidelidade](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/33)
+* [Cadastro do usuário cliente tripulante](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/34)
+* [Implementação da tela de cadastro](https://github.com/fga-eps-mds/2020.1-Ziguen-Front/issues/2)
+* [Implementação da tela de login](https://github.com/fga-eps-mds/2020.1-Ziguen-Front/issues/3)
+* [Implementação das telas de passageiro](https://github.com/fga-eps-mds/2020.1-Ziguen-Front/issues/6)
+* [Implementar embarcação](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/55)
+* [Implementar entidade viagem](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/56)
+
+### Sprint 6
+* [Checklist:community](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/61)
+* [Revisão da documentação para a R1](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/62)
+* [Integração backend com frontend](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/63)
+* [Protótipo de alta fidelidade](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/33)
+* [Implementação das telas de passageiro](https://github.com/fga-eps-mds/2020.1-Ziguen-Front/issues/6)
+* [Início dos testes](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/59)
+* [Terminar o frontend para a R1](https://github.com/fga-eps-mds/2020.1-Ziguen-Front/issues/7)
+
