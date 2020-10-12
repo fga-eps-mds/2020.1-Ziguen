@@ -78,11 +78,14 @@ O documento está segmento em Representação de Arquitetura, Metas e Restriçõ
 
 ### 2.1 - Padrão Arquitetural	
 
-Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando sua aplicação em três camadas. A camada de interação do usuário (view), que faz a exibição dos dados, sendo ela por meio de um html ou xml; a camada de manipulação dos dados (model), responsável pela leitura e escrita dos dados, e também suas validações e a camada de controle (controller), responsável por receber todas as requisições do usuário, controlando qual model usar e qual view será mostrado ao usuário. Essa divisão em camadas é realizada para facilitar a resolução de um problema maior.
+O MVC é um padrão de arquitetura de software, separando sua aplicação em três camadas. Nesse projeto a camada de interação do usuário (view), é a que faz a exibição dos dados, sendo ela por meio do framework react.js e next.js; a camada de manipulação dos dados (model), responsável pela leitura e escrita dos dados no banco de dados, nesse caso postgres usando a ferramenta sequelize, e também suas validações e a camada de controle (controller), responsável por receber todas as requisições do usuário, controlando qual model usar e qual view será mostrado ao usuário. Essa divisão em camadas é realizada para facilitar a resolução de um problema maior.
 
 * Model: Camada da arquitetura responsável pela lógica de négocio, manipulação e validação de dados na aplicação.
 * View: Camada da arquitetura responsável pela exibição da interface com o usuário.
 * Controller: Camada da arquitetura responsável pela validação das requisições dos usuário de acordo com as regras de autenticação e autorização da aplicação.
+
+Back-end: Model e Controller
+Front-end: View
 
 ### 2.2 - Tecnologias
 |tecnologias | descrição |
