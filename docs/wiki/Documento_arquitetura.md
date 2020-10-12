@@ -16,6 +16,8 @@
 | 1.1 | 23/09/2020  | Edson e Francisco  | Diagrama de representação|
 | 1.2 | 02/10/2020  | Edson e Geise  | Atualização do DER |
 | 1.3 | 03/10/2020  | Edson e Geise  | Inclusão de tecnologias e alteração de tripulante para passageiro |
+| 1.4 | 11/10/2020  | Liverson e Francisco  | Atualização na descrição da nossa arquitetura MVC |
+| 1.5 | 11/10/2020  | Liverson e Francisco  | Adição dos tópicos 5.1 e 5.2 |
 
 
 ## Sumário
@@ -203,7 +205,28 @@ Front-end: View
 ![DER 0.1](https://raw.githubusercontent.com/fga-eps-mds/2020-1-Ziguen/develop/docs/diagramas/der.jpg)
 
 ## 5 - Visão de Caso de Uso
+### 5.1 Diagrama de Caso de uso
 ![Diagrama de casos de uso 0.1](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/develop/docs/diagramas/Diagrama_Casos_de_Uso.png)
+
+### 5.2 Descrições de Caso de uso
+
+|Casos de uso| Ator | Descrição|
+|-----|-----|------|
+| UC01 - Manter conta | Usuário | O usuário tem as opções de atualizar informações da conta assim como pode também apagá-la |
+| UC02 - Pesquisar passagem | Passageiro | O passageiro pode pesquisar a passagem da viagem da qual planeja fazer |
+| UC03 - Visualizar passagem | Passageiro | O passageiro pode visualizar a passagem que deseja comprar|
+| UC04 - Visualizar quantidade de assentos disponíveis | Passageiro | O passageiro poderá ver os assentos que ainda estão disponíveis da viagem que pretende fazer|
+| UC05 - Comprar passagem| Passageiro | O passageiro poderá comprar a passagem que deseja|
+| UC06 - Visualizar passagem comprada| Passageiro | Depois de comprar a passagem o passageiro poderá visualizar novamente as passagens que comprou |
+| UC07 - Entrar em contato com o administrador| Passageiro e proprietário | Aqui estes usuários podem entrar em contato com os administradores para poder sanar suas dúvidas e dar sugestões |
+| UC08 - Visualizar embarcações dele cadastradas| Proprietário| O proprietário poderá ver quais embarcações estão linkadas ao seu nome |
+| UC09 - Visualizar como estão as compras de passagens| Proprietário e administrador | Os usuários citados poderão ver como estão os andamentos de vendas de passagens |
+| UC10 - Cadastro do dono de embarcação| Administrador | O administrador pode adicionar um novo proprietário de embarcação na plataforma |
+| UC11 - Cadastro de embarcação| Administrador | O administrador pode adicionar uma nova embarcação de um proprietário na plataforma |
+| UC12 - Cadastro de viagens referentes a cada embarcação| Administrador | Adicionar novas viagens que são feitas pelas embarcações correspondentes |
+| UC13 - Alteração no cadastro de embarcação| Administrador | O administrador pode mudar informações que foram feitas no cadastro de uma embarcação |
+| UC14 - Exclusão de embarcação| Administrador | Caso necessário o administrador pode excluir por completo uma embarcação |
+| UC15 - Resolução de problemas de usuários clientes| Administrador | O administrador terá que ajudar clientes da aplicação em caso de necessidade |
 
 
 ## 6 - Referências Bibliográficas
