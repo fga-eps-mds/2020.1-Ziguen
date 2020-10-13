@@ -18,6 +18,7 @@
 | 1.3 | 03/10/2020  | Edson e Geise  | Inclusão de tecnologias e alteração de tripulante para passageiro |
 | 1.4 | 11/10/2020  | Liverson e Francisco  | Atualização na descrição da nossa arquitetura MVC |
 | 1.5 | 11/10/2020  | Liverson e Francisco  | Adição dos tópicos 5.1 e 5.2 |
+| 1.6 | 11/10/2020  | Liverson e Giulia  | Adição dos usuários dos casos de uso e trocando as descrições de casos de uso para 5.3 |
 
 
 ## Sumário
@@ -50,6 +51,9 @@
 
 
 5- [Visão de Caso de Uso](#5---Visão-de-Caso-de-Uso)
+* [5.1 - Diagrama de Caso de uso](#5.1---Diagrama-de-Caso-de-uso)
+* [5.2- Atores de Caso de Uso](#5.2---Atores-de-Caso-de-Uso)
+* [5.3- Descrições de Caso de Uso3](#5.3----Descrições-de-Caso-de-Uso)
 
 
 7- [Referências Bibliográficas](#7---Referências-Bibliográficas)
@@ -205,10 +209,19 @@ Front-end: View
 ![DER 0.1](https://raw.githubusercontent.com/fga-eps-mds/2020-1-Ziguen/develop/docs/diagramas/der.jpg)
 
 ## 5 - Visão de Caso de Uso
+
 ### 5.1 Diagrama de Caso de uso
 ![Diagrama de casos de uso 0.1](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/develop/docs/diagramas/Diagrama_Casos_de_Uso.png)
 
-### 5.2 Descrições de Caso de uso
+### 5.2 Atores de Caso de Uso
+
+|Ator| Descrição |
+|Usuário| São todos os que forem utilizar o site |
+|Passageiro| É quem vai utilizar o site para compra de passagens|
+|Administrador| É quem irá fazer a manutenção do site com as devidas mudanças caso necessário |
+|Proprietário de embarcação| É quem vai utilizar o site para visualizar o desempenho de vendas  |
+
+### 5.3 Descrições de Caso de Uso
 
 |Casos de uso| Ator | Descrição|
 |-----|-----|------|
