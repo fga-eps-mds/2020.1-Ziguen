@@ -1,3 +1,8 @@
+require("dotenv").config({
+  path: process.env.NODE_ENV == 'test' ? '.env.test' : 'database.env'
+})
+
+
 import * as  Yup from 'yup';
 import User from '../models/User';
 

@@ -4,7 +4,7 @@ require("dotenv").config({
 
 
 module.exports = {
-    dialect: 'postgres'|| 'postgres',
+    dialect: 'postgres',
     storage: './__tests__/database.sqlite',
     host: 'db',
     username: 'postgres',

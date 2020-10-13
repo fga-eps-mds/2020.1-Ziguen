@@ -1,12 +1,11 @@
-const { isTopLevelDeclaration } = require("sucrase/dist/parser/tokenizer")
+const { testEnvironment } = require("../../jest.config");
 
-describe('Authentication', () => {
-    it('should sum two numbers', ()=> {
-        const x= 2;
-        const y = 3;
+function soma(a,b){
+    return a+b;
+}
 
-        const sum = x+y;
+test("if ashas", ()=>{
+    const result  = soma(2,2)
 
-        expect(sum).toBe(5);
-    })
+    expect(result).toBe(4);
 })
