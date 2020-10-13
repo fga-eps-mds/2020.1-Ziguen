@@ -7,6 +7,7 @@ Data|Versão|Descrição|Autor
 11/09/2020 |1.0.3|Adição do diagrama metodológico do time | @Francisco1code |
 15/09/2020 |1.0.4|Atualização dos novos dias da Daily | @GeiseSaunier |
 07/10/2020 |1.0.5|Atualização dados da Daily, hora da reunião | @edsondearaujo |
+07/10/2020 |1.0.5|Atualização dados do Diagrama Metodológico | @Giuulob89 |
 
 
 
