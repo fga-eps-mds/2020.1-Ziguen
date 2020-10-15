@@ -16,6 +16,9 @@
 | 1.1 | 23/09/2020  | Edson e Francisco  | Diagrama de representação|
 | 1.2 | 02/10/2020  | Edson e Geise  | Atualização do DER |
 | 1.3 | 03/10/2020  | Edson e Geise  | Inclusão de tecnologias e alteração de tripulante para passageiro |
+| 1.4 | 11/10/2020  | Liverson e Francisco  | Atualização na descrição da nossa arquitetura MVC |
+| 1.5 | 11/10/2020  | Liverson e Francisco  | Adição dos tópicos 5.1 e 5.2 |
+| 1.6 | 11/10/2020  | Liverson e Giulia  | Adição dos usuários dos casos de uso e trocando as descrições de casos de uso para 5.3 |
 
 
 ## Sumário
@@ -48,6 +51,9 @@
 
 
 5- [Visão de Caso de Uso](#5---Visão-de-Caso-de-Uso)
+* [5.1 - Diagrama de Caso de uso](#5.1---Diagrama-de-Caso-de-uso)
+* [5.2- Atores de Caso de Uso](#5.2---Atores-de-Caso-de-Uso)
+* [5.3- Descrições de Caso de Uso3](#5.3----Descrições-de-Caso-de-Uso)
 
 
 7- [Referências Bibliográficas](#7---Referências-Bibliográficas)
@@ -78,11 +84,14 @@ O documento está segmento em Representação de Arquitetura, Metas e Restriçõ
 
 ### 2.1 - Padrão Arquitetural	
 
-Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando sua aplicação em três camadas. A camada de interação do usuário (view), que faz a exibição dos dados, sendo ela por meio de um html ou xml; a camada de manipulação dos dados (model), responsável pela leitura e escrita dos dados, e também suas validações e a camada de controle (controller), responsável por receber todas as requisições do usuário, controlando qual model usar e qual view será mostrado ao usuário. Essa divisão em camadas é realizada para facilitar a resolução de um problema maior.
+O MVC é um padrão de arquitetura de software, separando sua aplicação em três camadas. Nesse projeto a camada de interação do usuário (view), é a que faz a exibição dos dados, sendo ela por meio do framework react.js e next.js; a camada de manipulação dos dados (model), responsável pela leitura e escrita dos dados no banco de dados, nesse caso postgres usando a ferramenta sequelize, e também suas validações e a camada de controle (controller), responsável por receber todas as requisições do usuário, controlando qual model usar e qual view será mostrado ao usuário. Essa divisão em camadas é realizada para facilitar a resolução de um problema maior.
 
 * Model: Camada da arquitetura responsável pela lógica de négocio, manipulação e validação de dados na aplicação.
 * View: Camada da arquitetura responsável pela exibição da interface com o usuário.
 * Controller: Camada da arquitetura responsável pela validação das requisições dos usuário de acordo com as regras de autenticação e autorização da aplicação.
+
+Back-end: Model e Controller
+Front-end: View
 
 ### 2.2 - Tecnologias
 |tecnologias | descrição |
@@ -200,7 +209,37 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 ![DER 0.1](https://raw.githubusercontent.com/fga-eps-mds/2020-1-Ziguen/develop/docs/diagramas/der.jpg)
 
 ## 5 - Visão de Caso de Uso
+
+### 5.1 Diagrama de Caso de uso
 ![Diagrama de casos de uso 0.1](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/develop/docs/diagramas/Diagrama_Casos_de_Uso.png)
+
+### 5.2 Atores de Caso de Uso
+
+|Ator| Descrição |
+|Usuário| São todos os que forem utilizar o site |
+|Passageiro| É quem vai utilizar o site para compra de passagens|
+|Administrador| É quem irá fazer a manutenção do site com as devidas mudanças caso necessário |
+|Proprietário de embarcação| É quem vai utilizar o site para visualizar o desempenho de vendas  |
+
+### 5.3 Descrições de Caso de Uso
+
+|Casos de uso| Ator | Descrição|
+|-----|-----|------|
+| UC01 - Manter conta | Usuário | O usuário tem as opções de atualizar informações da conta assim como pode também apagá-la |
+| UC02 - Pesquisar passagem | Passageiro | O passageiro pode pesquisar a passagem da viagem da qual planeja fazer |
+| UC03 - Visualizar passagem | Passageiro | O passageiro pode visualizar a passagem que deseja comprar|
+| UC04 - Visualizar quantidade de assentos disponíveis | Passageiro | O passageiro poderá ver os assentos que ainda estão disponíveis da viagem que pretende fazer|
+| UC05 - Comprar passagem| Passageiro | O passageiro poderá comprar a passagem que deseja|
+| UC06 - Visualizar passagem comprada| Passageiro | Depois de comprar a passagem o passageiro poderá visualizar novamente as passagens que comprou |
+| UC07 - Entrar em contato com o administrador| Passageiro e proprietário | Aqui estes usuários podem entrar em contato com os administradores para poder sanar suas dúvidas e dar sugestões |
+| UC08 - Visualizar embarcações dele cadastradas| Proprietário| O proprietário poderá ver quais embarcações estão linkadas ao seu nome |
+| UC09 - Visualizar como estão as compras de passagens| Proprietário e administrador | Os usuários citados poderão ver como estão os andamentos de vendas de passagens |
+| UC10 - Cadastro do dono de embarcação| Administrador | O administrador pode adicionar um novo proprietário de embarcação na plataforma |
+| UC11 - Cadastro de embarcação| Administrador | O administrador pode adicionar uma nova embarcação de um proprietário na plataforma |
+| UC12 - Cadastro de viagens referentes a cada embarcação| Administrador | Adicionar novas viagens que são feitas pelas embarcações correspondentes |
+| UC13 - Alteração no cadastro de embarcação| Administrador | O administrador pode mudar informações que foram feitas no cadastro de uma embarcação |
+| UC14 - Exclusão de embarcação| Administrador | Caso necessário o administrador pode excluir por completo uma embarcação |
+| UC15 - Resolução de problemas de usuários clientes| Administrador | O administrador terá que ajudar clientes da aplicação em caso de necessidade |
 
 
 ## 6 - Referências Bibliográficas
