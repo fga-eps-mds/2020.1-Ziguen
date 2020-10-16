@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "prestart": "sequelize db:migrate",
     "start": "nodemon ./src/server.js --ignore __tests__",
-    "test": "NODE_ENV=test jest"
+    "posttart":"sequelize db:migrate:undo:all",
+    "pretest": "NODE_ENV=test jest sequelize db:migrate",
+    "test": "NODE_ENV=test jest",
+    "posttest": "NODE_ENV=test jest sequelize db:migrate:undo:all"
   },
   "repository": "https://github.com/fga-eps-mds/2020-1--Grupo-1.git",
   "author": "francisco1code <francisco170142329@gmail.com>",
