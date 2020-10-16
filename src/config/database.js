@@ -1,12 +1,14 @@
-require('../bootstrap')
+
 
 module.exports = {
-    dialect: process.env.DB_DIALEC || 'postgres',
-    host: process.env.DB_HOST,
-    username: process.env.DB_USER,
-    password: process.env.DB_PASS,
-    database: process.env.DB_NAME,
+    dialect:'postgres',
+    host: process.env.POSTGRES_HOST,
+    username: process.env.POSTGRES_USER,
+    password: process.env.POSTGRES_PASSWORD,
+    database: process.env.POSTGRES_DB,
     storage: './__tests__/database.sqlite',
+
+    
     define: {
       timestamp: true,
       underscored: true,
