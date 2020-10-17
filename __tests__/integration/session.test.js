@@ -1,12 +1,19 @@
-const { isTopLevelDeclaration } = require("sucrase/dist/parser/tokenizer")
+import request from 'supertest'
+import app from '../../src/app'
 
-describe('Authentication', () => {
-    it('should sum two numbers', ()=> {
-        const x= 2;
-        const y = 3;
+describe('User', () => {
+    it('shold be able to register', async() => {
+        const response = await request(app)
+            .post('/users')
+            .send({
+                id: "1",
+	            name: "admin",
+	            email: "admin@gmail.com",
+	            telephone: "3254124",
+	            password: "123456"
+            })
 
-        const sum = x+y;
-
-        expect(sum).toBe(5);
+        expect(response.body).toHaveProperty('id')
     })
+
 })

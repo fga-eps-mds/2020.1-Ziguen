@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "prestart": "sequelize db:migrate",
     "start": "nodemon ./src/server.js --ignore __tests__",
-    "test": "jest"
+    "posttart": "sequelize db:migrate:undo:all",
+    "pretest": "NODE_ENV=test sequelize db:migrate",
+    "test": "NODE_ENV=test jest  ",
+    "posttest": "NODE_ENV=test  sequelize db:migrate:undo:all"
   },
   "repository": "https://github.com/fga-eps-mds/2020-1--Grupo-1.git",
   "author": "francisco1code <francisco170142329@gmail.com>",
@@ -22,8 +26,12 @@
     "yup": "^0.29.3"
   },
   "devDependencies": {
-    "jest": "^26.4.2",
+    "@sucrase/jest-plugin": "^2.0.0",
+    "@types/jest": "^26.0.14",
+    "jest": "^26.5.3",
     "sequelize-cli": "^6.2.0",
-    "sucrase": "^3.15.0"
+    "sqlite3": "^5.0.0",
+    "sucrase": "^3.15.0",
+    "supertest": "^5.0.0"
   }
 }
