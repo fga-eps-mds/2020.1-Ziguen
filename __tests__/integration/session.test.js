@@ -1,5 +1,3 @@
-const { testEnvironment } = require("../../jest.config");
-
 function soma(a,b){
     return a+b;
 }
