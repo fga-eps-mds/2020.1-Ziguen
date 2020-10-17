@@ -1,9 +1,19 @@
-function soma(a,b){
-    return a+b;
-}
+import request from 'supertest'
+import app from '../../src/app'
 
-test("if ashas", ()=>{
-    const result  = soma(2,2)
+describe('User', () => {
+    it('shold be able to register', async() => {
+        const response = await request(app)
+            .post('/users')
+            .send({
+                id: "1",
+	            name: "admin",
+	            email: "admin@gmail.com",
+	            telephone: "3254124",
+	            password: "123456"
+            })
 
-    expect(result).toBe(4);
+        expect(response.body).toHaveProperty('id')
+    })
+
 })
