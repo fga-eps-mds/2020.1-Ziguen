@@ -1,7 +1,13 @@
 import request from 'supertest'
 import app from '../../src/app'
+import truncate from '../util/truncate'
 
 describe('User', () => {
+
+    beforeEach(async() => {
+        await truncate();
+    })
+
     it('shold be able to register', async() => {
         const response = await request(app)
             .post('/users')
