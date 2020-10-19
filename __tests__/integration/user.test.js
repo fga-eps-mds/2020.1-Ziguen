@@ -76,7 +76,7 @@ describe('Create', () => {
 
 })
 
-describe('index',() => {
+/* describe('index',() => {
 
     it('returns a list of all registered users', async() => {
         await factory.createMany('User',5);
@@ -89,6 +89,6 @@ describe('index',() => {
     });
 
 });
-
+ */
  
 
