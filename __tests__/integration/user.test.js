@@ -3,7 +3,8 @@ import app from '../../src/app'
 import bcrypt from 'bcryptjs'
 import truncate from '../util/truncate'
 import factory from '../factores'
-import { response } from 'express'
+import jwt from 'jsonwebtoken';
+
 
 
 describe('User', () => {
@@ -11,6 +12,21 @@ describe('User', () => {
         await truncate();
     })
 })
+
+async function userSession() {
+    const user = (await factory.create('User')).dataValues;
+
+    const session = await request(app)
+      .post('/sessions')
+      .send({
+        email: user.email,
+        password: user.password,
+      });
+
+    console.log(session.body.token)
+
+    return session.body.token;
+}
 
 
 describe('Create', () => {
@@ -59,4 +75,20 @@ describe('Create', () => {
     })
 
 })
+
+describe('index',() => {
+
+    it('returns a list of all registered users', async() => {
+        await factory.createMany('User',5);
+
+        const response = await request(app)
+            .get('/users/list')
+            .set('Authentication', `Bearer ${await userSession()}`)
+
+        expect(response.status).toBe(200);
+    });
+
+});
+
+ 
 

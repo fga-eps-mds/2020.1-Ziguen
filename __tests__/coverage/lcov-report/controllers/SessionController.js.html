@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">29.69% </span>
+                <span class="strong">54.69% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>19/64</span>
+                <span class='fraction'>35/64</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">81.82% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>6/6</span>
+                <span class='fraction'>9/11</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">60% </span>
+                <span class="strong">80% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>3/5</span>
+                <span class='fraction'>4/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">29.69% </span>
+                <span class="strong">54.69% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>19/64</span>
+                <span class='fraction'>35/64</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -138,23 +138,23 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -200,24 +200,24 @@ class SessionController {
         }   
         // Verificar password
         if(!(await user.checkPassword(password))){
-            return res.status(401).json({ e<span class="fstat-no" title="function not covered" >rror: 'password incorreta.'});</span>
-<span class="cstat-no" title="statement not covered" >        }</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >        const {id, name} = user;</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >        return res.json({</span>
-<span class="cstat-no" title="statement not covered" >            user: {</span>
-<span class="cstat-no" title="statement not covered" >                id,</span>
-<span class="cstat-no" title="statement not covered" >                name,</span>
-<span class="cstat-no" title="statement not covered" >                email</span>
-<span class="cstat-no" title="statement not covered" >            },</span>
+            return res.status(401).json({ error: 'password incorreta.'});
+        }
+&nbsp;
+        const {id, name} = user;
+&nbsp;
+        return res.json({
+            user: {
+                id,
+                name,
+                email
+<span class="branch-0 cbranch-no" title="branch not covered" >            },</span>
 <span class="cstat-no" title="statement not covered" >            token: jwt.sign({ id }, authConfig.secret, {</span>
-<span class="cstat-no" title="statement not covered" >                expiresIn: authConfig.expiresIn,</span>
-<span class="cstat-no" title="statement not covered" >            })</span>
-<span class="cstat-no" title="statement not covered" >        })</span>
-<span class="cstat-no" title="statement not covered" >    }</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >    async store_trav(req,res){</span>
+                expiresIn: authConfig.expiresIn,
+            })
+        })
+    }
+&nbsp;
+    async store<span class="branch-0 cbranch-no" title="branch not covered" >_trav(req,res){</span>
 <span class="cstat-no" title="statement not covered" >        const {email, password } = req.body;</span>
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >        // Verificando email</span>
@@ -253,7 +253,7 @@ class SessionController {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sun Oct 18 2020 19:25:20 GMT-0300 (Brasilia Standard Time)
+                at Sun Oct 18 2020 23:25:47 GMT-0300 (Brasilia Standard Time)
             </div>
         </div>
         <script src="../prettify.js"></script>
