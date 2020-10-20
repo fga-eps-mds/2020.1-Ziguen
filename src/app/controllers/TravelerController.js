@@ -10,7 +10,6 @@ class TravelerController{
   
   async store(req, res){
     const schema = Yup.object().shape({
-      id: Yup.number().required(),
       name: Yup.string().required(),
       email: Yup.string().required(),
       password: Yup.string().required().min(6),
@@ -22,7 +21,7 @@ class TravelerController{
     
     const travelerExists = await Traveler.findOne({ 
       where: { email: req.body.email }, 
-      where: { id: req.body.id}
+
     });
     
     if (travelerExists) {

@@ -16,7 +16,6 @@ class TravelController {
   async store(req, res) {
 
     const schema = Yup.object().shape({
-      id: Yup.number().required(),
       origin: Yup.string().required(),
       destiny: Yup.string().required(),
       hour: Yup.string().required(),

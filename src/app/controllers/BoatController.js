@@ -14,7 +14,6 @@ class BoatController {
 
     const schema = Yup.object().shape({
       name: Yup.string().required(),
-      id: Yup.number().required(),
       user_id: Yup.number().required(),
    });
 
@@ -22,12 +21,13 @@ class BoatController {
       return res.status(400).json({ error: 'Falha na validação das informações.' });
     }
 
-    const boatExists = await Boat.findOne({       
-      where: { id: req.body.id}
+    const boatExists = await Boat.findOne({    
+      where: {name: req.body.name}   
+     
     });
 
     const userExists = await User.findOne({
-      where: {id: req.body.user_id}
+      where: { id: req.body.user_id}
     });
 
     if (!userExists) {
@@ -38,10 +38,9 @@ class BoatController {
       return res.status(400).json({ error: 'Embarcação já Cadastrada' });
     };
 
-    const { id ,name, user_id } = await Boat.create(req.body);
+    const { name, user_id } = await Boat.create(req.body);
 
     return res.json({
-      id,
       name,
       user_id
     }); 
@@ -52,7 +51,7 @@ class BoatController {
 
     const schema = Yup.object().shape({
       name: Yup.string().required(),
-      id: Yup.number().required(),
+   
     });
     if(!(await schema.isValid(req.body))){
       return res.status(400).json({ error: 'Preencha todos os campos' });
