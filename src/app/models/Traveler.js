@@ -6,6 +6,7 @@ class Traveler extends Model {
   static init(sequelize){
     super.init({
       name: Sequelize.STRING,
+      cpf: Sequelize.STRING,
       email: Sequelize.STRING,
       telephone: Sequelize.STRING,
       password: Sequelize.VIRTUAL,

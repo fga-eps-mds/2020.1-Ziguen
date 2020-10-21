@@ -1,5 +1,3 @@
-var Sequelize = require('sequelize');
-
 module.exports = {
   up: (queryInterface, Sequelize) => {
     
@@ -8,7 +6,7 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
         primaryKey: true,
-        autoIcrement: true,
+        autoIncrement: true,
       },
       origin: {
         type: Sequelize.STRING,
