@@ -11,6 +11,7 @@ class TravelerController{
   async store(req, res){
     const schema = Yup.object().shape({
       name: Yup.string().required(),
+      cpf: Yup.string().required().min(11),
       email: Yup.string().required(),
       password: Yup.string().required().min(6),
     })
@@ -20,7 +21,7 @@ class TravelerController{
     }
     
     const travelerExists = await Traveler.findOne({ 
-      where: { email: req.body.email }, 
+      where: { cpf: req.body.cpf }, 
 
     });
     
@@ -28,11 +29,12 @@ class TravelerController{
       return res.status(400).json({ error: 'Usuario já Cadastrado' });
     }
     
-    const { id, name, email } = await Traveler.create(req.body);
+    const {  name, cpf, email } = await Traveler.create(req.body);
     
     return res.json({
-      id,
+  
       name,
+      cpf,
       email,
     }); 
   }

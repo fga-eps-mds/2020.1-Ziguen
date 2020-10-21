@@ -17,6 +17,7 @@ class UserController{
 
     const schema = Yup.object().shape({
       name: Yup.string().required(),
+      cpf: Yup.string().required(),
       email: Yup.string()
         .required(),
       password: Yup.string()
@@ -33,18 +34,22 @@ class UserController{
     }
 
     const userExists = await User.findOne({ 
-      where: { email: req.body.email }, 
+      where: { cpf: req.body.cpf }, 
     });
 
     if (userExists) {
       return res.status(400).json({ error: 'Usuario já Cadastrado' });
     }
 
-    const { id, email } = await User.create(req.body);
+    const { id,name, cpf, email,telephone } = await User.create(req.body);
 
     return res.json({
       id,
+      name,
+      cpf,
       email,
+      telephone
+
     });
   }
 
@@ -56,7 +61,7 @@ class UserController{
     if(email !== user.email){
 
       const userExists = await User.findOne({ 
-        where: { email } 
+        where: { cpf: req.body.cpf } 
       });
   
       if (userExists) {
@@ -79,7 +84,7 @@ class UserController{
   }
 
   async destroy(req, res) {
-    const schema = Yup.object().shape({
+    /* const schema = Yup.object().shape({
       id: Yup.number()
       .required()
       .positive()
@@ -89,16 +94,16 @@ class UserController{
       return res
       .status(400)
       .json({ error: 'Falha na validação das informações.' });
-    }
+    } */
 
   
-   const user = await User.findOne(req.body.id)
+   const user_id = await User.findOne(req.body.id)
 
-   if (!user) {
+   if (!user_id) {
      return res.json({ error: 'Usuario não existe' });
    }
 
-    await user.destroy();
+    await user_id.destroy();
 
     return res.status(200).json({ message: 'Exclusão foi bem sucedida.' });
   }

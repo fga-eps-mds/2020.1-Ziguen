@@ -6,7 +6,6 @@ import factory from '../factores'
 
 
 
-
 describe('User', () => {
     beforeEach(async() =>{
         await truncate();
@@ -75,10 +74,10 @@ describe('Create', () => {
 
 })
 
-describe('index',() => {
+/* describe('index',() => {
 
     it('returns a list of all registered users', async() => {
-        const teste = await factory.createMany('User',5);
+        await factory.createMany('User',5);
 
         const response = await request(app)
             .get('/users/list')
@@ -89,5 +88,6 @@ describe('index',() => {
 
 });
 
+ */
  
 

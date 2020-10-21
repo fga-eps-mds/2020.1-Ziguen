@@ -28,6 +28,8 @@
   "devDependencies": {
     "@sucrase/jest-plugin": "^2.0.0",
     "@types/jest": "^26.0.14",
+    "factory-girl": "^5.0.4",
+    "faker": "^5.1.0",
     "jest": "^26.5.3",
     "sequelize-cli": "^6.2.0",
     "sqlite3": "^5.0.0",
