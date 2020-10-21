@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">20.95% </span>
+                <span class="strong">24.04% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>22/105</span>
+                <span class='fraction'>25/104</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">20.95% </span>
+                <span class="strong">24.04% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>22/105</span>
+                <span class='fraction'>25/104</span>
             </div>
         
             
@@ -160,8 +160,7 @@
 <a name='L101'></a><a href='#L101'>101</a>
 <a name='L102'></a><a href='#L102'>102</a>
 <a name='L103'></a><a href='#L103'>103</a>
-<a name='L104'></a><a href='#L104'>104</a>
-<a name='L105'></a><a href='#L105'>105</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L104'></a><a href='#L104'>104</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -179,8 +178,7 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -190,6 +188,10 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -236,11 +238,7 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -281,34 +279,33 @@ class BoatController {
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >    const schema = Yup.object().shape({</span>
       name: Yup.string().required(),
-      id: Yup.number().required(),
-      user_id: Yup.number().re<span class="branch-0 cbranch-no" title="branch not covered" >quired(),</span>
-<span class="cstat-no" title="statement not covered" >   });</span>
-<span class="cstat-no" title="statement not covered" ></span>
-    if(!(await schema.isValid(req.body))){
+      user_id: Yup.number().required(),
+   });
+&nbsp;
+    if(!(await sc<span class="branch-0 cbranch-no" title="branch not covered" >hema.isValid(req.bo</span>dy))){
       return res.status(400).json({ error: 'Falha na validação das informações.' });
     }
 &nbsp;
-    const boatExists = await Boat.findOne({       
-      where: { id: req.body.id}
+    const boatExists = await Boat.findOne({    
+      where: {name: req.body.name}   
+     
     });
 &nbsp;
-    const userExists = await User.fin<span class="fstat-no" title="function not covered" >dOne({</span>
-<span class="cstat-no" title="statement not covered" >      where: {id: req.body.user_id}</span>
+    const userExists = await User.findOne({
+      where: { id: <span class="fstat-no" title="function not covered" >req.body.user_id}</span>
 <span class="cstat-no" title="statement not covered" >    });</span>
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >    if (!userExists) {</span>
-      return res.status(400).json({ error: 'Administrador inexiste<span class="fstat-no" title="function not covered" >nte' });</span>
+<span class="cstat-no" title="statement not covered" >      return res.status(400).json({ error: 'Administrador inexistente' });</span>
 <span class="cstat-no" title="statement not covered" >    };</span>
 <span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >    if (boatExists) {</span>
+    if (<span class="fstat-no" title="function not covered" >boatExists) {</span>
 <span class="cstat-no" title="statement not covered" >      return res.status(400).json({ error: 'Embarcação já Cadastrada' });</span>
 <span class="cstat-no" title="statement not covered" >    };</span>
 <span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >    const { id ,name, user_id } = await Boat.create(req.body);</span>
+<span class="cstat-no" title="statement not covered" >    const { name, user_id } = await Boat.create(req.body);</span>
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >    return res.json({</span>
-<span class="cstat-no" title="statement not covered" >      id,</span>
 <span class="cstat-no" title="statement not covered" >      name,</span>
 <span class="cstat-no" title="statement not covered" >      user_id</span>
 <span class="cstat-no" title="statement not covered" >    }); </span>
@@ -319,7 +316,7 @@ class BoatController {
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >    const schema = Yup.object().shape({</span>
 <span class="cstat-no" title="statement not covered" >      name: Yup.string().required(),</span>
-<span class="cstat-no" title="statement not covered" >      id: Yup.number().required(),</span>
+<span class="cstat-no" title="statement not covered" >   </span>
 <span class="cstat-no" title="statement not covered" >    });</span>
 <span class="cstat-no" title="statement not covered" >    if(!(await schema.isValid(req.body))){</span>
 <span class="cstat-no" title="statement not covered" >      return res.status(400).json({ error: 'Preencha todos os campos' });</span>
@@ -343,8 +340,8 @@ class BoatController {
 <span class="cstat-no" title="statement not covered" >  };</span>
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >  async destroy(req, res) {</span>
-    const schema = Yup.<span class="fstat-no" title="function not covered" >object().shape({</span>
-<span class="cstat-no" title="statement not covered" >      id: Yup.number().required()</span>
+<span class="cstat-no" title="statement not covered" >    const schema = Yup.object().shape({</span>
+      id: Yup.<span class="fstat-no" title="function not covered" >number().required()</span>
 <span class="cstat-no" title="statement not covered" >   });</span>
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >    if (!(await schema.isValid(req.body))) {</span>
@@ -376,7 +373,7 @@ class BoatController {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sun Oct 18 2020 23:25:47 GMT-0300 (Brasilia Standard Time)
+                at Wed Oct 21 2020 18:42:29 GMT-0300 (Brasilia Standard Time)
             </div>
         </div>
         <script src="../prettify.js"></script>

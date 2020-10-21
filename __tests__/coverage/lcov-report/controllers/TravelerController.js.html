@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">17.7% </span>
+                <span class="strong">18.42% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>20/113</span>
+                <span class='fraction'>21/114</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">17.7% </span>
+                <span class="strong">18.42% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>20/113</span>
+                <span class='fraction'>21/114</span>
             </div>
         
             
@@ -170,23 +170,8 @@
 <a name='L111'></a><a href='#L111'>111</a>
 <a name='L112'></a><a href='#L112'>112</a>
 <a name='L113'></a><a href='#L113'>113</a>
-<a name='L114'></a><a href='#L114'>114</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -199,6 +184,23 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -295,30 +297,31 @@ class TravelerController{
 <span class="cstat-no" title="statement not covered" >  </span>
 <span class="cstat-no" title="statement not covered" >  async store(req, res){</span>
 <span class="cstat-no" title="statement not covered" >    const schema = Yup.object().shape({</span>
-<span class="cstat-no" title="statement not covered" >      id: Yup.number().required(),</span>
       name: Yup.string().required(),
-      email: Yup.string().required(),
-<span class="branch-0 cbranch-no" title="branch not covered" >      password: Yup.</span>string().required().min(6),
+      cpf: Yup.string().required().min(11),
+      email: Yup.string().requ<span class="branch-0 cbranch-no" title="branch not covered" >ired(),</span>
+      password: Yup.string().required().min(6),
     })
     
     if(!(await schema.isValid(req.body))){
       return res.status(400).json({ error: 'Falha na validação das informações.' });
     }
     
-    const travelerE<span class="fstat-no" title="function not covered" >xists = await Traveler.findOne({ </span>
-<span class="cstat-no" title="statement not covered" >      where: { email: req.body.email }, </span>
-<span class="cstat-no" title="statement not covered" >      where: { id: req.body.id}</span>
+    const <span class="fstat-no" title="function not covered" >travelerExists = await Traveler.findOne({ </span>
+<span class="cstat-no" title="statement not covered" >      where: { cpf: req.body.cpf }, </span>
+<span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >    });</span>
 <span class="cstat-no" title="statement not covered" >    </span>
 <span class="cstat-no" title="statement not covered" >    if (travelerExists) {</span>
-      retur<span class="fstat-no" title="function not covered" >n res.status(400).json({ error: 'Usuario já Cadastrado' });</span>
+      return res.status(400).json({ e<span class="fstat-no" title="function not covered" >rror: 'Usuario já Cadastrado' });</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
 <span class="cstat-no" title="statement not covered" >    </span>
-<span class="cstat-no" title="statement not covered" >    const { id, name, email } = await Traveler.create(req.body);</span>
+<span class="cstat-no" title="statement not covered" >    const {  name, cpf, email } = await Traveler.create(req.body);</span>
 <span class="cstat-no" title="statement not covered" >    </span>
 <span class="cstat-no" title="statement not covered" >    return res.json({</span>
-<span class="cstat-no" title="statement not covered" >      id,</span>
+<span class="cstat-no" title="statement not covered" >  </span>
 <span class="cstat-no" title="statement not covered" >      name,</span>
+<span class="cstat-no" title="statement not covered" >      cpf,</span>
 <span class="cstat-no" title="statement not covered" >      email,</span>
 <span class="cstat-no" title="statement not covered" >    }); </span>
 <span class="cstat-no" title="statement not covered" >  }</span>
@@ -403,7 +406,7 @@ class TravelerController{
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sun Oct 18 2020 23:25:47 GMT-0300 (Brasilia Standard Time)
+                at Wed Oct 21 2020 18:42:29 GMT-0300 (Brasilia Standard Time)
             </div>
         </div>
         <script src="../prettify.js"></script>

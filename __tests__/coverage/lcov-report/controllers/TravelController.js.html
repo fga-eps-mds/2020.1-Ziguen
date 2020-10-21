@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">19.64% </span>
+                <span class="strong">19.66% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>22/112</span>
+                <span class='fraction'>23/117</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">19.64% </span>
+                <span class="strong">19.66% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>22/112</span>
+                <span class='fraction'>23/117</span>
             </div>
         
             
@@ -168,7 +168,12 @@
 <a name='L109'></a><a href='#L109'>109</a>
 <a name='L110'></a><a href='#L110'>110</a>
 <a name='L111'></a><a href='#L111'>111</a>
-<a name='L112'></a><a href='#L112'>112</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a>
+<a name='L116'></a><a href='#L116'>116</a>
+<a name='L117'></a><a href='#L117'>117</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -197,12 +202,17 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -297,40 +307,45 @@ class TravelController {
 <span class="cstat-no" title="statement not covered" >  async store(req, res) {</span>
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >    const schema = Yup.object().shape({</span>
-      id: Yup.number().required(),
       origin: Yup.string().required(),
-      d<span class="branch-0 cbranch-no" title="branch not covered" >estiny: Yup.string(</span>).required(),
-      hour: Yup.string().required(),
+      destiny: Yup.string().required(),
+<span class="branch-0 cbranch-no" title="branch not covered" >      hour: Yup.strin</span>g().required(),
       date: Yup.string().required(),
       user_id: Yup.number().required()
     })
 &nbsp;
     if(!(await schema.isValid(req.body))){
       return res.status(400).json({ error: 'Verifique se todos os campos foram preenchidos' });
-<span class="fstat-no" title="function not covered" >    }</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >    const userExists = await User.findOne({ </span>
+    }
+&nbsp;
+    const userExists = await <span class="fstat-no" title="function not covered" >User.findOne({ </span>
 <span class="cstat-no" title="statement not covered" >      where: { id: req.body.user_id}</span>
 <span class="cstat-no" title="statement not covered" >    });</span>
 <span class="cstat-no" title="statement not covered" >    const travelExists = await Travel.findOne({</span>
-      wh<span class="fstat-no" title="function not covered" >ere: {id: req.body.id}</span>
+      where: {origin: req.body.origin, hour<span class="fstat-no" title="function not covered" >: req.body.hour, date: req.body.date}</span>
+<span class="cstat-no" title="statement not covered" >     </span>
 <span class="cstat-no" title="statement not covered" >    })</span>
 <span class="cstat-no" title="statement not covered" >    if (travelExists) {</span>
 <span class="cstat-no" title="statement not covered" >      return res.status(400).json({ error: 'Viagem já existe' });</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
 <span class="cstat-no" title="statement not covered" >    if (!userExists) {</span>
-<span class="cstat-no" title="statement not covered" >      return res.status(400).json({ error: 'Id do administrador não existe.' });</span>
+<span class="cstat-no" title="statement not covered" >      return res.status(400).json({ error: 'administrador não existe.' });</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
-<span class="cstat-no" title="statement not covered" >    const travels = await Travel.create(req.body)</span>
-<span class="cstat-no" title="statement not covered" >      </span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >   return res.json(travels);</span>
+<span class="cstat-no" title="statement not covered" >  </span>
+<span class="cstat-no" title="statement not covered" >   const {  origin, destiny, hour, date, user_id} = await Travel.create(req.body);</span>
+<span class="cstat-no" title="statement not covered" >    </span>
+<span class="cstat-no" title="statement not covered" >    return res.json({</span>
+<span class="cstat-no" title="statement not covered" >      origin,</span>
+<span class="cstat-no" title="statement not covered" >      destiny,</span>
+<span class="cstat-no" title="statement not covered" >      hour,</span>
+<span class="cstat-no" title="statement not covered" >      date,</span>
+<span class="cstat-no" title="statement not covered" >      user_id</span>
+<span class="cstat-no" title="statement not covered" >    }); </span>
 <span class="cstat-no" title="statement not covered" >  }</span>
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >  async update(req,res){ </span>
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >    const schema = Yup.object().shape({</span>
-<span class="cstat-no" title="statement not covered" >      id: Yup.number().required(),</span>
 <span class="cstat-no" title="statement not covered" >      origin: Yup.string().required(),</span>
 <span class="cstat-no" title="statement not covered" >      destiny: Yup.string().required(),</span>
 <span class="cstat-no" title="statement not covered" >      hour: Yup.string().required(),</span>
@@ -349,7 +364,7 @@ class TravelController {
 <span class="cstat-no" title="statement not covered" >      return res.status(400).json({ error: 'Viagem não existe' });</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
 <span class="cstat-no" title="statement not covered" >    </span>
-    const {origin, destiny,<span class="fstat-no" title="function not covered" > hour, date} = await travelExists.update(req.body);</span>
+    const {origin, destiny, hour, date} = await travelExists.u<span class="fstat-no" title="function not covered" >pdate(req.body);</span>
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >    return res.json({</span>
 <span class="cstat-no" title="statement not covered" >      origin,</span>
@@ -397,7 +412,7 @@ class TravelController {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sun Oct 18 2020 23:25:47 GMT-0300 (Brasilia Standard Time)
+                at Wed Oct 21 2020 18:42:29 GMT-0300 (Brasilia Standard Time)
             </div>
         </div>
         <script src="../prettify.js"></script>
