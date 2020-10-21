@@ -28,10 +28,10 @@ class TravelerController{
       return res.status(400).json({ error: 'Usuario já Cadastrado' });
     }
     
-    const { id, name, email } = await Traveler.create(req.body);
+    const {  name, email } = await Traveler.create(req.body);
     
     return res.json({
-      id,
+  
       name,
       email,
     }); 
