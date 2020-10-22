@@ -98,6 +98,25 @@ class BoatController {
     return res.status(200).json({ message: 'Exclusão foi bem sucedida.' });
   }
 
+  async descript(req, res){
+    const schema = Yup.object().shape({
+      id: Yup.number().required().positive()
+    });
+    if(!(await schema.isValid(req.body))){
+      return res.status(400).json({error:"Informações incoerentes"});
+    }
+
+    const {id} = req.body;
+
+    const boats = await Boat.findByPk(id);
+
+    if(!boats){
+      return res.json({error:"Embarcação não existe"});
+    }
+    
+    return res.json(boats);
+  }
+
 
 }
 
