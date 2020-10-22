@@ -31,6 +31,7 @@ routes.delete('/travelers', TravelerController.destroy);
 routes.put('/users', UserController.update);
 routes.get('/users', UserController.index);
 routes.delete('/users', UserController.destroy);
+routes.get('/travelers/:id', UserController.descript);
 
 routes.put('/travels', TravelController.update);
 routes.get('/travels', TravelController.index);
