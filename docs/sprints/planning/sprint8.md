@@ -28,7 +28,7 @@ Duração: 15/10 à 22/10
 ## Backlog
 | Issue | Descrição | Pontuação | Responsáveis | Status | Prioridade | Repositório |
 | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |------------------- |------------------- | 
-| [#100](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/100)  | Criar Release  v 1.0.0 | 5 | Francisco e Edson  | Nova  | 1  |  [Backend](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/100)  |
+| [#100](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/100)  | Criar Release  v 1.0.0 | 3 | Francisco e Edson  | Nova  | 1  |  [Backend](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/100)  |
 | [#101](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/101)  |  Configurar o code climate | 5 |  Liverson e Geise | Nova |  1 |  [Backend](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/101)  |
 | [#102](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/102)  |  Configuração do ambiente de teste | 8 | Francisco e Edson |  Nova |  2 |  [Backend](https://github.com/fga-eps-mds/2020-1-Ziguen/issues/102)  |
 | [#18](https://github.com/fga-eps-mds/2020.1-Ziguen-Front/issues/18)  | Criação do Projeto React App  | 2 | Gabriela e Geise  | Nova  | 1  |  [Frontend](https://github.com/fga-eps-mds/2020.1-Ziguen-Front/issues/18)  |
