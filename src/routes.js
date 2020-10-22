@@ -17,29 +17,33 @@ routes.post('/users', UserController.store);
 routes.post('/sessions', SessionController.store);
 routes.post('/sessions/trav', SessionController.store_trav);
 routes.post('/travels', TravelController.store);
-routes.put('/travels', TravelController.update);
-routes.get('/travels', TravelController.index);
-routes.delete('/travels', TravelController.destroy);
 routes.post('/boats', BoatController.store);
-routes.get('/boats/list', BoatController.index);
-routes.put('/boats/update', BoatController.update);
-routes.delete('/boats/del', BoatController.destroy);
-
 
 
 // Todas as rotas a baixo desse middleware tem que ser autenticadas
 routes.use(authMiddleware); 
 
-routes.put('/users', authMiddleware, UserController.update);
-routes.put('/travelers/update', authMiddleware, TravelerController.update);
-routes.get('/travelers/list', authMiddleware,TravelerController.list);
-routes.get('/travelers/list/:id', authMiddleware,TravelerController.descript);
-routes.get('/users/list', authMiddleware, UserController.index);
-routes.delete('/users', authMiddleware, UserController.destroy);
+routes.put('/travelers', TravelerController.update);
+routes.get('/travelers', TravelerController.list);
+routes.get('/travelers/:id', TravelerController.descript);
 routes.delete('/travelers', TravelerController.destroy);
+
 routes.put('/users', UserController.update);
-routes.get('/users/list', UserController.index);
+routes.get('/users', UserController.index);
 routes.delete('/users', UserController.destroy);
+routes.get('/users/:id', UserController.descript);
+
+routes.put('/travels', TravelController.update);
+routes.get('/travels', TravelController.index);
+routes.get('/travels/:id', TravelController.descript);
+routes.delete('/travels', TravelController.destroy);
+
+routes.put('/boats', BoatController.update);
+routes.get('/boats', BoatController.index);
+routes.get('/boats/:id', BoatController.descript);
+routes.delete('/boats', BoatController.destroy);
+
+
 
 
 

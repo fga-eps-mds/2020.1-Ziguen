@@ -10,11 +10,30 @@ class UserController{
     return res.json(users);
   }
 
+  async descript(req, res){
+    const schema = Yup.object().shape({
+      id: Yup.number().required().positive()
+    });
+    if(!(await schema.isValid(req.body))){
+      return res.status(400).json({error:"Informações incoerentes"});
+    }
+
+    const {id} = req.body;
+
+    const traveler = await User.findByPk(id);
+
+    if(!traveler){
+      return res.json({error:"Usuário inexistente"});
+    }
+    
+    return res.json(traveler);
+  }
+
   async store(req, res) {
 
     const schema = Yup.object().shape({
-      id: Yup.number().required(),
       name: Yup.string().required(),
+      cpf: Yup.string().required(),
       email: Yup.string()
         .required(),
       password: Yup.string()
@@ -32,7 +51,6 @@ class UserController{
 
     const userExists = await User.findOne({ 
       where: { email: req.body.email }, 
-      where: { id: req.body.id}
     });
 
     if (userExists) {
@@ -46,20 +64,18 @@ class UserController{
       email,
     });
   }
-
   async update(req,res){
     const { email, oldpassword } = req.body;
 
     const user = await User.findByPk(req.userId);
 
     if(email !== user.email){
-
       const userExists = await User.findOne({ 
         where: { email } 
       });
   
-      if (userExists) {
-        return res.status(400).json({ error: 'Usuario já Cadastrado.' });
+      if (!userExists) {
+        return res.status(400).json({ error: 'Usuario' });
       }
     }
     if(oldpassword && !(await user.checkPassword(oldpassword))){
@@ -75,13 +91,14 @@ class UserController{
       name,
       email,
     });
+
   }
 
   async destroy(req, res) {
+
     const schema = Yup.object().shape({
       id: Yup.number()
       .required()
-      .positive()
    });
 
     if (!(await schema.isValid(req.body))) {

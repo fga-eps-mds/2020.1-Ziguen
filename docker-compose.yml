@@ -5,8 +5,10 @@ services:
   db:
     container_name: db
     image: "postgres" 
-    env_file:
-      - database.env 
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
     
     volumes:
     - postgres_data:/var/lib/postgresql/data 
@@ -30,7 +32,9 @@ volumes:
   postgres_data:
   node_modules:
 
+
 networks:
   network-api:
     external:
       name: network-api
+
