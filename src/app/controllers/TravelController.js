@@ -7,8 +7,8 @@ class TravelController {
 
 
   async index(req,res){
-    const travel = req.query;
-    const travels = await Travel.findAll({travel});
+    const {id} = req.query;
+    const travels = await Travel.findAll({id});
     return res.json(travels);
   }
 
@@ -109,6 +109,25 @@ class TravelController {
     await travelExists.destroy();
 
     return res.status(200).json({ message: 'Exclusão foi bem sucedida.' });
+  }
+
+  async descript(req, res){
+    const schema = Yup.object().shape({
+      id: Yup.number().required().positive()
+    });
+    if(!(await schema.isValid(req.body))){
+      return res.status(400).json({error:"Informações incoerentes"});
+    }
+
+    const {id} = req.body;
+
+    const travel = await Travel.findByPk(id);
+
+    if(!travel){
+      return res.json({error:"Essa viagem não existe."});
+    }
+    
+    return res.json(travel);
   }
 
 

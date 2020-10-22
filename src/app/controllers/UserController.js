@@ -1,6 +1,3 @@
-require('../../bootstrap')
-
-
 import * as  Yup from 'yup';
 import User from '../models/User';
 
@@ -11,6 +8,25 @@ class UserController{
     const { name } = req.query;
     const users = await User.findAll({name});
     return res.json(users);
+  }
+
+  async descript(req, res){
+    const schema = Yup.object().shape({
+      id: Yup.number().required().positive()
+    });
+    if(!(await schema.isValid(req.body))){
+      return res.status(400).json({error:"Informações incoerentes"});
+    }
+
+    const {id} = req.body;
+
+    const traveler = await User.findByPk(id);
+
+    if(!traveler){
+      return res.json({error:"Usuário inexistente"});
+    }
+    
+    return res.json(traveler);
   }
 
   async store(req, res) {
@@ -34,38 +50,32 @@ class UserController{
     }
 
     const userExists = await User.findOne({ 
-      where: { cpf: req.body.cpf }, 
+      where: { email: req.body.email }, 
     });
 
     if (userExists) {
       return res.status(400).json({ error: 'Usuario já Cadastrado' });
     }
 
-    const { id,name, cpf, email,telephone } = await User.create(req.body);
+    const { id, name, email } = await User.create(req.body);
 
     return res.json({
       id,
-      name,
-      cpf,
       email,
-      telephone
-
     });
   }
-
   async update(req,res){
     const { email, oldpassword } = req.body;
 
     const user = await User.findByPk(req.userId);
 
     if(email !== user.email){
-
       const userExists = await User.findOne({ 
-        where: { cpf: req.body.cpf } 
+        where: { email } 
       });
   
-      if (userExists) {
-        return res.status(400).json({ error: 'Usuario já Cadastrado.' });
+      if (!userExists) {
+        return res.status(400).json({ error: 'Usuario' });
       }
     }
     if(oldpassword && !(await user.checkPassword(oldpassword))){
@@ -81,29 +91,30 @@ class UserController{
       name,
       email,
     });
+
   }
 
   async destroy(req, res) {
-    /* const schema = Yup.object().shape({
+
+    const schema = Yup.object().shape({
       id: Yup.number()
       .required()
-      .positive()
    });
 
     if (!(await schema.isValid(req.body))) {
       return res
       .status(400)
       .json({ error: 'Falha na validação das informações.' });
-    } */
+    }
 
   
-   const user_id = await User.findOne(req.body.id)
+   const user = await User.findOne(req.body.id)
 
-   if (!user_id) {
+   if (!user) {
      return res.json({ error: 'Usuario não existe' });
    }
 
-    await user_id.destroy();
+    await user.destroy();
 
     return res.status(200).json({ message: 'Exclusão foi bem sucedida.' });
   }
