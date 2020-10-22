@@ -3,7 +3,7 @@ version: "3"
 services:
   
   db:
- 
+    container_name: db
     image: "postgres" 
     environment:
       POSTGRES_USER: postgres
@@ -11,9 +11,12 @@ services:
       POSTGRES_DB: postgres
     
     volumes:
-    - postgres_data:/var/lib/postgresql/data  
+    - postgres_data:/var/lib/postgresql/data 
+    networks:
+      - network-api 
     
-  app:
+  api:
+    container_name: api
     depends_on:
       - db
     build: .
@@ -22,9 +25,16 @@ services:
     volumes:
       - .:/app
       - node_modules:/app/node_modules
+    networks:
+      - network-api
 
-    
 volumes: 
   postgres_data:
   node_modules:
-  
+
+
+networks:
+  network-api:
+    external:
+      name: network-api
+
