@@ -22,7 +22,6 @@ async function userSession() {
         password: user.password,
       });
 
-
     return session.body.token;
 }
 
@@ -74,20 +73,27 @@ describe('Create', () => {
 
 })
 
-/* describe('index',() => {
+describe('index',() => {
 
     it('returns a list of all registered users', async() => {
-        await factory.createMany('User',5);
 
+      console.log(await factory.createMany('User', 5));
+
+        const teste = await userSession();
+        console.log(teste);
+    
         const response = await request(app)
-            .get('/users/list')
+            .get('/users')
             .set('Authentication', `Bearer ${await userSession()}`)
+            
+     
+       expect(response.status).toBe(200);
+    }, 50000)
 
-        expect(response.status).toBe(200);
-    });
+    
 
 });
 
- */
+
  
 

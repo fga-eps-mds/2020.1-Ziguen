@@ -1,6 +1,5 @@
 import request from 'supertest'
 import app from '../../src/app'
-import bcrypt from 'bcryptjs'
 import truncate from '../util/truncate'
 import factory from '../factores'
 
