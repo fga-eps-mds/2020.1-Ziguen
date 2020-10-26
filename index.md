@@ -53,7 +53,7 @@ A ferramenta ZIGUEN tem o propósito de facilitar a integração entre usuários
 
 
 **1.3 - Visão Geral**
-O documento está segmento em Representação de Arquitetura, Metas e Restrições da Arquitetura, Visão de Casos de Uso, Visão Lógica e Visão de Dados.
+O documento está segmentado em Representação de Arquitetura, Metas e Restrições da Arquitetura, Visão de Casos de Uso, Visão Lógica e Visão de Dados.
 
 **1.4 - Definições, acrônomos e Abreviações**
 
@@ -193,7 +193,7 @@ Segundo Ramos (2015), o MVC é um padrão de arquitetura de software, separando 
 
 **Administrador** -- cadastra -- **Embarcação** O administrador responsável por cadastrar varias embarcações e as embarcaçãoes são cadastradas por um administrador. (Cardinalidade 1:n)
 
-**Passageiro** -- compra -- **Viagem** Um Passageiro compra uma única viagem, uma viagem poder ser vendida para varios Passageiros. (Cardinalidade 1:n)
+**Passageiro** -- compra -- **Passagem** Um Passageiro compra uma única passagem, uma passagem poder ser vendida para varios Passageiros. (Cardinalidade 1:n)
  
 
 
@@ -253,7 +253,7 @@ Os artefatos do Scrum representam **trabalho** ou **valor** para fornecer transp
 Os artefatos do Scrum são:
 
 - Backlog do produto
-- Backlog do Sprint
+- Backlog da Sprint
 - Incremento
 
 ## 3. Descrição da Metodologia
@@ -271,13 +271,13 @@ Percebemos que um bom período da sprint seria de 7 dias e que um tempo maior qu
 Optamos pela Daily em quatro dias semanais apenas, pois achamos coerente quanto a comunicação. Todos os integrantes devem responder as seguintes perguntas:
 - O que você fez desde a última sprint?
 - O que pretende fazer até a próxima?
-- Há algum obstáculo que esteja impedindo você ou a equipe de alcançar a meta do sprint?
+- Há algum obstáculo que esteja impedindo você ou a equipe de alcançar a meta da sprint?
 
 Ressalta-se que a equipe realiza comunicação diária acerca do projeto, tanto no telegram quanto nas issues criadas para cada assunto.
 
-#### - Planejamento na sexta: das 20h às 22h (horário sempre oscilante)
+#### - Planejamento na quinta: das 12h às 13h30min 
 
-Vimos que seria necessário fazer reuniões para definir o planejamento da semana e essa reunião acontece toda sexta, conforme o horário descrito acima. 
+Vimos que seria necessário fazer reuniões para definir o planejamento da semana e essa reunião acontece toda quinta, após a aula de MDS. Na reunião, realizamos o review e em seguida o planning.
 
 #### - ZenHub
 
