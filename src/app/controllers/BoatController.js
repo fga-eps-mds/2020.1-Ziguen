@@ -14,6 +14,7 @@ class BoatController {
 
     const schema = Yup.object().shape({
       name: Yup.string().required(),
+      capacity: Yup.number().required(),
       user_id: Yup.number().required(),
    });
 
@@ -38,10 +39,11 @@ class BoatController {
       return res.status(400).json({ error: 'Embarcação já Cadastrada' });
     };
 
-    const { name, user_id } = await Boat.create(req.body);
+    const { name, capacity, user_id } = await Boat.create(req.body);
 
     return res.json({
       name,
+      capacity,
       user_id
     }); 
 
@@ -51,6 +53,7 @@ class BoatController {
 
     const schema = Yup.object().shape({
       name: Yup.string().required(),
+      capacity: Yup.number().required()
    
     });
     if(!(await schema.isValid(req.body))){
@@ -65,11 +68,12 @@ class BoatController {
       return res.status(400).json({ error: 'Embarcação não existe' });
     }
 
-    const { name } = await boatExists.update(req.body);
+    const { name, capacity } = await boatExists.update(req.body);
 
 
     return res.json({
       name,
+      capacity
     })
 
   };
