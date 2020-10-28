@@ -1,13 +1,15 @@
+require('../../bootstrap')
+
 import * as  Yup from 'yup';
-import User from '../models/User';
+import Admin from '../models/Admin';
 
 
-class UserController{
+class AdminController{
 
   async index(req,res){
     const { name } = req.query;
-    const users = await User.findAll({name});
-    return res.json(users);
+    const admins = await Admin.findAll({name});
+    return res.json(admins);
   }
 
   async descript(req, res){
@@ -20,13 +22,13 @@ class UserController{
 
     const {id} = req.body;
 
-    const traveler = await User.findByPk(id);
+    const admin = await Admin.findByPk(id);
 
     if(!traveler){
-      return res.json({error:"Usuário inexistente"});
+      return res.json({error:"Administrador inexistente"});
     }
     
-    return res.json(traveler);
+    return res.json(admin);
   }
 
   async store(req, res) {
@@ -49,33 +51,38 @@ class UserController{
       return res.status(400).json({ error: 'Falha na validação das informações.' });
     }
 
-    const userExists = await User.findOne({ 
-      where: { email: req.body.email }, 
+    const adminExists = await Admin.findOne({ 
+      where: { cpf: req.body.cpf }, 
     });
 
-    if (userExists) {
+    if (adminExists) {
       return res.status(400).json({ error: 'Usuario já Cadastrado' });
     }
 
-    const { id, name, email } = await User.create(req.body);
+    const { id,name, cpf, email,telephone } = await Admin.create(req.body);
 
     return res.json({
       id,
+      name,
+      cpf,
       email,
+      telephone
+
     });
   }
+
   async update(req,res){
     const { email, oldpassword } = req.body;
 
-    const user = await User.findByPk(req.userId);
+    const admin = await Admin.findByPk(req.userId);
 
-    if(email !== user.email){
-      const userExists = await User.findOne({ 
+    if(email !== admin.email){
+      const adminExists = await Admin.findOne({ 
         where: { email } 
       });
   
-      if (!userExists) {
-        return res.status(400).json({ error: 'Usuario' });
+      if (!adminExists) {
+        return res.status(400).json({ error: 'Administrador não existe' });
       }
     }
     if(oldpassword && !(await user.checkPassword(oldpassword))){
@@ -83,7 +90,7 @@ class UserController{
       return res.status(400).json({ error: 'Senha incorreta.' });
     }
 
-    const  {id , name } = await user.update(req.body);
+    const  {id , name, email } = await admin.update(req.body);
 
 
     return res.json({
@@ -96,30 +103,19 @@ class UserController{
 
   async destroy(req, res) {
 
-    const schema = Yup.object().shape({
-      id: Yup.number()
-      .required()
-   });
+    const admin = await Admin.findOne({ 
+      where: { cpf: req.body.cpf }, 
+    });
 
-    if (!(await schema.isValid(req.body))) {
-      return res
-      .status(400)
-      .json({ error: 'Falha na validação das informações.' });
-    }
-
-  
-   const user = await User.findOne(req.body.id)
-
-   if (!user) {
+   if (!admin) {
      return res.json({ error: 'Usuario não existe' });
    }
 
-    await user.destroy();
+    await admin.destroy(req.body);
 
     return res.status(200).json({ message: 'Exclusão foi bem sucedida.' });
   }
 
-
 }
 
-export default new UserController(); 
+export default new AdminController(); 

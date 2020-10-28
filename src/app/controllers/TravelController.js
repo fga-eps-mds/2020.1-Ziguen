@@ -1,6 +1,6 @@
 import * as  Yup from 'yup';
 import Travel from '../models/Travel';
-import User from '../models/User';
+import Admin from '../models/Admin';
 
 
 class TravelController {
@@ -27,7 +27,7 @@ class TravelController {
       return res.status(400).json({ error: 'Verifique se todos os campos foram preenchidos' });
     }
 
-    const userExists = await User.findOne({ 
+    const userExists = await Admin.findOne({ 
       where: { id: req.body.user_id}
     });
     const travelExists = await Travel.findOne({

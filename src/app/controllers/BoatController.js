@@ -1,6 +1,6 @@
 import Boat from '../models/Boat'
 import * as  Yup from 'yup';
-import User from '../models/User'
+import Admin from '../models/Admin'
 
 class BoatController {
 
@@ -27,7 +27,7 @@ class BoatController {
      
     });
 
-    const userExists = await User.findOne({
+    const userExists = await Admin.findOne({
       where: { id: req.body.user_id}
     });
 
