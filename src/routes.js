@@ -1,7 +1,7 @@
 import {Router} from 'express';
 
 import authMiddleware from './app/middlewares/auth';
-import AdminController from "./app/controllers/AdminController";
+import AdminController from './app/controllers/AdminController';
 import SessionController from './app/controllers/SessionController';
 import TravelerController from './app/controllers/TravelerController';
 import TravelController from './app/controllers/TravelController';
@@ -30,7 +30,7 @@ routes.delete('/travelers', TravelerController.destroy);
 
 routes.put('/admins', AdminController.update);
 routes.get('/admins', AdminController.index);
-routes.delete('/admins', AdminController.destroy);
+routes.delete('/admins', authMiddleware, AdminController.destroy);
 routes.get('/admins/:id', AdminController.descript);
 
 routes.put('/travels', TravelController.update);
