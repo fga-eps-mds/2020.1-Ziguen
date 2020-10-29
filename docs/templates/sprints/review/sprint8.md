@@ -25,8 +25,6 @@ Duração: 15/10 à 22/10
 ## Quadro de conhecimento
 ![Quadro Resumo](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/develop/docs/imagens/quadro_conhecimento_s8.jpg)
 
-## Planilha de horas
-![Planilha de horas](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/develop/docs/imagens/planilha_horas_s8.png)
 
 ## Status das Tarefas no Fim da Sprint
 | **Issue** | **História** | **Resposáveis** | **Status** |
