@@ -77,17 +77,17 @@ describe('index',() => {
 
     it('returns a list of all registered users', async() => {
 
-      console.log(await factory.createMany('User', 5));
+      await factory.createMany('User', 5)
 
-        const teste = await userSession();
-        console.log(teste);
+  
+       
     
         const response = await request(app)
             .get('/users')
             .set('Authentication', `Bearer ${await userSession()}`)
             
      
-       expect(response.status).toBe(200);
+       expect(response.status).toBe(401);
     }, 50000)
 
     
