@@ -1,12 +1,12 @@
 import Sequelize from 'sequelize';
-import Travel from '../app/models/Travel';
+import Trip from '../app/models/Trip';
 import Admin from '../app/models/Admin';
 import Traveler from '../app/models/Traveler';
 import Boat from '../app/models/Boat'
 import databaseConfig from '../config/database';
 
 
-const models = [Admin,Traveler, Travel, Boat];
+const models = [Admin,Traveler, Trip, Boat];
 
 class Database {
   constructor() {

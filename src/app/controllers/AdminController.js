@@ -104,7 +104,7 @@ class AdminController{
       return res.status(200).json({ message: 'Exclusão foi bem sucedida.' });
 
       }catch(err){
-        return res.status(500).json({ error: 'Falaha na exclusão' });
+        return res.status(500).json({ error: 'Falha na exclusão' });
       }
   }
 
