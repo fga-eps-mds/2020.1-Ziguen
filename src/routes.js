@@ -4,7 +4,7 @@ import authMiddleware from './app/middlewares/auth';
 import AdminController from './app/controllers/AdminController';
 import SessionController from './app/controllers/SessionController';
 import TravelerController from './app/controllers/TravelerController';
-import TravelController from './app/controllers/TravelController';
+import TripController from './app/controllers/TripController';
 
 
 import BoatController from './app/controllers/BoatController';
@@ -16,7 +16,7 @@ routes.post('/travelers', TravelerController.store);
 routes.post('/admins', AdminController.store);
 routes.post('/sessions', SessionController.store);
 routes.post('/sessions/trav', SessionController.store_trav);
-routes.post('/travels', TravelController.store);
+routes.post('/trips', TripController.store);
 routes.post('/boats', BoatController.store);
 
 
@@ -33,10 +33,10 @@ routes.get('/admins', AdminController.index);
 routes.delete('/admins', authMiddleware, AdminController.destroy);
 routes.get('/admins/:id', AdminController.descript);
 
-routes.put('/travels', TravelController.update);
-routes.get('/travels', TravelController.index);
-routes.get('/travels/:id', TravelController.descript);
-routes.delete('/travels', TravelController.destroy);
+routes.put('/trips', TripController.update);
+routes.get('/trips', TripController.index);
+routes.get('/trips/:id', TripController.descript);
+routes.delete('/trips', TripController.destroy);
 
 routes.put('/boats', BoatController.update);
 routes.get('/boats', BoatController.index);
