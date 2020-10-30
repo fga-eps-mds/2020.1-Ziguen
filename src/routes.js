@@ -30,7 +30,7 @@ routes.delete('/travelers', TravelerController.destroy);
 
 routes.put('/admins', AdminController.update);
 routes.get('/admins', AdminController.index);
-routes.delete('/admins', authMiddleware, AdminController.destroy);
+routes.delete('/admins', AdminController.destroy);
 routes.get('/admins/:id', AdminController.descript);
 
 routes.put('/travels', TravelController.update);
