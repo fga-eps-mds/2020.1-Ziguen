@@ -61,7 +61,7 @@ class AdminController{
     try{
       const { id } = req.body;
       const adminExists = await Admin.findByPk(id)
-      console.log(adminExists)
+      
       if(!adminExists){
         return res.status(400).json({ error: 'Usuario não existe' });
       }
@@ -86,19 +86,11 @@ class AdminController{
     try {
 
       const {id} = req.body;
-
-  
       const adminExists = await Admin.findByPk(id)
-
-      console.log(adminExists)
-
   
       if (!adminExists) {
         return res.json({ error: 'Usuario não existe' });
       }
-
-      console.log("buceta é isso mesmo carai")
-
       await adminExists.destroy();
 
       return res.status(200).json({ message: 'Exclusão foi bem sucedida.' });
