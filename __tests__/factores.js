@@ -1,9 +1,9 @@
 import faker from 'faker'
 import { factory} from 'factory-girl'
 
-import User from '../src/app/models/User'
+import Admin from '../src/app/models/Admin';
 
- factory.define('User', User, {
+ factory.define('Admin', Admin, {
     cpf: faker.random.number,
     name: faker.name.findName,
     email: faker.internet.email, 
@@ -13,4 +13,3 @@ import User from '../src/app/models/User'
 
  export default factory;
 
- // Gerar dados aleatorios

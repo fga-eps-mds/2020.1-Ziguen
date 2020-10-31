@@ -24,7 +24,7 @@ routes.post('/boats', BoatController.store);
 routes.use(authMiddleware); 
 
 routes.put('/travelers', TravelerController.update);
-routes.get('/travelers', TravelerController.list);
+routes.get('/travelers', TravelerController.index);
 routes.get('/travelers/:id', TravelerController.descript);
 routes.delete('/travelers', TravelerController.destroy);
 
