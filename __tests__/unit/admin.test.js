@@ -48,6 +48,16 @@ describe('Create', () => {
         
         expect(response.status).toBe(400);
     })
+
+    it('should encrypt admin password when new admin create', async() => {
+
+        const admin = await factory.create('Admin',{
+            password: "123456",
+        })
+        const compareHash = await bcrypt.compare('123456', admin.password_hash)
+        expect(compareHash).toBe(true);
+        
+    })
         
         
 })
