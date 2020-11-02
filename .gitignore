@@ -10,5 +10,5 @@ coverage
 lib-cov
 
 
-database.sqlite
+__tests__/database.sqlite
 

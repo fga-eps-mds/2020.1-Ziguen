@@ -20,6 +20,7 @@ describe('Create', () => {
     
         expect(response.status).toBe(200);
     })
+    
     it('must return validation failure', async() => {
         
         const admin = await factory.attrs('Admin',{
@@ -31,5 +32,22 @@ describe('Create', () => {
         const response = await request(app).post('/admins').send(admin);
         
         expect(response.status).toBe(500)
-        })
+    })
+
+    it('should return a message if the email is already registered', async() => {
+
+        const admin = await factory.attrs('Admin')
+        
+        await request(app)
+        .post('/admins')
+        .send(admin);
+        
+        const response = await request(app)
+        .post('/admins')
+        .send(admin)
+        
+        expect(response.status).toBe(400);
+    })
+        
+        
 })
