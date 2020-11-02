@@ -58,6 +58,20 @@ describe('Create', () => {
         expect(compareHash).toBe(true);
         
     })
+
+    it('returns a token if the user is authenticated', async () => {
+        const adm = (await factory.create('Admin')).dataValues;
+    
+        const session = await request(app)
+        .post('/sessions')
+        .send({
+            email: adm.email,
+            password: adm.password
+        })
+        expect(session.body).toHaveProperty('token');
+        expect(session.status).toBe(200);
+    
+    })
         
         
 })
