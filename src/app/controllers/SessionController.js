@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken'
-import User from '../models/User'
+import Admin from '../models/Admin'
 import Traveler from '../models/Traveler'
 
 import authConfig from '../../config/auth'
@@ -9,7 +9,7 @@ class SessionController {
         const {email, password } = req.body;
 
         // Verificando email
-        const user = await User.findOne({ where: {email:email}})
+        const user = await Admin.findOne({ where: {email:email}})
         if(!user){
             return res.status(401).json({ error: 'Usuário não existe.'});
         }   

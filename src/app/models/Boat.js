@@ -6,6 +6,7 @@ class Boat extends Model {
       super.init(
         {
           name: Sequelize.STRING,
+          capacity: Sequelize.NUMBER,
           user_id: Sequelize.NUMBER
         },
       {

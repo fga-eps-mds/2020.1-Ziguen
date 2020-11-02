@@ -1,101 +1,98 @@
 import Boat from '../models/Boat'
-import * as  Yup from 'yup';
-import User from '../models/User'
+import Admin from '../models/Admin'
 
 class BoatController {
 
   async index(req,res){
-    const { id } = req.query;
-    const Boats = await Boat.findAll({id});
-    return res.json(Boats);
+    try {
+      const { id } = req.query;
+      const Boats = await Boat.findAll({id});
+      return res.json(Boats);
+    }catch(err){
+      return res.status(500).json({ error: 'Falaha na exclusão' });
+    }
   }
 
   async store(req, res) {
-
-    const schema = Yup.object().shape({
-      name: Yup.string().required(),
-      user_id: Yup.number().required(),
-   });
-
-    if(!(await schema.isValid(req.body))){
-      return res.status(400).json({ error: 'Falha na validação das informações.' });
-    }
-
-    const boatExists = await Boat.findOne({    
-      where: {name: req.body.name}   
+    try{
+      const boatExists = await Boat.findOne({    
+        where: {name: req.body.name}   
      
-    });
+      });
 
-    const userExists = await User.findOne({
-      where: { id: req.body.user_id}
-    });
+      const userExists = await Admin.findOne({
+        where: { id: req.body.user_id}
+      });
 
-    if (!userExists) {
-      return res.status(400).json({ error: 'Administrador inexistente' });
-    };
+      if (!userExists) {
+        return res.status(400).json({ error: 'Administrador inexistente' });
+      };
 
-    if (boatExists) {
-      return res.status(400).json({ error: 'Embarcação já Cadastrada' });
-    };
+      if (boatExists) {
+        return res.status(400).json({ error: 'Embarcação já Cadastrada' });
+      };
 
-    const { name, user_id } = await Boat.create(req.body);
+      const { name, capacity, user_id } = await Boat.create(req.body);
 
-    return res.json({
-      name,
-      user_id
-    }); 
+      return res.json({
+        name,
+        capacity,
+        user_id
+      });
+    }catch(err){
+      return res.status(500).json({ error: 'Falaha na exclusão' });
+    } 
 
   }
 
    async update(req,res){
 
-    const schema = Yup.object().shape({
-      name: Yup.string().required(),
-   
-    });
-    if(!(await schema.isValid(req.body))){
-      return res.status(400).json({ error: 'Preencha todos os campos' });
+    try{
+      const boatExists = await Boat.findOne({
+        where: { id: req.body.id }
+      })    
+      if(!boatExists){
+        return res.status(400).json({ error: 'Embarcação não existe' });
+      }
+      const { name, capacity } = await boatExists.update(req.body);
+      return res.json({
+        name,
+        capacity
+      })
+    }catch(err){
+      return res.status(500).json({ error: 'Falaha na exclusão' });
     }
-
-    const boatExists = await Boat.findOne({
-      where: { id: req.body.id }
-       
-    })    
-    if(!boatExists){
-      return res.status(400).json({ error: 'Embarcação não existe' });
-    }
-
-    const { name } = await boatExists.update(req.body);
-
-
-    return res.json({
-      name,
-    })
-
   };
 
   async destroy(req, res) {
-    const schema = Yup.object().shape({
-      id: Yup.number().required()
-   });
+    try{
+      const boatExists = await Boat.findOne({
+        where: { id: req.body.id }
+      });
 
-    if (!(await schema.isValid(req.body))) {
-      return res
-      .status(400)
-      .json({ error: 'Falha na validação das informações.' });
+      if (!boatExists) {
+        return res.json({ error: 'Usuario não existe' });
+      } 
+
+      await boatExists.destroy();
+      return res.status(200).json({ message: 'Exclusão foi bem sucedida.' });
+    }catch(err){
+      return res.status(500).json({ error: 'Falaha na exclusão' });
     }
+  }
 
-   const boatExists = await Boat.findOne({
-    where: { id: req.body.id }
-   });
-
-   if (!boatExists) {
-     return res.json({ error: 'Usuario não existe' });
-   }
-
-    await boatExists.destroy();
-
-    return res.status(200).json({ message: 'Exclusão foi bem sucedida.' });
+  async descript(req, res){
+    
+    try{
+      const {id} = req.body;
+      const boats = await Boat.findByPk(id);
+      if(!boats){
+        return res.json({error:"Embarcação não existe"});
+      }
+      return res.json(boats);
+    }catch(err){
+      return res.status(500).json({ error: 'Falaha na exclusão' });
+    } 
   }
 
 
