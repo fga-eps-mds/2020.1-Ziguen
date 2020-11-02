@@ -13,13 +13,13 @@ describe('Session', () => {
 
 
 it('returns a token if the user is authenticated', async () => {
-    const user = (await factory.create('User')).dataValues;
+    const adm = (await factory.create('Admin')).dataValues;
 
     const session = await request(app)
     .post('/sessions')
     .send({
-        email: user.email,
-        password: user.password
+        email: adm.email,
+        password: adm.password
     })
     expect(session.body).toHaveProperty('token');
     expect(session.status).toBe(200);

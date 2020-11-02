@@ -14,8 +14,8 @@ describe('Admin', () => {
 describe('Create', () => {
 
 it('Create new user and return status 200 to successful', async() => {
-    const user = await factory.attrs('User');
-    const response = await request(app).post('/users').send(user);
+    const user = await factory.attrs('Admin');
+    const response = await request(app).post('/admins').send(user);
     
     expect(response.status).toBe(200);
     })
