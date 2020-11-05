@@ -11,6 +11,21 @@ describe('Admin', () => {
     })
 })
 
+async function adminSession() {
+    const user = (await factory.create('Admin')).dataValues;
+
+    const session = await request(app)
+      .post('/sessions')
+      .send({
+        email: user.email,
+        password: user.password,
+      });
+
+
+    return session.body.token;
+}
+
+
 describe('Create', () => {
 
     it('Create new user and return status 200 to successful', async() => {
@@ -19,6 +34,17 @@ describe('Create', () => {
         const response = await request(app).post('/admins').send(user);
     
         expect(response.status).toBe(200);
+    })
+
+    it('returns if the account is already registered', async() => {
+
+        const user = await factory.create('Admin');
+        const response = await request(app).post('/admins').send(user);
+
+        const user1 = await factory.create('Admin');
+        const response1 = await request(app).post('/admins').send(user1);
+    
+        expect(response1.status).toBe(500);
     })
     
     it('must return validation failure', async() => {
@@ -68,10 +94,10 @@ describe('Create', () => {
             email: adm.email,
             password: adm.password
         })
-        expect(session.body).toHaveProperty('token');
         expect(session.status).toBe(200);
     
     })
-        
-        
+         
 })
+
+
