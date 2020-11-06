@@ -102,11 +102,22 @@ describe('Create', () => {
 
 
 describe('index',() => {
-    it('returns a list of all registered users', async() => {
+    it('returns status 500', async() => {
         await factory.createMany('Admin',2);
         const response = await request(app)
-            .get('/users/list')
+            .get('/admins')
             .set('Authentication', `Bearer ${await adminSession()}`)
-        expect(response.status).toBe(500);
+        expect(response.status).toBe(401);
     });
 });
+
+describe('update', () => {
+    it('returns status 500', async() => {
+        await factory.attrs('Admin');
+        const response = await request(app)
+            .get('/admins')
+            .set('Authentication', `Bearer ${await adminSession()}`)
+        expect(response.status).toBe(401);
+
+    })
+})
