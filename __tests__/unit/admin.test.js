@@ -102,7 +102,7 @@ describe('Create', () => {
 
 
 describe('index',() => {
-    it('returns status 500', async() => {
+    it('returns status 401', async() => {
         await factory.createMany('Admin',2);
         const response = await request(app)
             .get('/admins')
@@ -112,10 +112,21 @@ describe('index',() => {
 });
 
 describe('update', () => {
-    it('returns status 500', async() => {
+    it('returns status 401', async() => {
         await factory.attrs('Admin');
         const response = await request(app)
-            .get('/admins')
+            .put('/admins')
+            .set('Authentication', `Bearer ${await adminSession()}`)
+        expect(response.status).toBe(401);
+
+    })
+})
+
+describe('delete', () => {
+    it('returns status 401', async() => {
+        await factory.attrs('Admin');
+        const response = await request(app)
+            .delete('/admins')
             .set('Authentication', `Bearer ${await adminSession()}`)
         expect(response.status).toBe(401);
 
