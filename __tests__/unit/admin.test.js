@@ -101,3 +101,12 @@ describe('Create', () => {
 })
 
 
+describe('index',() => {
+    it('returns a list of all registered users', async() => {
+        await factory.createMany('Admin',2);
+        const response = await request(app)
+            .get('/users/list')
+            .set('Authentication', `Bearer ${await adminSession()}`)
+        expect(response.status).toBe(500);
+    });
+});
