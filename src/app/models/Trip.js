@@ -1,7 +1,7 @@
 import Sequelize, { Model } from 'sequelize';
 
 
-class Travel extends Model {
+class Trip extends Model {
     static init(sequelize){
       super.init(
         {
@@ -18,4 +18,4 @@ class Travel extends Model {
         return this;
     }
 }
-export default Travel;
+export default Trip;
