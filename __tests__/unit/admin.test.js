@@ -60,6 +60,7 @@ describe('Create', () => {
         expect(response.status).toBe(500)
     })
 
+ 
     it('should return a message if the email is already registered', async() => {
 
         const admin = await factory.attrs('Admin')
@@ -127,7 +128,7 @@ describe('delete', () => {
         await factory.attrs('Admin');
         const response = await request(app)
             .delete('/admins')
-            .set('Authentication', `Bearer ${await adminSession()}`)
+            .set('Authentication', `Bearer ${await adminSession()}`);
         expect(response.status).toBe(401);
 
     })
