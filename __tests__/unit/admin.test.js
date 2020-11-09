@@ -133,9 +133,9 @@ describe('delete', () => {
     it('returns status 401', async() => {
         await factory.attrs('Admin');
         const response = await request(app)
-            .delete('/admins')
-            .set('Authentication', `Bearer ${await adminSession()}`);
+            .delete('/admins/delete')
         expect(response.status).toBe(401);
 
     })
+    
 })
