@@ -110,6 +110,13 @@ describe('index',() => {
             .set('Authentication', `Bearer ${await adminSession()}`)
         expect(response.status).toBe(401);
     });
+
+    it('returns status 200', async() => {
+        await factory.createMany('Admin',2);
+        const response = await request(app)
+            .get('/admins/list')
+        expect(response.status).toBe(200);
+    });
 });
 
 describe('update', () => {
