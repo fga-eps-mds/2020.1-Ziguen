@@ -120,21 +120,21 @@ describe('index',() => {
 });
 
 describe('update', () => {
-    it('returns status 401', async() => {
+    it('returns status 400', async() => {
         await factory.attrs('Admin');
         const response = await request(app)
             .put('/admins/update')
-        expect(response.status).toBe(401);
+        expect(response.status).toBe(400);
 
     })
 })
 
 describe('delete', () => {
-    it('returns status 401', async() => {
+    it('returns status 200 if delete', async() => {
         await factory.attrs('Admin');
         const response = await request(app)
             .delete('/admins/delete')
-        expect(response.status).toBe(401);
+        expect(response.status).toBe(200);
 
     })
     
