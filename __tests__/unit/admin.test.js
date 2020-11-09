@@ -123,8 +123,7 @@ describe('update', () => {
     it('returns status 401', async() => {
         await factory.attrs('Admin');
         const response = await request(app)
-            .put('/admins')
-            .set('Authentication', `Bearer ${await adminSession()}`)
+            .put('/admins/update')
         expect(response.status).toBe(401);
 
     })
