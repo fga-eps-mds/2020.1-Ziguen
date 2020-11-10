@@ -1,12 +1,4 @@
-setup: 
-  addons:
-    - plan: heroku-postgres
-      as: DATABASE
- 
-##build:
- # docker:
-  #  web: Dockerfile 
 
 run:
-  web: yarn install
+  web: yarn install && yarn start
 
