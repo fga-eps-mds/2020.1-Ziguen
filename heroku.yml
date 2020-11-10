@@ -3,4 +3,4 @@ build:
     web: Dockerfile 
 
 run:
-  web: make build && make up
+  web: yarn install
