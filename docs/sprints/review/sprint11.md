@@ -23,10 +23,10 @@ Duração: 05/11 à 12/11
 | Liverson Severo | ✔ | ✔ | ✔ |
 
 ## Quadro de conhecimento
-![Quadro Resumo](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/develop/docs/imagens/quadro_conhecimento_s11.jpg)
+![Quadro Resumo](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/docs/docs/imagens/quadro_conhecimento_s11.jpg)
 
 ## Planilha de horas
-![Planilha de horas](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/develop/docs/imagens/planilha_horas_s11.png)
+![Planilha de horas](https://github.com/fga-eps-mds/2020-1-Ziguen/blob/docs/docs/imagens/planilha_horas_s11.png)
 
 
 ## Status das Tarefas no Fim da Sprint
