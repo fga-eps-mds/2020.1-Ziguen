@@ -21,4 +21,13 @@ describe('Create', () => {
         const response = await request(app).post('/trips').send(trip);
         expect(response.status).toBe(200);
     })
+
+    it('return status 400 to failure', async() => {
+        
+        const trip = await factory.attrs('Trip',{
+            user_id: null
+        });
+        const response = await request(app).post('/trips').send(trip);
+        expect(response.status).toBe(400);
+    })
 })
