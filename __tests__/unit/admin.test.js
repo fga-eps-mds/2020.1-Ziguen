@@ -105,7 +105,7 @@ describe('Create', () => {
 describe('index',() => {
     it('returns status 200 to successful', async() => {
       
-        await factory.createMany('Admin',2);
+        await factory.createMany('Admin',1);
         const response = await request(app)
             .get('/admins')
             .set('authorization', `Bearer ${await adminSession()}`)
