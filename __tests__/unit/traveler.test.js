@@ -26,4 +26,15 @@ describe('Create', () => {
         expect(response.status).toBe(400);
     })
 
+    it('returns if the account is already registered', async() => {
+
+        const user = await factory.create('Traveler');
+        await request(app).post('/travelers').send(user);
+
+        const user1 = await factory.create('Traveler');
+        const response1 = await request(app).post('/travelers').send(user1);
+    
+        expect(response1.status).toBe(400);
+    })
+
 })
