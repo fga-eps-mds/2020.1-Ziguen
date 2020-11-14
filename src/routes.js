@@ -19,8 +19,7 @@ routes.post('/sessions/trav', SessionController.store_trav);
 routes.post('/trips', TripController.store);
 routes.post('/boats', BoatController.store);
 routes.get('/admins/list', AdminController.index);
-routes.put('/admins/update', AdminController.update);
-routes.delete('/admins/delete', AdminController.destroy);
+
 
 
 // Todas as rotas a baixo desse middleware tem que ser autenticadas

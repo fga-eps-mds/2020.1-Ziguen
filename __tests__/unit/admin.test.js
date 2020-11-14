@@ -103,37 +103,41 @@ describe('Create', () => {
 
 
 describe('index',() => {
-    it('returns status 401', async() => {
+    it('returns status 200 to successful', async() => {
+      
         await factory.createMany('Admin',2);
         const response = await request(app)
             .get('/admins')
-            .set('Authentication', `Bearer ${await adminSession()}`)
-        expect(response.status).toBe(401);
+            .set('authorization', `Bearer ${await adminSession()}`)
+        expect(response.status).toBe(200);
     });
 
-    it('returns status 200', async() => {
+    it('returns status 401 to failure', async() => {
         await factory.createMany('Admin',2);
+        const tok = 123456;
         const response = await request(app)
-            .get('/admins/list')
-        expect(response.status).toBe(200);
+            .get('/admins')
+            .set('authorization', `Bearer ${tok}`)
+        expect(response.status).toBe(401);
     });
 });
 
 describe('update', () => {
-    it('returns status 400', async() => {
+    it('returns status 400 to failure', async() => {
         await factory.attrs('Admin');
         const response = await request(app)
-            .put('/admins/update')
+            .put('/admins')
+            .set('authorization', `Bearer ${await adminSession()}`)
         expect(response.status).toBe(400);
-
     })
 })
 
 describe('delete', () => {
-    it('returns status 200 if delete', async() => {
+    it('returns status 200 to successful', async() => {
         await factory.attrs('Admin');
         const response = await request(app)
-            .delete('/admins/delete')
+            .delete('/admins')
+            .set('authorization', `Bearer ${await adminSession()}`)
         expect(response.status).toBe(200);
 
     })
