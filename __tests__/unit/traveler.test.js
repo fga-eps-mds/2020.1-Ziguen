@@ -10,6 +10,20 @@ describe('Traveler', () => {
     })
 })
 
+async function travelerSession() {
+    const user = (await factory.create('Traveler')).dataValues;
+
+    const session = await request(app)
+      .post('/sessions/trav')
+      .send({
+        email: user.email,
+        password: user.password,
+      });
+
+
+    return session.body.token;
+}
+
 describe('Create', () => {
 
     it("return status 200 to successful", async() => {
@@ -37,4 +51,38 @@ describe('Create', () => {
         expect(response1.status).toBe(400);
     })
 
+})
+
+describe('index', () => {
+    it('returns status 200 to successful', async() => {
+      
+        const user = await factory.create('Traveler');
+        await request(app).post('/travelers').send(user);
+        const response = await request(app)
+            .get('/travelers')
+            .set('authorization', `Bearer ${await travelerSession()}`)
+        expect(response.status).toBe(200);
+    });
+
+    it('returns status 401 to failure', async() => {
+        await factory.createMany('Traveler',1);
+        const tok = 123456;
+        const response = await request(app)
+            .get('/travelers')
+            .set('authorization', `Bearer ${tok}`)
+        expect(response.status).toBe(401);
+    });
+
+})
+
+describe('delete', () => {
+    it('returns status 200 to successful', async() => {
+        await factory.attrs('Traveler');
+        const response = await request(app)
+            .delete('/travelers')
+            .set('authorization', `Bearer ${await travelerSession()}`)
+        expect(response.status).toBe(200);
+
+    })
+    
 })
