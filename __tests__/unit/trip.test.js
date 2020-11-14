@@ -5,7 +5,7 @@ import truncate from '../util/truncate'
 import factory from '../factores'
 
 
-describe('Admin', () => {
+describe('Trip', () => {
     beforeEach(async() =>{
     await truncate();
     })

@@ -3,6 +3,7 @@ import { factory} from 'factory-girl'
 
 import Admin from '../src/app/models/Admin';
 import Trip from '../src/app/models/Trip';
+import Traveler from '../src/app/models/Traveler';
 
  factory.define('Admin', Admin, {
     cpf: faker.random.number,
@@ -12,11 +13,17 @@ import Trip from '../src/app/models/Trip';
     password: faker.internet.password
  })
  factory.define('Trip',Trip, {
-   origin: faker.name.findName,
-   destiny: faker.name.findName,
-   hour: faker.random.number,
-   date: faker.random.number,
-   
+    origin: faker.name.findName,
+    destiny: faker.name.findName,
+    hour: faker.random.number,
+    date: faker.random.number,
+ })
+ factory.define('Traveler', Traveler, {
+    name: faker.name.findName,
+    cpf: faker.random.number,
+    email: faker.internet.email,
+    telephone: faker.random.number,
+    password: faker.internet.password,
  })
 
  export default factory;
