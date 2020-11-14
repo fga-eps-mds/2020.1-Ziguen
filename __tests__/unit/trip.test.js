@@ -69,3 +69,13 @@ describe('index', () => {
 
 })
 
+describe('delete', () => {
+ 
+    it('returns status 500 to failure', async() => {
+        const response = await request(app)
+            .delete('/trips')
+            .set('authorization', `Bearer ${await adminSession()}`)
+        expect(response.status).toBe(500);
+    })
+    
+})
