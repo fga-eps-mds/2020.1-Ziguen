@@ -30,4 +30,13 @@ describe('Create', () => {
         const response = await request(app).post('/trips').send(trip);
         expect(response.status).toBe(400);
     })
+
+    it('return 400 status if admin does not exist', async() => {
+        
+        const trip = await factory.attrs('Trip',{
+            user_id: 99999
+        });
+        const response = await request(app).post('/trips').send(trip);
+        expect(response.status).toBe(400);
+    })
 })
