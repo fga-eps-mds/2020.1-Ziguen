@@ -28,6 +28,9 @@ async function adminSession() {
 
 describe('Create', () => {
     it('Create new trip and return status 200 to sucessful', async() => {
+
+        const user = await factory.attrs('Admin');
+        await request(app).post('/admins').send(user);
         
         const trip = await factory.attrs('Trip',{
             user_id: 1
