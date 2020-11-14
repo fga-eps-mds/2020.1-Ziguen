@@ -11,6 +11,20 @@ describe('Admin', () => {
     })
 })
 
+async function adminSession() {
+    const user = (await factory.create('Admin')).dataValues;
+
+    const session = await request(app)
+      .post('/sessions')
+      .send({
+        email: user.email,
+        password: user.password,
+      });
+
+
+    return session.body.token;
+}
+
 
 describe('Create', () => {
     it('Create new trip and return status 200 to sucessful', async() => {
@@ -28,15 +42,30 @@ describe('Create', () => {
             user_id: null
         });
         const response = await request(app).post('/trips').send(trip);
-        expect(response.status).toBe(400);
+        expect(response.status).toBe(500);
     })
 
-    it('return 400 status if admin does not exist', async() => {
+    it('return 500 status if admin does not exist', async() => {
         
         const trip = await factory.attrs('Trip',{
             user_id: 99999
         });
         const response = await request(app).post('/trips').send(trip);
-        expect(response.status).toBe(400);
+        expect(response.status).toBe(500);
     })
+
+  
 })
+
+describe('index', () => {
+    it("list all trip and return status 200 to successful", async() => {
+
+        await factory.attrs('Trip');
+            const response = await request(app)
+                .get('/trips')
+                .set('authorization', `Bearer ${await adminSession()}`)
+            expect(response.status).toBe(200);
+    })
+
+})
+
