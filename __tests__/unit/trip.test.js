@@ -72,6 +72,23 @@ describe('index', () => {
 
 })
 
+describe('descript', () => {
+    it("list all trip and return status 404 to failure", async() => {
+
+       const trip = await factory.attrs('Trip');
+       await request(app).post('/trips').send(trip);
+            const response = await request(app)
+                .get('/trips:id')
+                .send({
+                    id:1
+                })
+                .set('authorization', `Bearer ${await adminSession()}`)
+            expect(response.status).toBe(404);
+    })
+
+})
+
+
 describe('delete', () => {
  
     it('returns status 500 to failure', async() => {

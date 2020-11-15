@@ -82,7 +82,7 @@ describe('update', () => {
         await request(app).post('/travelers').send(user);
 
         const response = await request(app)
-            .put('/Travelers')
+            .put('/travelers')
             .set('authorization', `Bearer ${await travelerSession()}`)
         expect(response.status).toBe(400);
     })
