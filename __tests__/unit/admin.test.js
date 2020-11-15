@@ -36,10 +36,17 @@ describe('Create', () => {
         expect(response.status).toBe(200);
     })
 
-    it('returns if the account is already registered', async() => {
+    it('Create new user and return status 500 to successful', async() => {
+
+        const response = await request(app).post('/admins').send();
+    
+        expect(response.status).toBe(500);
+    })
+
+    it('returns status 500 if the account is already registered', async() => {
 
         const user = await factory.create('Admin');
-        const response = await request(app).post('/admins').send(user);
+        await request(app).post('/admins').send(user);
 
         const user1 = await factory.create('Admin');
         const response1 = await request(app).post('/admins').send(user1);
