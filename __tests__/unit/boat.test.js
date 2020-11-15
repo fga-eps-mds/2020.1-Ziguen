@@ -25,4 +25,32 @@ describe('Create', () => {
 
         expect(response.status).toBe(200);
     })
+    it('return status 400 to failure', async() => {
+        
+        const admin = await factory.attrs('Admin');
+        await request(app).post('/admins').send(admin);
+        
+        const boat = await factory.attrs('Boat')
+
+        const response = await request(app).post('/boats').send(boat);
+
+        expect(response.status).toBe(400);
+    })
+    it('If the boat does not exist return status 500', async() => {
+        
+        const admin = await factory.attrs('Admin');
+        await request(app).post('/admins').send(admin);
+        
+        const boat = await factory.attrs('Boat',{
+            user_id: 999999
+        });
+
+        const response = await request(app).post('/boats').send(boat);
+
+        expect(response.status).toBe(400);
+        
+
+    })
+
+
 })
