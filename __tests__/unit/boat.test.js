@@ -48,8 +48,17 @@ describe('Create', () => {
         const response = await request(app).post('/boats').send(boat);
 
         expect(response.status).toBe(400);
-        
+    })
 
+    describe('index', () => {
+        it("list all boat and return status 200 to successful", async() => {
+    
+            await factory.attrs('Boat');
+                const response = await request(app)
+                    .get('/boats')
+                    .set('authorization', `Bearer ${await adminSession()}`)
+                expect(response.status).toBe(200);
+        })
     })
 
 
