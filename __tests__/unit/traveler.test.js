@@ -75,6 +75,20 @@ describe('index', () => {
 
 })
 
+describe('update', () => {
+    it('returns status 400 to failure', async() => {
+
+        const user = await factory.create('Traveler');
+        await request(app).post('/travelers').send(user);
+
+        const response = await request(app)
+            .put('/Travelers')
+            .set('authorization', `Bearer ${await travelerSession()}`)
+        expect(response.status).toBe(400);
+    })
+})
+
+
 describe('delete', () => {
     it('returns status 200 to successful', async() => {
         await factory.attrs('Traveler');
