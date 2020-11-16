@@ -11,6 +11,21 @@ describe('Boat', () => {
     })
 })
 
+async function adminSession() {
+    const user = (await factory.create('Admin')).dataValues;
+
+    const session = await request(app)
+      .post('/sessions')
+      .send({
+        email: user.email,
+        password: user.password,
+      });
+
+
+    return session.body.token;
+}
+
+
 describe('Create', () => {
     it('return status 200 to successful', async() => {
 
@@ -49,17 +64,33 @@ describe('Create', () => {
 
         expect(response.status).toBe(400);
     })
+})
 
-    describe('index', () => {
-        it("list all boat and return status 200 to successful", async() => {
-    
-            await factory.attrs('Boat');
-                const response = await request(app)
-                    .get('/boats')
-                    .set('authorization', `Bearer ${await adminSession()}`)
-                expect(response.status).toBe(200);
-        })
+describe('index', () => {
+    it("list all boat and return status 200 to successful", async() => {
+
+        await factory.attrs('Boat');
+            const response = await request(app)
+                .get('/boats')
+                .set('authorization', `Bearer ${await adminSession()}`)
+            expect(response.status).toBe(200);
     })
+})
 
+describe('delete', () => {
+    it('returns status 500 to failure', async() => {
+        
+        const admin = await factory.attrs('Admin');
+        await request(app).post('/admins').send(admin);
 
+        const boat = await factory.attrs('Boat',{
+            user_id: 1
+        });
+        await request(app).post('/boats').send(boat);
+            
+        const response = await request(app)
+            .delete('/boats')
+            .set('authorization', `Bearer ${await adminSession()}`)
+        expect(response.status).toBe(500);
+    })
 })
