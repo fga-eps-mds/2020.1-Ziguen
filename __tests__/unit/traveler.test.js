@@ -51,6 +51,20 @@ describe('Create', () => {
         expect(response1.status).toBe(400);
     })
 
+    it('returns status 200 if login is successfu', async() => {
+
+        const user = (await factory.create('Traveler')).dataValues;
+
+        const session = await request(app)
+          .post('/sessions/trav')
+          .send({
+            email: user.email,
+            password: user.password,
+          });
+    
+        expect(session.status).toBe(200);
+    })
+
 })
 
 describe('index', () => {
