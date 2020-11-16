@@ -6,9 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 node_modules
 
-coverage
-lib-cov
 
-
-__tests__/database.sqlite
+/__tests__/database.sqlite
+/__tests__/coverage
 
