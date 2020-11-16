@@ -5,7 +5,9 @@
   "scripts": {
     "start": "nodemon ./src/server.js --ignore __tests__",
     "pretest": "NODE_ENV=test sequelize db:migrate",
-    "test": "NODE_ENV=test jest --runInBand",
+
+    "test": "NODE_ENV=test  jest  ",
+
     "posttest": "NODE_ENV=test  sequelize db:migrate:undo:all"
   },
   "repository": "https://github.com/fga-eps-mds/2020-1--Grupo-1.git",
