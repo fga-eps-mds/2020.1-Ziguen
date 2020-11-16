@@ -5,7 +5,7 @@ import truncate from '../util/truncate'
 import factory from '../factores'
 
 
-describe('Admin', () => {
+describe('Trip', () => {
     beforeEach(async() =>{
     await truncate();
     })
@@ -28,6 +28,9 @@ async function adminSession() {
 
 describe('Create', () => {
     it('Create new trip and return status 200 to sucessful', async() => {
+
+        const user = await factory.attrs('Admin');
+        await request(app).post('/admins').send(user);
         
         const trip = await factory.attrs('Trip',{
             user_id: 1
@@ -68,6 +71,23 @@ describe('index', () => {
     })
 
 })
+
+describe('descript', () => {
+    it("list all trip and return status 404 to failure", async() => {
+
+       const trip = await factory.attrs('Trip');
+       await request(app).post('/trips').send(trip);
+            const response = await request(app)
+                .get('/trips:id')
+                .send({
+                    id:1
+                })
+                .set('authorization', `Bearer ${await adminSession()}`)
+            expect(response.status).toBe(404);
+    })
+
+})
+
 
 describe('delete', () => {
  
