@@ -5,6 +5,7 @@ import AdminController from './app/controllers/AdminController';
 import SessionController from './app/controllers/SessionController';
 import TravelerController from './app/controllers/TravelerController';
 import TripController from './app/controllers/TripController';
+import PassageController from './app/controllers/PassageController';
 
 
 import BoatController from './app/controllers/BoatController';
@@ -18,6 +19,9 @@ routes.post('/sessions', SessionController.store);
 routes.post('/sessions/trav', SessionController.store_trav);
 routes.post('/trips', TripController.store);
 routes.post('/boats', BoatController.store);
+routes.post('/passages', PassageController.store);
+
+
 
 
 // Todas as rotas a baixo desse middleware tem que ser autenticadas

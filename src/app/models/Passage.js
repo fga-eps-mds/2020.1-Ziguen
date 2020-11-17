@@ -5,9 +5,9 @@ class Passage extends Model {
     static init(sequelize){
       super.init(
         {
-          price: Sequelize.NUMBER,
-          user_id: Sequelize.NUMBER,
-          travaler_id: Sequelize.NUMBER,
+          price: Sequelize.STRING,
+          admin_id: Sequelize.NUMBER,
+          traveler_id: Sequelize.NUMBER,
           trip_id: Sequelize.NUMBER,
           
         },

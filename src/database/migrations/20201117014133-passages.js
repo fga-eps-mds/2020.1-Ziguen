@@ -9,10 +9,10 @@ module.exports = {
         autoIncrement: true,
       },
       price: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING,
         allowNull: false,
       },
-      user_id: {
+      admin_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
