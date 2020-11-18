@@ -1,7 +1,7 @@
 import app from './app';
 
+var PORT = process.env.PORT || 5000
 
-const port = process.env.PORT || 3333;
+//teste1
 
-
-app.listen(port);
+app.listen(PORT);

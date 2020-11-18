@@ -21,6 +21,8 @@ routes.post('/trips', TripController.store);
 routes.post('/boats', BoatController.store);
 routes.post('/passages', PassageController.store);
 
+routes.get('/admins/list', AdminController.index);
+
 
 
 
