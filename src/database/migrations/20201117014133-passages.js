@@ -12,10 +12,6 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      admin_id: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-      },
       traveler_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
@@ -24,8 +20,6 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
-
-
       created_at: {
         type: Sequelize.STRING,
         allowNull: false,

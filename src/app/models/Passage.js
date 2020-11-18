@@ -6,13 +6,12 @@ class Passage extends Model {
       super.init(
         {
           price: Sequelize.STRING,
-          admin_id: Sequelize.NUMBER,
           traveler_id: Sequelize.NUMBER,
           trip_id: Sequelize.NUMBER,
           
         },
         {
-            sequelize,
+            sequelize
         }
         );
         return this;
