@@ -36,6 +36,25 @@ class PassageController {
      }
   }
 
+  async destroy(req, res) {
+
+    try{
+      const passageExists = await Passage.findOne({
+        where: {id: req.body.id}
+      })
+  
+      if (!passageExists) {
+        return res.json({ error: 'Passagem não existe' });
+      }
+  
+      await passageExists.destroy();
+  
+      return res.status(200).json({ message: 'Exclusão foi bem sucedida.' });
+    }catch(err){
+      return res.status(500).json({ error: 'Falha na exclusão' });
+    }
+  }
+
 
 }
 export default new PassageController(); 
