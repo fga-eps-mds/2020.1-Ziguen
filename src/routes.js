@@ -47,6 +47,7 @@ routes.get('/boats', BoatController.index);
 routes.get('/boats/:id', BoatController.descript);
 routes.delete('/boats', BoatController.destroy);
 
+routes.get('/passages', PassageController.index);
 
 
 
