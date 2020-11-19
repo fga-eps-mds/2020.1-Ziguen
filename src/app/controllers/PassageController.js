@@ -80,6 +80,23 @@ class PassageController {
     }
   }
 
+  async descript(req, res){
+    try{
+      const {id} = req.body;
+
+      const passageExists = await Passage.findByPk(id);
+  
+      if(!passageExists){
+        return res.json({error:"Essa viagem não existe."});
+      }
+      
+      return res.json(passageExists);
+    }catch(err){
+      return res.status(500).json({ error: 'Falha ao listar' });
+    }
+  
+  }
+
 
 }
 export default new PassageController(); 
