@@ -36,6 +36,31 @@ class PassageController {
      }
   }
 
+  async update(req,res){ 
+
+    try{
+      const passageExists = await Passage.findOne({
+        where: {id: req.body.id}
+      })
+  
+      if(!passageExists){
+        return res.status(400).json({ error: 'Viagem não existe' });
+      }
+      
+      const {price, traveler_id, trip_id} = await passageExists.update(req.body);
+  
+      return res.json({
+        price,
+        traveler_id,
+        trip_id
+      })
+  
+
+    }catch(err){
+      return res.status(500).json({ error: 'Falha no update' });
+    }
+  }
+
   async destroy(req, res) {
 
     try{
