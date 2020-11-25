@@ -3,15 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./src/server.js --ignore __tests__",
+    "start": "node -r sucrase/register ./src/server.js",
+    "dev": "nodemon ./src/server.js --ignore __tests_",
     "pretest": "NODE_ENV=test sequelize db:migrate",
-    "test": "NODE_ENV=test jest --runInBand",
+    "test": "NODE_ENV=test  jest  ",
     "posttest": "NODE_ENV=test  sequelize db:migrate:undo:all"
   },
   "repository": "https://github.com/fga-eps-mds/2020-1--Grupo-1.git",
   "author": "francisco1code <francisco170142329@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@sucrase/jest-plugin": "^2.0.0",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
@@ -21,17 +23,16 @@
     "pg": "^8.3.3",
     "pg-hstore": "^2.3.3",
     "sequelize": "^6.3.5",
+    "sucrase": "^3.16.0",
     "yup": "^0.29.3"
   },
   "devDependencies": {
-    "@sucrase/jest-plugin": "^2.0.0",
     "@types/jest": "^26.0.14",
     "factory-girl": "^5.0.4",
     "faker": "^5.1.0",
     "jest": "^26.5.3",
     "sequelize-cli": "^6.2.0",
     "sqlite3": "^5.0.0",
-    "sucrase": "^3.15.0",
     "supertest": "^5.0.0"
   }
 }
