@@ -34,7 +34,7 @@ class TripController {
         return res.status().json({ error: 'administrador não existe.' });
       }
     
-     const {  origin, destiny, hour, date, user_id} = await Trip.create(req.body);
+     const {  origin, destiny, hour, date, user_id } = await Trip.create(req.body);
       
       return res.json({
         origin,
