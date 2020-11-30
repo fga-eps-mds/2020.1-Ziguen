@@ -1,4 +1,3 @@
-import * as  Yup from 'yup';
 import Trip from '../models/Trip';
 import Passage from '../models/Passage';
 

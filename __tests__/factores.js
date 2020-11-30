@@ -4,6 +4,7 @@ import { factory} from 'factory-girl'
 import Admin from '../src/app/models/Admin';
 import Trip from '../src/app/models/Trip';
 import Boat from '../src/app/models/Boat';
+import Passage from '../src/app/models/Passage'
 
 import Traveler from '../src/app/models/Traveler';
 
@@ -27,12 +28,19 @@ import Traveler from '../src/app/models/Traveler';
     telephone: faker.random.number,
     password: faker.internet.password,
  })
-  factory.define('Boat', Boat, {
+ factory.define('Boat', Boat, {
     name: faker.name.findName,
     capacity: faker.random.number,
     user_id: faker.random.number
 
   })
+
+  factory.define('Passage', Passage, {
+   price: faker.random.number,
+   traveler_id: faker.random.number,
+   trip_id: faker.random.number
+
+ })
 
 
  export default factory;
