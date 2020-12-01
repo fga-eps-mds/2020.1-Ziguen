@@ -116,3 +116,12 @@ describe('Index', () =>  {
         expect(response.status).toBe(401);
     })
 })
+
+describe('Delete', () => {
+    it('Should return status 500, if deleting is not successful', async() => {
+        await factory.create('Passage')
+        const response = await request(app).delete('/passages').set('authorization', `Bearer ${await adminSession()}`)
+
+        expect(response.status).toBe(500);
+    })
+})
