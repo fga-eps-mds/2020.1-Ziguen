@@ -28,6 +28,19 @@ describe('Trip', () => {
     })
 })
 
+async function adminSession() {
+    const user = (await factory.create('Admin')).dataValues;
+
+    const session = await request(app)
+      .post('/sessions')
+      .send({
+        email: user.email,
+        password: user.password,
+      });
+
+
+    return session.body.token;
+}
 
 describe('Create', () => {
     it('returns status 400 to failure', async() => {
