@@ -46,6 +46,17 @@ async function adminSession() {
 describe('Create', () => {
     it('returns status 400 to failure', async() => {
 
+        const user = await factory.attrs('Admin');
+        await request(app).post('/admins').send(user);
+
+        const trip = await factory.attrs('Trip',{
+            user_id: 1
+        });
+        await request(app).post('/trips').send(trip);
+
+        const traveler = await factory.attrs('Traveler');
+        await request(app).post('/travelers').send(traveler);
+
         const passage = await factory.attrs('Passage',{
             price: "200",
             traveler_id: 1,
