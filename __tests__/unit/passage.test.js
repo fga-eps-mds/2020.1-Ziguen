@@ -3,6 +3,7 @@ import app from '../../src/app'
 import bcrypt from 'bcryptjs'
 import truncate from '../util/truncate'
 import factory from '../factores'
+import { response } from 'express'
 
 
 describe('Passage', () => {
@@ -66,5 +67,24 @@ describe('Create', () => {
         const response = await request(app).post('/passages').send(passage);
     
         expect(response.status).toBe(400);
+    })
+})
+
+describe('Update', () => {
+    it('Should return status 401, if Authorization error', async() =>{
+        const tok = 1234;
+
+        const passage = await factory.attrs('Passage',{
+            price: "100",
+            traveler_id: 1,
+            trip_id: 1,
+        });
+        await request(app).post('/passages').send(passage);
+
+        await request(app).put('/admins').set('authorization',tok)
+
+        const response = await request(app).put('/passages').send(passage);
+        
+        expect(response.status).toBe(401);
     })
 })
