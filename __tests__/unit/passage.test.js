@@ -88,3 +88,12 @@ describe('Update', () => {
         expect(response.status).toBe(401);
     })
 })
+
+describe('Index', () =>  {
+    it('Should return status 200, if listing is successful', async() => {
+        await factory.createMany('Passage',1)
+        const response = await request(app).get('/passages').set('authorization', `Bearer ${await adminSession()}`)
+
+        expect(response.status).toBe(200);
+    })
+})
