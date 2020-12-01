@@ -14,9 +14,24 @@ describe('Passage', () => {
 describe('Create', () => {
     it('returns status 400 to failure', async() => {
 
-        const user = await factory.attrs('Passage');
-        const response = await request(app).post('/passages').send(user);
+        const user = await factory.attrs('Admin');
+        await request(app).post('/admins').send(user);
+
+        const traveler = await factory.attrs('Traveler');
+        await request(app).post('/travelers').send(traveler);
+
+        const trip = await factory.attrs('Trip',{
+            user_id: 1
+        });
+        await request(app).post('/trips').send(trip);
+
+        const passage = await factory.attrs('Passage',{
+            price: "200",
+            traveler_id: 1,
+            trip_id: 1
+        });
+        const response = await request(app).post('/passages').send(passage);
     
-        expect(response.status).toBe(400);
+        expect(response.status).toBe(200);
     })
 })
