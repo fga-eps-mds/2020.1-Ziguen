@@ -16,6 +16,18 @@ describe('Admin', () => {
     })
 })
 
+describe('Traveler', () => {
+    beforeEach(async() =>{
+    await truncate();
+    })
+})
+
+describe('Trip', () => {
+    beforeEach(async() =>{
+    await truncate();
+    })
+})
+
 
 describe('Create', () => {
     it('returns status 400 to failure', async() => {
