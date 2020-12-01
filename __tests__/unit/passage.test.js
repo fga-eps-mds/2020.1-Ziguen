@@ -96,4 +96,12 @@ describe('Index', () =>  {
 
         expect(response.status).toBe(200);
     })
+
+    it('Should return status 401, if listing is not successful', async() => {
+        const tok = 123456
+        await factory.createMany('Passage',1)
+        const response = await request(app).get('/passages').set('authorization', tok)
+
+        expect(response.status).toBe(401);
+    })
 })
