@@ -10,6 +10,12 @@ describe('Passage', () => {
     await truncate();
     })
 })
+describe('Admin', () => {
+    beforeEach(async() =>{
+    await truncate();
+    })
+})
+
 
 describe('Create', () => {
     it('returns status 400 to failure', async() => {
@@ -33,5 +39,18 @@ describe('Create', () => {
         const response = await request(app).post('/passages').send(passage);
     
         expect(response.status).toBe(200);
+    })
+
+    it('should return status 400, if data is null', async() => {
+        
+       
+        const passage = await factory.attrs('Passage',{
+            price: null,
+            traveler_id: null,
+            trip_id: null
+        });
+        const response = await request(app).post('/passages').send(passage);
+    
+        expect(response.status).toBe(400);
     })
 })
