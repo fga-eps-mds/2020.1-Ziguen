@@ -133,5 +133,17 @@ describe ('Descript', () => {
         
 
         expect(response.status).toBe(200);
+ 
+    })
+
+    it('Should return status 401, if descript is not sucessful', async() => {
+        const tok = 12390
+        await factory.create('Passage')
+        const response = await request(app).get('/passages').set('authorization', tok)
+        
+
+        expect(response.status).toBe(401);
     })
 })
+
+
