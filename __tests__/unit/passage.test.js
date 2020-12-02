@@ -125,3 +125,13 @@ describe('Delete', () => {
         expect(response.status).toBe(500);
     })
 })
+
+describe ('Descript', () => { 
+    it('Should return status 200, if descript is sucessful', async() => {
+        await factory.create('Passage')
+        const response = await request(app).get('/passages').set('authorization', `Bearer ${await adminSession()}`)
+        
+
+        expect(response.status).toBe(200);
+    })
+})
