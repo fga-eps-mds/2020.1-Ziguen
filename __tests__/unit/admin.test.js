@@ -150,3 +150,15 @@ describe('delete', () => {
     })
     
 })
+
+describe ('Descript', () => { 
+    it('Should return status 200, if descript is sucessful', async() => {
+        const tok = 123456;
+        const response = await request(app).get('/admins/1').set('authorization',tok)
+        
+
+        expect(response.status).toBe(401);
+ 
+    })
+
+})
