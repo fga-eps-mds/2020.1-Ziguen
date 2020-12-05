@@ -8,10 +8,6 @@ module.exports = {
         primaryKey: true,
         autoIncrement: true,
       },
-      price: {
-        type: Sequelize.STRING,
-        allowNull: false,
-      },
       traveler_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
