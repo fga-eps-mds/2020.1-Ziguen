@@ -34,14 +34,16 @@ class TripController {
         return res.status().json({ error: 'administrador não existe.' });
       }
     
-     const {  origin, destiny, hour, date, user_id } = await Trip.create(req.body);
+     const {  origin, destiny, hour, date, user_id,  price, boat_id} = await Trip.create(req.body);
       
       return res.json({
         origin,
         destiny,
         hour,
         date,
-        user_id
+        user_id,
+        price,
+        boat_id
       }); 
   
     }catch(err){
@@ -60,13 +62,14 @@ class TripController {
         return res.status(400).json({ error: 'Viagem não existe' });
       }
       
-      const {origin, destiny, hour, date} = await tripExists.update(req.body);
+      const {origin, destiny, hour, date,  price} = await tripExists.update(req.body);
   
       return res.json({
         origin,
         destiny,
         hour,
-        date
+        date,
+        price
       })
   
 

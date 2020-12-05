@@ -20,6 +20,7 @@ import Traveler from '../src/app/models/Traveler';
     destiny: faker.name.findName,
     hour: faker.random.number,
     date: faker.random.number,
+    price: faker.name.findName,
  })
  factory.define('Traveler', Traveler, {
     name: faker.name.findName,
@@ -36,7 +37,7 @@ import Traveler from '../src/app/models/Traveler';
   })
 
   factory.define('Passage', Passage, {
-   price: faker.random.number,
+  
    traveler_id: faker.random.number,
    trip_id: faker.random.number
 

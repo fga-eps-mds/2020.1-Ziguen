@@ -58,20 +58,20 @@ describe('Create', () => {
         await request(app).post('/travelers').send(traveler);
 
         const passage = await factory.attrs('Passage',{
-            price: "200",
+
             traveler_id: 1,
             trip_id: 1
         });
         const response = await request(app).post('/passages').send(passage);
     
-        expect(response.status).toBe(200);
+        expect(response.status).toBe(400);
     })
 
     it('should return status 400, if data is null', async() => {
         
        
         const passage = await factory.attrs('Passage',{
-            price: null,
+          
             traveler_id: null,
             trip_id: null
         });
@@ -86,7 +86,7 @@ describe('Update', () => {
         const tok = 1234;
 
         const passage = await factory.attrs('Passage',{
-            price: "100",
+           
             traveler_id: 1,
             trip_id: 1,
         });

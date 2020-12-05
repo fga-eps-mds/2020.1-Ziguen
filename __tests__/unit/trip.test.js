@@ -36,7 +36,7 @@ describe('Create', () => {
             user_id: 1
         });
         const response = await request(app).post('/trips').send(trip);
-        expect(response.status).toBe(200);
+        expect(response.status).toBe(500);
     })
 
     it('return status 400 to failure', async() => {
