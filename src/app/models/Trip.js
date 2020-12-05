@@ -10,6 +10,8 @@ class Trip extends Model {
           hour: Sequelize.STRING,
           date: Sequelize.STRING,
           user_id: Sequelize.NUMBER,
+          price: Sequelize.STRING,
+          boat_id: Sequelize.STRING
         },
         {
             sequelize,
