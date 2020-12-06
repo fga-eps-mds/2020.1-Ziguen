@@ -23,6 +23,7 @@ routes.post('/passages', PassageController.store);
 
 routes.get('/admins/list', AdminController.index);
 routes.get('/trips', TripController.index);
+routes.get('/boats', BoatController.index);
 
 // Todas as rotas a baixo desse middleware tem que ser autenticadas
 routes.use(authMiddleware); 
@@ -43,7 +44,6 @@ routes.get('/trips/:id', TripController.descript);
 routes.delete('/trips', TripController.destroy);
 
 routes.put('/boats', BoatController.update);
-routes.get('/boats', BoatController.index);
 routes.get('/boats/:id', BoatController.descript);
 routes.delete('/boats', BoatController.destroy);
 
