@@ -23,6 +23,7 @@ routes.post('/passages', PassageController.store);
 
 routes.get('/admins/list', AdminController.index);
 routes.get('/trips', TripController.index);
+routes.get('/boats', BoatController.index);
 routes.get('/boats/:id', BoatController.descript);
 
 // Todas as rotas a baixo desse middleware tem que ser autenticadas
