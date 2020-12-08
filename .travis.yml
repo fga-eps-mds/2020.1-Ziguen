@@ -1,14 +1,14 @@
 language: node_js
-
 node_js:
-  - node
-
+- node
 services:
-  - docker
-
+- docker
 sudo: false
-
 script:
-  - yarn test
-
-
+- yarn test
+deploy:
+  provider: heroku
+  api_key:
+    secure: J1hPawrDwXVUWRBr3lffN3/OqZyulCHRO9h/7aQPdvZwXuT32LtzOW8BxhqbnsujhUEDIaYynWH+H8v8UDr8J3I0ie7zSBta8zqAD3mzN1GBTA83ymEelx4/O51W6XKIWAm0iARofI6w/Dr59AB1WokSsmHOldgpyIU19gzINhdcucE1zduKpOn+7zD/0tKonYDOwq9/rKNsDzLUf3EjETbdsRCO1WdAuvwojCOHm9l71uW3z0hUj+rvLXxZpbE/Fz2BU8Y3+09Wa0uMdAj9g99kQ0tKow7U/C5PVNyrwxX/BrrAAKZge1WEKsadBWBqXEV8vkNtKjzwJ4rWmS7mOmYTcUieWgn2WjVSV5AaZggktyDFpFF6+dk+i2Edd+eyqwQRRu0Ay2dABOv3LZYo4k2S8+/zwzTWDNYlWaD5yIHMkJhLzDANsX1Xjzgibj9ypgnnaMLeDFDVTk2qtan6ljX49XisU8jtn0vUPaE3zRX34NR040TPzvtr7Gdbh+NDXoQmtpuTe4wfRU5/zo+c64ygPqPud29hvUDRx7djJMWhx7BXyVryprOZDlkc0QEH6pX8qBeGeQV61IajcwQ1u1E94KaayPlurhLUvMx0VMg+/40P4kKxo5Ulr29t2+vKyDFJZqM0/NCFupsOJiCHxE/x+jHg0rDZC4C2GQYtppI=
+  app: ziguen-api
+  edge: true
